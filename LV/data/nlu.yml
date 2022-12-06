@@ -1,0 +1,648 @@
+version: "3.1"
+
+nlu:
+- intent: greet #chào hỏi
+  examples: |
+    - hey
+    - hello
+    - hihe
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good afternoon
+    - xin chào shop
+    - chào 
+    - Shop có thể giúp mình không ạ?
+    - alo
+    - cho em hỏi với shop
+    - cho mình hỏi với ạ
+    - belo shop
+    
+
+- intent: goodbye #tạm biệt
+  examples: |
+    - tạm biệt
+    - chào tạm biệt
+    - bye shop nha 
+    - bai bai
+    - bái bai
+    - byeee
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: price_common #hỏi về giá cả sách sau khi hỏi sách
+  examples: |
+    - giá sao
+    - giá thế nào
+    - sách giá thế nào vậy shop
+    - giá 
+    - giá bao nhiêu 
+    - giá thế nào ạ ?
+    - giá bao nhiêu?
+    - giá sao?
+    - giá thế nào?
+    - bán thế nào?
+    - bán bao nhiêu?
+    - bán bao nhiêu vậy shop
+    - shop bán bao nhiêu vậy ?
+    - giá quyển này bao nhiêu?
+    - quyển này bên shop bán bao nhiêu ạ ?
+    - giá nhiêu vậy?
+
+#---------------------TYPE_BOOK--------------------------------------------------------------
+
+- intent: typebook1 #sách văn học Việt Nam
+  examples: |
+    - cho em hỏi shop mình có sách văn học Việt Nam không ạ?
+    - có sách văn học Việt Nam không bạn ?
+    - mình muốn tìm sách văn học Việt Nam
+    - không biết shop có sách văn học Việt Nam không ạ?
+    - bên shop có sách văn học Việt Nam  không ?
+    - sách văn học Việt Nam shop có không ạ?
+    - sách văn học Việt Nam shop có bán không ? 
+    - ở shop mình có bán sách văn học Việt Nam không ?
+    - bên mình có sách văn học Việt Nam không?
+    - tìm sách văn học Việt Nam
+
+- intent: typebook2 #sách thiếu nhi
+  examples: |
+    - cho em hỏi shop mình có sách thiếu nhi không ạ?
+    - có sách thiếu nhi không bạn ?
+    - mình muốn tìm sách thiếu nhi
+    - không biết shop có sách thiếu nhi không ạ?
+    - bên shop có sách thiếu nhi  không ?
+    - sách thiếu nhi shop có không ạ?
+    - sách thiếu nhi shop có bán không ? 
+    - ở shop mình có bán sách thiếu nhi không ?
+    - bên mình có sách thiếu nhi không?
+    - tìm sách thiếu nhi
+
+
+
+- intent: typebook3 #Văn học nước ngoài
+  examples: |
+    - cho em hỏi shop mình có sách văn học nước ngoài không ạ?
+    - có sách văn học nước ngoài không bạn ?
+    - mình muốn tìm sách văn học nước ngoài
+    - không biết shop có sách văn học nước ngoài không ạ?
+    - bên shop có sách văn học nước ngoài  không ?
+    - sách văn học nước ngoài shop có không ạ?
+    - sách văn học nước ngoài shop có bán không ? 
+    - ở shop mình có bán sách văn học nước ngoài không ?
+    - bên mình có văn học nước ngoài không?
+    - tìm sách văn học nước ngoài
+    
+
+- intent: typebook4 #sách kinh tế
+  examples: |
+    - cho em hỏi shop mình có sách kinh tếg không ạ?
+    - có sách kinh tế không bạn ?
+    - mình muốn tìm sách kinh tế
+    - không biết shop có sách kinh tế không ạ?
+    - bên shop có sách kinh tế  không ?
+    - sách kinh tế shop có không ạ?
+    - sách kinh tế shop có bán không ? 
+    - ở shop mình có bán sách kinh tế không ?
+    - bên mình có sách kinh tế không?
+    - tìm sách kinh tế
+
+
+
+- intent: typebook5 #sách khoa học và đời sống
+  examples: |
+    - cho em hỏi shop mình có sách khoa học đời sống không ạ?
+    - có sách khoa học đời sống không bạn ?
+    - mình muốn tìm sách khoa học đời sống
+    - không biết shop có sách khoa học đời sống không ạ?
+    - bên shop có sách khoa học đời sống  không ?
+    - sách khoa học đời sống shop có không ạ?
+    - sách khoa học đời sống shop có bán không ? 
+    - ở shop mình có bán sách khoa học đời sống không ?
+    - bên mình có sách khoa học đời sống không?
+    - tìm sách khoa học đời sống
+
+
+- intent: typebook6 #sách kỹ năng sống
+  examples: |
+    - cho em hỏi shop mình có sách kỹ năng sống không ạ? 
+    - mình muốn tìm sách kỹ năng sống	
+    - không biết shop có sách kỹ năng sống không ạ?
+    - bên shop có sách kỹ năng sống  không ?
+    - sách kỹ năng sống shop có không ạ?
+    - sách kỹ năng sống shop có bán không ?
+    - ở shop mình có bán sách kỹ năng sống không ?
+    - bên mình có sách kỹ năng sống không?	 
+    - tìm sách kỹ năng sống
+    - có sách kỹ năng sống không bạn ?
+
+
+
+
+- intent: typebook7 #sách từ điển
+  examples: |
+    - cho em hỏi shop mình có sách từ điển không ạ?
+    - có sách từ điển không bạn ?
+    - mình muốn tìm sách từ điển
+    - không biết shop có sách từ điển không ạ?
+    - bên shop có sách từ điển  không ?
+    - sách từ điển shop có không ạ?
+    - sách từ điển shop có bán không ? 
+    - ở shop mình có bán sách từ điển không ?
+    - bên mình có sách từ điển không?
+    - tìm sách từ điển
+
+- intent: typebook8 #lịch sử địa lý
+  examples: |
+    - cho em hỏi shop mình có sách lịch sử địa lý không ạ?
+    - có sách lịch sử địa lý không bạn ?
+    - mình muốn tìm lịch sử địa lý
+    - không biết shop có sách lịch sử địa lý không ạ?
+    - bên shop có sách lịch sử địa lý  không ?
+    - sách lịch sử địa lý shop có không ạ?
+    - sách lịch sử địa lý shop có bán không ? 
+    - ở shop mình có bán sách lịch sử địa lý không ?
+    - bên mình có sách lịch sử địa lý không?
+    - tìm sách lịch sử địa lý
+
+#-------------------NAME_BOOK------------------------------------------------------
+
+- intent: namebook1 #Cảm ơn người lớn
+  examples: |
+    - cho em hỏi shop mình có quyển Cảm ơn người lớn không ạ?
+    - cho em hỏi shop mình có cuốn Cảm ơn người lớn không ạ?
+    - cho em hỏi shop mình có Cảm ơn người lớn không ạ?
+    - có quyển Cảm ơn người lớn không bạn ?
+    - có cuốn Cảm ơn người lớn không bạn ?
+    - có Cảm ơn người lớn không bạn ?
+    - mình muốn tìm quyển Cảm ơn người lớn
+    - mình muốn tìm cuốn Cảm ơn người lớn
+    - mình muốn tìm cuốn Cảm ơn người lớn
+    - không biết shop có quyển Cảm ơn người lớn không ạ?
+    - không biết shop có cuốn Cảm ơn người lớn không ạ?
+    - không biết shop có Cảm ơn người lớn không ạ?
+    - bên shop có quyển Cảm ơn người lớn không ?
+    - bên shop có cuốn Cảm ơn người lớn không ?
+    - bên shop có Cảm ơn người lớn không ?
+    - Cảm ơn người lớn shop có không ạ? - Cảm ơn người lớn shop có bán không ? 
+    - ở shop mình có bán quyển Cảm ơn người lớn không ?
+    - ở shop mình có bán cuốn Cảm ơn người lớn không ?
+    - bên mình có quyển Cảm ơn người lớn không?
+    - bên mình có cuốn Cảm ơn người lớn không?
+    - tìm quyển Cảm ơn người lớn
+    - tìm cuốn Cảm ơn người lớn
+    - tìm Cảm ơn người lớn
+
+- intent: namebook2 #Doraemon
+  examples: |
+    - cho em hỏi shop mình có quyển Doraemon không ạ?
+    - cho em hỏi shop mình có cuốn Doraemon không ạ?
+    - cho em hỏi shop mình có Doraemon không ạ?
+    - có quyển Doraemon không bạn ?
+    - có cuốn Doraemon không bạn ?
+    - có Doraemon không bạn ?
+    - mình muốn tìm quyển Doraemon
+    - mình muốn tìm cuốn Doraemon
+    - mình muốn tìm cuốn Doraemon
+    - không biết shop có quyển Doraemon không ạ?
+    - không biết shop có cuốn Doraemon không ạ?
+    - không biết shop có Doraemon không ạ?
+    - bên shop có quyển Doraemon không ?
+    - bên shop có cuốn Doraemon không ?
+    - bên shop có Doraemon không ?
+    - Doraemon shop có không ạ? 
+    - Doraemon shop có bán không ? 
+    - ở shop mình có bán quyển Doraemon không ?
+    - ở shop mình có bán cuốn Doraemon không ?
+    - bên mình có quyển Doraemon không?
+    - bên mình có cuốn Doraemon không?
+    - tìm quyển Doraemon
+    - tìm cuốn Doraemon
+    - tìm Doraemon
+
+- intent: namebook3 #Nhà giả kim
+  examples: |
+    - cho em hỏi shop mình có quyển Nhà giả kim không ạ?
+    - cho em hỏi shop mình có cuốn Nhà giả kim không ạ?
+    - cho em hỏi shop mình có Nhà giả kim không ạ?
+    - có quyển Nhà giả kim không bạn ?
+    - có cuốn Nhà giả kim không bạn ?
+    - có Nhà giả kim không bạn ?
+    - mình muốn tìm quyển Nhà giả kim
+    - mình muốn tìm cuốn Nhà giả kim
+    - mình muốn tìm cuốn Nhà giả kim
+    - không biết shop có quyển Nhà giả kim không ạ?
+    - không biết shop có cuốn Nhà giả kim không ạ?
+    - không biết shop có Nhà giả kim không ạ?
+    - bên shop có quyển Nhà giả kim không ?
+    - bên shop có cuốn Nhà giả kim không ?
+    - bên shop có Nhà giả kim không ?
+    - Nhà giả kim shop có không ạ? 
+    - Nhà giả kim shop có bán không ? 
+    - ở shop mình có bán quyển Nhà giả kim không ?
+    - ở shop mình có bán cuốn Nhà giả kim không ?
+    - bên mình có quyển Nhà giả kim không?
+    - bên mình có cuốn Nhà giả kim không?
+    - tìm quyển Nhà giả kim
+    - tìm cuốn Nhà giả kim
+    - tìm Nhà giả kim
+
+- intent: namebook4 #Nghĩ giàu làm giàu
+  examples: |
+    - cho em hỏi shop mình có quyển Nghĩ giàu làm giàu  không ạ?
+    - cho em hỏi shop mình có cuốn Nghĩ giàu làm giàu  không ạ?
+    - cho em hỏi shop mình có Nghĩ giàu làm giàu  không ạ?
+    - có quyển Nghĩ giàu làm giàu  không bạn ?
+    - có cuốn Nghĩ giàu làm giàu  không bạn ?
+    - có Nghĩ giàu làm giàu  không bạn ?
+    - mình muốn tìm quyển Nghĩ giàu làm giàu 
+    - mình muốn tìm cuốn Nghĩ giàu làm giàu 
+    - mình muốn tìm cuốn Nghĩ giàu làm giàu 
+    - không biết shop có quyển Nghĩ giàu làm giàu  không ạ?
+    - không biết shop có cuốn Nghĩ giàu làm giàu  không ạ?
+    - không biết shop có Nghĩ giàu làm giàu  không ạ?
+    - bên shop có quyển Nghĩ giàu làm giàu  không ?
+    - bên shop có cuốn Nghĩ giàu làm giàu  không ?
+    - bên shop có Nghĩ giàu làm giàu  không ?
+    - Nghĩ giàu làm giàu  shop có không ạ? 
+    - Nghĩ giàu làm giàu shop có bán không ? 
+    - ở shop mình có bán quyển Nghĩ giàu làm giàu  không ?
+    - ở shop mình có bán cuốn Nghĩ giàu làm giàu  không ?
+    - bên mình có quyển Nghĩ giàu làm giàu  không?
+    - bên mình có cuốn Nghĩ giàu làm giàu  không?
+    - tìm quyển Nghĩ giàu làm giàu 
+    - tìm cuốn Nghĩ giàu làm giàu 
+    - tìm Nghĩ giàu làm giàu 
+
+- intent: namebook5 #Vũ trụ trong vỏ hạt dẻ
+  examples: |
+    - cho em hỏi shop mình có quyển Vũ trụ trong vỏ hạt dẻ không ạ?
+    - cho em hỏi shop mình có cuốn Vũ trụ trong vỏ hạt dẻ không ạ?
+    - cho em hỏi shop mình có Vũ trụ trong vỏ hạt dẻ không ạ?
+    - có quyển Vũ trụ trong vỏ hạt dẻ không bạn ?
+    - có cuốn Vũ trụ trong vỏ hạt dẻ không bạn ?
+    - có Vũ trụ trong vỏ hạt dẻ không bạn ?
+    - mình muốn tìm quyển Vũ trụ trong vỏ hạt dẻ
+    - mình muốn tìm cuốn Vũ trụ trong vỏ hạt dẻ
+    - mình muốn tìm cuốn Vũ trụ trong vỏ hạt dẻ
+    - không biết shop có quyển Vũ trụ trong vỏ hạt dẻ không ạ?
+    - không biết shop có cuốn Vũ trụ trong vỏ hạt dẻ không ạ?
+    - không biết shop có Vũ trụ trong vỏ hạt dẻ không ạ?
+    - bên shop có quyển Vũ trụ trong vỏ hạt dẻ không ?
+    - bên shop có cuốn Vũ trụ trong vỏ hạt dẻ không ?
+    - bên shop có Vũ trụ trong vỏ hạt dẻ không ?
+    - Vũ trụ trong vỏ hạt dẻ shop có không ạ? 
+    - Vũ trụ trong vỏ hạt dẻ shop có bán không ? 
+    - ở shop mình có bán quyển Vũ trụ trong vỏ hạt dẻ ?
+    - ở shop mình có bán cuốn Vũ trụ trong vỏ hạt dẻ ?
+    - bên mình có quyển Vũ trụ trong vỏ hạt dẻ không?
+    - bên mình có cuốn Vũ trụ trong vỏ hạt dẻ không?
+    - tìm quyển Vũ trụ trong vỏ hạt dẻ
+    - tìm cuốn Vũ trụ trong vỏ hạt dẻ
+    - tìm Vũ trụ trong vỏ hạt dẻ
+    
+    
+
+- intent: namebook6 #Deep Learning cơ bản
+  examples: |
+    - cho em hỏi shop mình có quyển Deep Learning cơ bản không ạ?
+    - cho em hỏi shop mình có cuốn Deep Learning cơ bản không ạ?
+    - cho em hỏi shop mình có Deep Learning cơ bản không ạ?
+    - có quyển Deep Learning cơ bản không bạn ?
+    - có cuốn Deep Learning cơ bản không bạn ?
+    - có Deep Learning cơ bản không bạn ?
+    - mình muốn tìm quyển Deep Learning cơ bản
+    - mình muốn tìm cuốn Deep Learning cơ bản
+    - mình muốn tìm cuốn Deep Learning cơ bản
+    - không biết shop có quyển Deep Learning cơ bản không ạ?
+    - không biết shop có cuốn Deep Learning cơ bản không ạ?
+    - không biết shop có Deep Learning cơ bản không ạ?
+    - bên shop có quyển Deep Learning cơ bản không ?
+    - bên shop có cuốn Deep Learning cơ bản không ?
+    - bên shop có Deep Learning cơ bản không ?
+    - Deep Learning cơ bản shop có không ạ? 
+    - Deep Learning cơ bản shop có bán không ? 
+    - ở shop mình có bán quyển Deep Learning cơ bản ?
+    - ở shop mình có bán cuốn Deep Learning cơ bản ?
+    - bên mình có quyển Deep Learning cơ bản không?
+    - bên mình có cuốn Deep Learning cơ bản không?
+    - tìm quyển Deep Learning cơ bản
+    - tìm cuốn Deep Learning cơ bản
+    - tìm Deep Learning cơ bản
+
+- intent: namebook7 #Tiếng gọi nơi hoang dã
+  examples: |
+    - cho em hỏi shop mình có quyển Tiếng gọi nơi hoang dã không ạ?
+    - cho em hỏi shop mình có cuốn Tiếng gọi nơi hoang dã không ạ?
+    - cho em hỏi shop mình có Tiếng gọi nơi hoang dã không ạ?
+    - có quyển Tiếng gọi nơi hoang dã không bạn ?
+    - có cuốn Tiếng gọi nơi hoang dã không bạn ?
+    - có Tiếng gọi nơi hoang dã không bạn ?
+    - mình muốn tìm quyển Tiếng gọi nơi hoang dã 
+    - mình muốn tìm cuốn Tiếng gọi nơi hoang dã
+    - mình muốn tìm cuốn Tiếng gọi nơi hoang dã
+    - không biết shop có quyển Tiếng gọi nơi hoang dã không ạ?
+    - không biết shop có cuốn Tiếng gọi nơi hoang dã không ạ?
+    - không biết shop có Tiếng gọi nơi hoang dã không ạ?
+    - bên shop có quyển Tiếng gọi nơi hoang dã không ?
+    - bên shop có cuốn Tiếng gọi nơi hoang dã không ?
+    - bên shop có Tiếng gọi nơi hoang dã không ?
+    - Tiếng gọi nơi hoang dã shop có không ạ? 
+    - Tiếng gọi nơi hoang dã shop có bán không ? 
+    - ở shop mình có bán quyển Tiếng gọi nơi hoang dã ?
+    - ở shop mình có bán cuốn Tiếng gọi nơi hoang dã ?
+    - bên mình có quyển Tiếng gọi nơi hoang dã không?
+    - bên mình có cuốn Tiếng gọi nơi hoang dã không?
+    - tìm quyển Tiếng gọi nơi hoang dã
+    - tìm cuốn Tiếng gọi nơi hoang dã
+    - tìm Tiếng gọi nơi hoang dã
+- intent: namebook8 #Cà Phê cùng Tony
+  examples: |
+    - cho em hỏi shop mình có quyển Cà Phê cùng Tony không ạ?
+    - cho em hỏi shop mình có cuốn Cà Phê cùng Tony không ạ?
+    - cho em hỏi shop mình có Cà Phê cùng Tony không ạ?
+    - có quyển Cà Phê cùng Tony không bạn ?
+    - có cuốn Cà Phê cùng Tony không bạn ?
+    - có Cà Phê cùng Tony không bạn ?
+    - mình muốn tìm quyển Cà Phê cùng Tony
+    - mình muốn tìm cuốn Cà Phê cùng Tony
+    - mình muốn tìm cuốn Cà Phê cùng Tony
+    - không biết shop có quyển Cà Phê cùng Tony không ạ?
+    - không biết shop có cuốn Cà Phê cùng Tony không ạ?
+    - không biết shop có Cà Phê cùng Tony không ạ?
+    - bên shop có quyển Cà Phê cùng Tony không ?
+    - bên shop có cuốn Cà Phê cùng Tony không ?
+    - bên shop có Cà Phê cùng Tony không ?
+    - Cà Phê cùng Tony shop có không ạ? 
+    - Cà Phê cùng Tony shop có bán không ? 
+    - ở shop mình có bán quyển Cà Phê cùng Tony không?
+    - ở shop mình có bán cuốn Cà Phê cùng Tony không?
+    - bên mình có quyển Cà Phê cùng Tony không?
+    - bên mình có cuốn Cà Phê cùng Tony không?
+    - tìm quyển Cà Phê cùng Tony
+    - tìm cuốn Cà Phê cùng Tony
+    - tìm Cà Phê cùng Tony
+- intent: namebook9 #Từ điển anh việt
+  examples: |
+    - cho em hỏi shop mình có quyển Từ điển anh việt không ạ?
+    - cho em hỏi shop mình có cuốn Từ điển anh việt không ạ?
+    - cho em hỏi shop mình có Từ điển anh việt không ạ?
+    - có quyển Từ điển anh việt không bạn ?
+    - có cuốn Từ điển anh việt không bạn ?
+    - có Từ điển anh việt không bạn ?
+    - mình muốn tìm quyển Từ điển anh việt
+    - mình muốn tìm cuốn Từ điển anh việt
+    - mình muốn tìm cuốn Từ điển anh việt
+    - không biết shop có quyển Từ điển anh việt không ạ?
+    - không biết shop có cuốn Từ điển anh việt không ạ?
+    - không biết shop có Từ điển anh việt không ạ?
+    - bên shop có quyển Từ điển anh việt không ?
+    - bên shop có cuốn Từ điển anh việt không ?
+    - bên shop có Từ điển anh việt không ?
+    - Từ điển anh việt shop có không ạ? 
+    - Từ điển anh việt shop có bán không ? 
+    - ở shop mình có bán quyển Từ điển anh việt không?
+    - ở shop mình có bán cuốn Từ điển anh việt không?
+    - bên mình có quyển Từ điển anh việt không?
+    - bên mình có cuốn Từ điển anh việt không?
+    - tìm quyển Từ điển anh việt
+    - tìm cuốn Từ điển anh việt
+    - tìm Cà Từ điển anh việt
+- intent: namebook10 #Đại Việt sử ký toàn thư
+  examples: |
+    - cho em hỏi shop mình có quyển Đại Việt sử ký toàn thư không ạ?
+    - cho em hỏi shop mình có cuốn Đại Việt sử ký toàn thư không ạ?
+    - cho em hỏi shop mình có Đại Việt sử ký toàn thư không ạ?
+    - có quyển Đại Việt sử ký toàn thư không bạn ?
+    - có cuốn Đại Việt sử ký toàn thư không bạn ?
+    - có Đại Việt sử ký toàn thư không bạn ?
+    - mình muốn tìm quyển Đại Việt sử ký toàn thư
+    - mình muốn tìm cuốn Đại Việt sử ký toàn thư
+    - mình muốn tìm cuốn Đại Việt sử ký toàn thư
+    - không biết shop có quyển Đại Việt sử ký toàn thư không ạ?
+    - không biết shop có cuốn Đại Việt sử ký toàn thư không ạ?
+    - không biết shop có Đại Việt sử ký toàn thư không ạ?
+    - bên shop có quyển Đại Việt sử ký toàn thư không ?
+    - bên shop có cuốn Đại Việt sử ký toàn thư không ?
+    - bên shop có Đại Việt sử ký toàn thư không ?
+    - Đại Việt sử ký toàn thư shop có không ạ? 
+    - Đại Việt sử ký toàn thư shop có bán không ? 
+    - ở shop mình có bán quyển Đại Việt sử ký toàn thư?
+    - ở shop mình có bán cuốn Đại Việt sử ký toàn thư?
+    - bên mình có quyển Đại Việt sử ký toàn thư không?
+    - bên mình có cuốn Đại Việt sử ký toàn thư không?
+    - tìm quyển Đại Việt sử ký toàn thư
+    - tìm cuốn Đại Việt sử ký toàn thư
+    - tìm Cà Đại Việt sử ký toàn thư
+
+#---------------------PRICE_BOOK-----------------------------------------------------------------
+
+
+    
+
+- intent: pricebook1 #Cảm ơn người lớn
+  examples: |   
+    - Cảm ơn người lớn giá bao nhiêu vậy shop?
+    - Cảm ơn người lớn giá bao nhiêu thế?
+    - Cảm ơn người lớn  giá bao nhiêu ạ?	
+    - Cảm ơn người lớn  giá sao ạ?
+    - Cảm ơn người lớn  giá sao shop?
+    - Giá của quyển Cảm ơn người lớn bao nhiêu vậy shop?
+    - Cảm ơn người lớn  bao nhiêu tiền vậy shop ?
+    - Cảm ơn người lớn bán bao nhiêu vậy shop?
+    - Quyển Cảm ơn người lớn giá bao nhiêu vậy shop?
+    - Giá Cảm ơn người lớn là bao nhiêu vậy shop?
+
+- intent: pricebook2 #Doraemon
+  examples: |   
+    - Doraemon giá bao nhiêu vậy shop?
+    - Doraemon giá bao nhiêu thế?
+    - Doraemon giá bao nhiêu ạ?
+    - Doraemon giá sao ạ?
+    - Doraemon giá sao shop?
+    - Giá của quyển Doraemon bao nhiêu vậy shop?
+    - Doraemon bao nhiêu tiền vậy shop ?
+    - Doraemon bán bao nhiêu vậy shop?
+    - Quyển Doraemon bao nhiêu vậy shop?
+    - Giá Doraemon  là bao nhiêu vậy shop?
+
+- intent: pricebook3 #Nhà giả kim
+  examples: |   
+    - Nhà giả kim giá bao nhiêu vậy shop?
+    - Nhà giả kim giá bao nhiêu thế?
+    - Nhà giả kim giá bao nhiêu ạ?
+    - Nhà giả kim giá sao ạ?
+    - Nhà giả kim giá sao shop?
+    - Giá của quyển Nhà giả kim bao nhiêu vậy shop?
+    - Nhà giả kim bao nhiêu tiền vậy shop ?
+    - Nhà giả kim bán bao nhiêu vậy shop?
+    - Quyển Nhà giả kim bao nhiêu vậy shop?
+    - Giá Nhà giả kim là bao nhiêu vậy shop?
+
+- intent: pricebook4 #Nghĩ giàu làm giàu
+  examples: |   
+    - Nghĩ giàu làm giàu giá bao nhiêu vậy shop?
+    - Nghĩ giàu làm giàu giá bao nhiêu thế?
+    - Nghĩ giàu làm giàu giá bao nhiêu ạ?
+    - Nghĩ giàu làm giàu giá sao ạ?
+    - Nghĩ giàu làm giàu giá sao shop?	
+    - Giá của quyển Nghĩ giàu làm giàu bao nhiêu vậy shop?
+    - Nghĩ giàu làm giàu bao nhiêu tiền vậy shop ?
+    - Nghĩ giàu làm giàu bán bao nhiêu vậy shop?
+    - Quyển Nghĩ giàu làm giàu  bao nhiêu vậy shop?
+    - Giá Nghĩ giàu làm giàu là bao nhiêu vậy shop?
+
+- intent: pricebook5 #Vũ trụ trong vỏ hạt dẻ
+  examples: |   
+    - Vũ trụ trong vỏ hạt dẻ  giá bao nhiêu vậy shop?	
+    - Vũ trụ trong vỏ hạt dẻ  giá bao nhiêu thế?
+    - Vũ trụ trong vỏ hạt dẻ giá bao nhiêu ạ?	
+    - Vũ trụ trong vỏ hạt dẻ giá sao ạ?
+    - Vũ trụ trong vỏ hạt dẻ giá sao shop?
+    - Giá của quyển vũ trụ trong vỏ hạt dẻ  bao nhiêu vậy shop?
+    - Vũ trụ trong vỏ hạt dẻ  bao nhiêu tiền vậy shop ?
+    - Vũ trụ trong vỏ hạt dẻ bán bao nhiêu vậy shop?
+    - Quyển Vũ trụ trong vỏ hạt dẻ  giá bao nhiêu vậy shop?
+    - Giá Vũ trụ trong vỏ hạt dẻ  là bao nhiêu vậy shop?
+
+- intent: pricebook6 #Deep Learning cơ bản
+  examples: |   
+    - Deep Learning cơ bản  giá bao nhiêu vậy shop?
+    - Deep Learning cơ bản  giá bao nhiêu thế?
+    - Deep Learning cơ bản  giá bao nhiêu ạ?	
+    - Deep Learning cơ bản  giá sao ạ?
+    - Deep Learning cơ bản  giá sao shop?
+    - Giá của quyển Deep Learning cơ bản  bao nhiêu vậy shop?
+    - Deep Learning cơ bản  bao nhiêu tiền vậy shop ?
+    - Deep Learning cơ bản  bán bao nhiêu vậy shop?
+    - Quyển Deep Learning cơ bản lớn giá bao nhiêu vậy shop?
+    - Giá Deep learning là bao nhiêu vậy shop?
+
+- intent: pricebook7 #Tiếng gọi nơi hoang dã
+  examples: |  
+    - Tiếng gọi nơi hoang dã  giá bao nhiêu vậy shop?
+    - Tiếng gọi nơi hoang dã giá bao nhiêu thế?
+    - Tiếng gọi nơi hoang dã  giá bao nhiêu ạ?
+    - Tiếng gọi nơi hoang dã giá sao ạ?
+    - Tiếng gọi nơi hoang dã giá sao shop?
+    - Giá của quyển Tiếng gọi nơi hoang dã  bao nhiêu vậy shop?
+    - Tiêng gọi nơi hoang dã  bao nhiêu tiền vậy shop ?
+    - Tiếng gọi nơi hoang dã  bán bao nhiêu vậy shop?
+    - Quyển Tiếng gọi nơi hoang dã giá bao nhiêu vậy shop?
+    - Giá Tiếng gọi nơi hoang dã  là bao nhiêu vậy shop?
+
+- intent: pricebook8 #Cà phê cùng Tony
+  examples: |   
+    - Cà phê cùng Tony giá bao nhiêu vậy shop?	
+    - Cà phê cùng Tony  giá bao nhiêu thế?
+    - Cà phê cùng Tony giá bao nhiêu ạ?
+    - Cà phê cùng Tony giá sao ạ?
+    - Cà phê cùng Tony giá sao shop?
+    - Giá của quyển Cà phê cùng Tony bao nhiêu vậy shop?
+    - Cà phê cùng Tony  bao nhiêu tiền vậy shop ?
+    - Cà phê cùng Tony bán bao nhiêu vậy shop?
+
+
+- intent: pricebook9 #Từ điển Anh Việt
+  examples: | 
+    - Từ điển Anh Việt giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt giá bao nhiêu thế?
+    - Từ điển Anh Việt giá bao nhiêu ạ?
+    - Từ điển Anh Việt giá bao nhiêu ạ?
+    - Từ điển Anh Việt giá sao ạ?
+    - Từ điển Anh Việt giá sao shop?
+    - Giá của quyển từ điển Anh Việt bao nhiêu vậy shop?
+    - Từ điển Anh Việt  bao nhiêu tiền vậy shop ?
+    - Từ điển Anh Việt bán bao nhiêu vậy shop?
+    - Quyển Từ điển Anh Việt giá bao nhiêu vậy shop?
+    - Từ điển ANh Việt  là bao nhiêu vậy shop?	
+
+- intent: pricebook10 #Đại Việt sử kí toàn thư
+  examples: | 
+    - Đại Việt sử kí toàn thư giá bao nhiêu vậy shop?
+    - Đại Việt sử kí toàn thư giá bao nhiêu ạ?
+    - Đại Việt sử kí toàn thư giá bao nhiêu thế?
+    - Giá của quyển Đại Việt sử kí toàn thư  bao nhiêu vậy shop?
+    - Đại Việt sử kí toàn thư  bao nhiêu tiền vậy shop ?
+    - Đại Việt sử kí toàn thư  bán bao nhiêu vậy shop?
+    - Quyển Đại Việt sử kí toàn thư giá bao nhiêu vậy shop?
+    - Giá Đại Việt sử kí toàn thư  là bao nhiêu vậy shop?
+
+
+#----------------------PAYMENT--------------------------------------------------------------
+- intent: payment #thanh toán
+  examples: |
+    - Bên mình có những hình thức thanh toán nào ạ?
+    - Shop mình có những hình thức thanh toán nào ạ?
+    - Shop mình có những hình thức thanh toán nào vậy?
+    - Mình thanh toán bằng thẻ ngân hàng được không shop?
+    - Thanh toán bằng thẻ ngân hàng được không shop ơi?
+    - Mình thanh toán bằng tiền mặt được không shop?
+    - tiền mặt được không shop?
+    - Bên mình có thanh toán bằng tiền mặt không ạ?
+    - Shop mình có thanh toán bằng tiền mặt không ạ?
+    - Cho em xin số tài khoản em chuyển tiền ạ.
+    - cho mình xin số tài khoản mình chuyển tiền ạ.
+    - bên mình có thanh toán qua ví momo không ạ ?
+    - shop mình có nhận tiền qua ví momo không ạ?
+    - mình chuyển tiền qua ví momo được không vậy shop?
+    - Momo được không shop ơi?
+    - Momo được không ạ?
+    - Shop có thể hướng dẫn em thanh toán được không 
+    - Shop cho em thanh toán sản phẩm ạ ?
+    - Em muốn thanh toán ạ?
+    - em không biết thanh toán sao hết Shop ơi.
+    - Thanh toán thế nào shop ơi
+    - Shop cho em xin số tài khoản em chuyển tiền ạ
+    - Thanh toán bên shop có những phương thức thanh toán nào ạ ?
+    - Thanh toán bằng thẻ ngân hàng được không shop ?
+    - Thanh toán bằng tiền mặt được không shop ?
+
+#---------------------------SHIP-----------------------------------------------------------------
+
+- intent: ship
+  examples: |
+      - ship thế nào ạ
+      - ship hàng bao lâu vậy shop
+      - Dịch vụ vận chuyển như thế nào ạ
+      - Địa chỉ shop ở đâu để em tới lấy hàng ạ
+      - Mua hàng như nào để có thể miễn phí vận chuyển vậy shop
+      - Cho em hỏi phí vận chuyển tính như nào ạ
+      - Chính sách vận chuyển bên shop như thế nào ạ
+      - Phí vận chuyển đơn hàng của em là bao nhiêu vậy ạ
+      - Đơn hàng của em phí vận chuyển là bao nhiêu vậy shop
+      - Nếu hàng nhận không như hàng mẫu phải đổi trả thế nào ạ
+      - Vận chuyển thế nào vậy?
+      - có ship đi các tỉnh không shop
+      - Hàng gửi ngoại thành bao nhiêu ngày là tới vậy ạ
+      - Hàng gửi ngoại thành đến nơi trong bao lâu ạ
+      - Em ở trong bán kính 2km thì có hàng trong ngày không shop
+      - Shop ơi, khi vận chuyển shop nhớ đóng gói kỹ giúp em
+      - Nhờ em shop đóng gói hàng kỹ giúp em ạ
+      - nhưng mà vận chuyển bao lâu
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: sale_time
+  examples: |
+    - bên mình có chương trình giảm giá không ạ?
+    - hiện đang có chương trình giảm giá gì không vậy shop?
+
+- intent: sale_product
+  examples: |
+    - các sách nào được giảm giá vậy shop?
+    - các sản phẩm này có đang được giảm giá không shop?

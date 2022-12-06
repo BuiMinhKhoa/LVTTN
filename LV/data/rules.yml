@@ -1,0 +1,133 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule: typebook1
+  steps:
+    - intent: typebook1
+    - action: utter_typebook1
+- rule: typebook2
+  steps:
+    - intent: typebook2
+    - action: utter_typebook2
+- rule: typebook3
+  steps:
+    - intent: typebook3
+    - action: utter_typebook3
+- rule: typebook4
+  steps:
+    - intent: typebook4
+    - action: utter_typebook4
+- rule: typebook5
+  steps:
+    - intent: typebook5
+    - action: utter_typebook5
+- rule: typebook6
+  steps:
+    - intent: typebook6
+    - action: utter_typebook6
+- rule: typebook7
+  steps:
+    - intent: typebook7
+    - action: utter_typebook7
+- rule: typebook8
+  steps:
+    - intent: typebook8
+    - action: utter_typebook8
+- rule: namebook1
+  steps:
+    - intent: namebook1
+    - action: utter_namebook1
+- rule: namebook2
+  steps:
+    - intent: namebook2
+    - action: utter_namebook2
+- rule: namebook3
+  steps:
+    - intent: namebook3
+    - action: utter_namebook3
+- rule: namebook4
+  steps:
+    - intent: namebook4
+    - action: utter_namebook4
+- rule: namebook5
+  steps:
+    - intent: namebook5
+    - action: utter_namebook5
+- rule: namebook6
+  steps:
+    - intent: namebook6
+    - action: utter_namebook6
+- rule: namebook7
+  steps:
+    - intent: namebook7
+    - action: utter_namebook7
+- rule: namebook8
+  steps:
+    - intent: namebook8
+    - action: utter_namebook8
+- rule: namebook9
+  steps:
+    - intent: namebook9
+    - action: utter_namebook9
+- rule: namebook10
+  steps:
+    - intent: namebook10
+    - action: utter_namebook10
+- rule: pricebook1
+  steps:
+    - intent: pricebook1
+    - action: utter_pricebook1
+- rule: pricebook2
+  steps:
+    - intent: pricebook2
+    - action: utter_pricebook2
+- rule: pricebook3
+  steps:
+    - intent: pricebook3
+    - action: utter_pricebook3
+- rule: pricebook4
+  steps:
+    - intent: pricebook4
+    - action: utter_pricebook4
+- rule: pricebook5
+  steps:
+    - intent: pricebook5
+    - action: utter_pricebook5
+- rule: pricebook6
+  steps:
+    - intent: pricebook6
+    - action: utter_pricebook6
+- rule: pricebook7
+  steps:
+    - intent: pricebook7
+    - action: utter_pricebook7
+- rule: pricebook8
+  steps:
+    - intent: pricebook8
+    - action: utter_pricebook8
+- rule: pricebook9
+  steps:
+    - intent: pricebook9
+    - action: utter_pricebook9
+- rule: pricebook10
+  steps:
+    - intent: pricebook10
+    - action: utter_pricebook10
+- rule: payment
+  steps:
+    - intent: payment
+    - action: utter_payment
+- rule: ship
+  steps:
+    - intent: ship
+    - action: utter_ship

@@ -1,0 +1,221 @@
+version: "3.1"
+
+stories:
+- story: greet goodbye # chào - tạm biệt
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: greet ship #chào - ship
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ship
+  - action: utter_ship
+
+- story: greet payment #chào - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: payment
+  - action: utter_payment
+
+- story: greet namebook1 price #chào - name_book1 - price_book1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook1
+  - action: utter_namebook1
+  - intent: price_common
+  - action: pricebook1
+
+- story: greet namebook2 price #chào - name_book2 - price_book2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook2
+  - action: utter_namebook2
+  - intent: price_common
+  - action: pricebook2
+
+- story: greet namebook3 price #chào - name_book3 - price_book3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook3
+  - action: utter_namebook3
+  - intent: price_common
+  - action: pricebook3
+
+- story: greet namebook4 price #chào - name_book4 - price_book4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook4
+  - action: utter_namebook4
+  - intent: price_common
+  - action: pricebook4
+
+- story: greet namebook5 price #chào - name_book5 - price_book5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook5
+  - action: utter_namebook5
+  - intent: price_common
+  - action: pricebook5
+
+- story: greet namebook6 price #chào - name_book6 - price_book6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook6
+  - action: utter_namebook6
+  - intent: price_common
+  - action: pricebook6
+
+- story: greet namebook7 price #chào - name_book7 - price_book7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook7
+  - action: utter_namebook7
+  - intent: price_common
+  - action: pricebook7
+
+- story: greet namebook8 price #chào - name_book8 - price_book8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook8
+  - action: utter_namebook8
+  - intent: price_common
+  - action: pricebook8
+
+- story: greet namebook price #chào - name_book9 - price_book9
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook9
+  - action: utter_namebook9
+  - intent: price_common
+  - action: pricebook9
+
+- story: greet namebook10 price #chào - name_book10 - pricebook10
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: namebook10
+  - action: utter_namebook10
+  - intent: price_common
+  - action: pricebook10
+
+- story: greet pricebook1 price #chào - price_book1 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook1
+  - action: utter_pricebook1
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook2 price #chào - price_book2 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook2
+  - action: utter_pricebook2
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook2 price #chào - price_book2 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook2
+  - action: utter_pricebook2
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook3 price #chào - price_book3 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook3
+  - action: utter_pricebook3
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook4 price #chào - price_book4 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook4
+  - action: utter_pricebook4
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook5 price #chào - price_book5 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook5
+  - action: utter_pricebook5
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook6 price #chào - price_book6 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook6
+  - action: utter_pricebook6
+  - intent: payment
+  - action: utter_payment
+
+- story: greet pricebook7 price #chào - price_book7 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook7
+  - action: utter_pricebook7
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook8 price #chào - price_book8 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook8
+  - action: utter_pricebook8
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook9 price #chào - price_book9 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook9
+  - action: utter_pricebook9
+  - intent: payment
+  - action: utter_payment
+- story: greet pricebook10 price #chào - price_book10 - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pricebook10
+  - action: utter_pricebook10
+  - intent: payment
+  - action: utter_payment
+- story: greet payment ship #chào - thanh toán - ship
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: payment
+  - action: utter_payment
+  - intent: ship
+  - action: utter_ship
+
+- story: greet ship payment #chào - ship - thanh toán
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ship
+  - action: utter_ship
+  - intent: payment
+  - action: utter_payment
+
