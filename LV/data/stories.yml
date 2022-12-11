@@ -10,212 +10,451 @@ stories:
 
 - story: greet ship #chào - ship
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ship
-  - action: utter_ship
-
-- story: greet payment #chào - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: payment
-  - action: utter_payment
-
-- story: greet namebook1 price #chào - name_book1 - price_book1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook1
-  - action: utter_namebook1
-  - intent: price_common
-  - action: pricebook1
-
-- story: greet namebook2 price #chào - name_book2 - price_book2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook2
-  - action: utter_namebook2
-  - intent: price_common
-  - action: pricebook2
-
-- story: greet namebook3 price #chào - name_book3 - price_book3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook3
-  - action: utter_namebook3
-  - intent: price_common
-  - action: pricebook3
-
-- story: greet namebook4 price #chào - name_book4 - price_book4
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook4
-  - action: utter_namebook4
-  - intent: price_common
-  - action: pricebook4
-
-- story: greet namebook5 price #chào - name_book5 - price_book5
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook5
-  - action: utter_namebook5
-  - intent: price_common
-  - action: pricebook5
-
-- story: greet namebook6 price #chào - name_book6 - price_book6
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook6
-  - action: utter_namebook6
-  - intent: price_common
-  - action: pricebook6
-
-- story: greet namebook7 price #chào - name_book7 - price_book7
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook7
-  - action: utter_namebook7
-  - intent: price_common
-  - action: pricebook7
-
-- story: greet namebook8 price #chào - name_book8 - price_book8
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook8
-  - action: utter_namebook8
-  - intent: price_common
-  - action: pricebook8
-
-- story: greet namebook price #chào - name_book9 - price_book9
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook9
-  - action: utter_namebook9
-  - intent: price_common
-  - action: pricebook9
-
-- story: greet namebook10 price #chào - name_book10 - pricebook10
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: namebook10
-  - action: utter_namebook10
-  - intent: price_common
-  - action: pricebook10
-
-- story: greet pricebook1 price #chào - price_book1 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook1
-  - action: utter_pricebook1
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook2 price #chào - price_book2 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook2
-  - action: utter_pricebook2
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook2 price #chào - price_book2 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook2
-  - action: utter_pricebook2
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook3 price #chào - price_book3 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook3
-  - action: utter_pricebook3
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook4 price #chào - price_book4 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook4
-  - action: utter_pricebook4
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook5 price #chào - price_book5 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook5
-  - action: utter_pricebook5
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook6 price #chào - price_book6 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook6
-  - action: utter_pricebook6
-  - intent: payment
-  - action: utter_payment
-
-- story: greet pricebook7 price #chào - price_book7 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook7
-  - action: utter_pricebook7
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook8 price #chào - price_book8 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook8
-  - action: utter_pricebook8
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook9 price #chào - price_book9 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook9
-  - action: utter_pricebook9
-  - intent: payment
-  - action: utter_payment
-- story: greet pricebook10 price #chào - price_book10 - thanh toán
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pricebook10
-  - action: utter_pricebook10
-  - intent: payment
-  - action: utter_payment
+    - intent: greet
+    - action: utter_greet
+    - intent: ship
+    - action: utter_ship
 - story: greet payment ship #chào - thanh toán - ship
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: payment
-  - action: utter_payment
-  - intent: ship
-  - action: utter_ship
+    - intent: greet
+    - action: utter_greet
+    - intent: payment
+    - action: utter_payment
+    - intent: ship
+    - action: utter_ship
 
 - story: greet ship payment #chào - ship - thanh toán
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: ship
-  - action: utter_ship
-  - intent: payment
-  - action: utter_payment
+    - intent: greet
+    - action: utter_greet
+    - intent: ship
+    - action: utter_ship
+    - intent: payment
+    - action: utter_payment
+#---------------GREET-TYPEBOOK1--------------------------------
+- story: greet - typebook1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook1
+    - action: utter_typebook1
+#----------------GREET-TYPEBOOK2----------------------------
+- story: greet - typebook2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook2
+    - action: utter_typebook2
+#----------------GREET-TYPEBOOK3----------------------------
+- story: greet - typebook3
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook3
+    - action: utter_typebook3
+#----------------GREET-TYPEBOOK4----------------------------
+- story: greet - typebook4
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook4
+    - action: utter_typebook4
+#----------------GREET-TYPEBOOK5----------------------------
+- story: greet - typebook5
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook5
+    - action: utter_typebook5
+#----------------GREET-TYPEBOOK6----------------------------
+- story: greet - typebook6
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook6
+    - action: utter_typebook6
+#----------------GREET-TYPEBOOK7----------------------------
+- story: greet - typebook7
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook7
+    - action: utter_typebook7
+#----------------GREET-TYPEBOOK8----------------------------
+- story: greet - typebook8
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: typebook8
+    - action: utter_typebook8
+#----------------GREET - BOOK1 - VERSOFT---------------------------------
+- story: greet - namebook1 -versoft-price1.1 #Cảm ơn người lớn - bản bìa mềm
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook1
+    - action: utter_namebook1
+    - intent: versoft_common
+    - action: utter_pricebook11
+#----------------GREET - BOOK1 - VERHARD---------------------------------
+- story: greet - namebook1 -verhard-price1.2 #Cảm ơn người lớn - bản bìa cứng
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook1
+    - action: utter_namebook1
+    - intent: verhard_common
+    - action: utter_pricebook12
+#----------------GREET - BOOK2 - VER1BOOK---------------------------------
+- story: greet - namebook2 -ver1book-price2.1 # Doraemon truyện dài - 1 quyển lẻ
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook2
+    - action: utter_namebook2
+    - intent: ver1book_common
+    - action: utter_pricebook21
+#----------------GREET - BOOK2 - VER24BOOK---------------------------------
+- story: greet - namebook2 -verhard-price2.2 #Doraemon truyện dài - 1 bộ 24 quyển
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook2
+    - action: utter_namebook2
+    - intent: ver24book_common
+    - action: utter_pricebook22
+#----------------GREET - BOOK3 - VERSOFT---------------------------------
+- story: greet - namebook3 -versoft-price3.1 #Nhà giả kim - bản bìa mềm
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook3
+    - action: utter_namebook3
+    - intent: versoft_common
+    - action: utter_pricebook31
+#----------------GREET - BOOK3 - VERHARD---------------------------------
+- story: greet - namebook3 -versoft-price3.2 #Nhà giả kim - bản bìa cứng
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook3
+    - action: utter_namebook3
+    - intent: verhard_common
+    - action: utter_pricebook32
 
+#----------------GREET - BOOK4 - VERSOFT---------------------------------
+- story: greet - namebook4 -versoft-price4.1 #Nghĩ giàu làm giàu - bản bìa mềm
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook4
+    - action: utter_namebook4
+    - intent: versoft_common
+    - action: utter_pricebook41
+#----------------GREET - BOOK4 - VERHARD---------------------------------
+- story: greet - namebook4 -versoft-price4.2 #Nghĩ giàu làm giàu - bản bìa cứng
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook4
+    - action: utter_namebook4
+    - intent: verhard_common
+    - action: utter_pricebook42
+
+#----------------GREET - BOOK5 - VER2022---------------------------------
+- story: greet - namebook5 -ver2022-price5.1 #Vũ trụ trong vỏ hạt dẻ - bản tái bản 2022
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook5
+    - action: utter_namebook5
+    - intent: ver2022_common
+    - action: utter_pricebook51
+#----------------GREET - BOOK5 - VER2018---------------------------------
+- story: greet - namebook5 -versoft-price5.1 #Vũ trụ trong vỏ hạt dẻ - bản tái bản 2018
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook5
+    - action: utter_namebook5
+    - intent: ver2018_common
+    - action: utter_pricebook52
+
+#----------------GREET - BOOK6 - VERNORMAL---------------------------------
+- story: greet - namebook6 -versoft-price6.1 #Deep Learning - cuộc cách mạng học sâu  - bản thường
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook6
+    - action: utter_namebook6
+    - intent: versoft_common
+    - action: utter_pricebook61
+#----------------GREET - BOOK6 - VERBONUS---------------------------------
+- story: greet - namebook6 -versoft-price6.2 #Deep Learning - cuộc cách mạng học sâu  - bản có tặng kèm
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook6
+    - action: utter_namebook6
+    - intent: verbonus_common
+    - action: utter_pricebook62
+#----------------GREET - BOOK7 - VERSOFT---------------------------------
+- story: greet - namebook7 -versoft-price7.1 #Tiếng gọi nơi hoang dã  - bản bìa mềm
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook7
+    - action: utter_namebook7
+    - intent: versoft_common
+    - action: utter_pricebook71
+#----------------GREET - BOOK7 - VERHARD---------------------------------
+- story: greet - namebook7 -versoft-price7.2 #Tiếng gọi nơi hoang dã  - bản bìa cứng
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook7
+    - action: utter_namebook7
+    - intent: verhard_common
+    - action: utter_pricebook72
+#----------------GREET - BOOK8 - VERNORMAL---------------------------------
+- story: greet - namebook8 -vernormal-price8.1 #Cà phê cùng Tony - bản thường
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook8
+    - action: utter_namebook8
+    - intent: vernormal_common
+    - action: utter_pricebook81
+#----------------GREET - BOOK8 - VER2022---------------------------------
+- story: greet - namebook8 -ver2022-price8.2 #Cà phê cùng Tony - bản tái bản 2022
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook8
+    - action: utter_namebook8
+    - intent: ver2022_common
+    - action: utter_pricebook82
+
+#----------------GREET - BOOK9 - VERREDHARD---------------------------------
+- story: greet - namebook9 -verredhard-price9.1 #Từ điển ANh- Việt  - bản bìa đỏ cứng
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook9
+    - action: utter_namebook9
+    - intent: verredhard_common
+    - action: utter_pricebook91
+#----------------GREET - BOOK9 - VERBLUEHARD---------------------------------
+- story: greet - namebook9 -verredhard-price9.2 #Từ điển Anh- Việt  - bản bìa xanh cứng
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook9
+    - action: utter_namebook9
+    - intent: verbluehard_common
+    - action: utter_pricebook92
+
+#----------------GREET - BOOK10 - VERNORMAL---------------------------------
+- story: greet - namebook10 -vernormal-price10.1 # Đại Việt sử kí toàn thư - bản thường
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook10
+    - action: utter_namebook10
+    - intent: vernormal_common
+    - action: utter_pricebook101
+#----------------GREET - BOOK10 - VERSPECIAL---------------------------------
+- story: greet - namebook10 -verspecial-price10.1 # Đại Việt sử kí toàn thư - bản đặc biệt
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: namebook10
+    - action: utter_namebook10
+    - intent: verspecial_common
+    - action: utter_pricebook102
+
+#----------------GREET - VERBOOK1.1-PRICE1.1---------------------------------
+- story: greet - verbook1.1-price1.1 #Cảm ơn người lớn bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook11
+    - action: utter_verbook11
+    - intent: price_common
+    - action: utter_pricebook11
+#----------------GREET - VERBOOK1.2-PRICE1.2---------------------------------
+- story: greet - verbook1.2-price1.2 #Cảm ơn người lớn bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook12
+    - action: utter_verbook12
+    - intent: price_common
+    - action: utter_pricebook12
+
+#----------------GREET - VERBOOK2.1-PRICE2.1---------------------------------
+- story: greet - verbook2.1-price2.1 #Doraemon quyển lẻ - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook21
+    - action: utter_verbook21
+    - intent: price_common
+    - action: utter_pricebook21
+#----------------GREET - VERBOOK2.2-PRICE2.2---------------------------------
+- story: greet - verbook2.2-price2.2 #Doraemon trọn bộ - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook22
+    - action: utter_verbook22
+    - intent: price_common
+    - action: utter_pricebook22
+#----------------GREET - VERBOOK3.1-PRICE3.1---------------------------------
+- story: greet - verbook3.1-price3.1 #Nhà giả kim bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook31
+    - action: utter_verbook31
+    - intent: price_common
+    - action: utter_pricebook31
+#----------------GREET - VERBOOK3.2-PRICE3.2---------------------------------
+- story: greet - verbook3.2-price3.2 #Nhà giả kim bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook32
+    - action: utter_verbook32
+    - intent: price_common
+    - action: utter_pricebook32
+
+#----------------GREET - VERBOOK4.1-PRICE4.1---------------------------------
+- story: greet - verbook4.1-price4.1 #Nghĩ giàu làm giàu bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook41
+    - action: utter_verbook41
+    - intent: price_common
+    - action: utter_pricebook41
+#----------------GREET - VERBOOK4.2-PRICE4.2---------------------------------
+- story: greet - verbook4.2-price4.2 #Nghĩ giàu làm giàu bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook42
+    - action: utter_verbook42
+    - intent: price_common
+    - action: utter_pricebook42
+#----------------GREET - VERBOOK5.1-PRICE5.1---------------------------------
+- story: greet - verbook5.1-price5.1 #Vũ trụ trong vỏ hạt dẻ 2022 - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook51
+    - action: utter_verbook51
+    - intent: price_common
+    - action: utter_pricebook51
+#----------------GREET - VERBOOK5.2-PRICE5.2---------------------------------
+- story: greet - verbook5.2-price5.2 #Vũ trụ trong vỏ hạt dẻ 2018 - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook52
+    - action: utter_verbook52
+    - intent: price_common
+    - action: utter_pricebook52
+
+#----------------GREET - VERBOOK6.1-PRICE6.1---------------------------------
+- story: greet - verbook6.1-price6.1 #Deep Learning - cuộc cách mạng học sâu bản thường - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook61
+    - action: utter_verbook61
+    - intent: price_common
+    - action: utter_pricebook61
+#----------------GREET - VERBOOK6.2-PRICE6.2---------------------------------
+- story: greet - verbook6.2-price6.2 #Deep Learning - cuộc cách mạng học sâu bản tặng kèm sổ tay - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook62
+    - action: utter_verbook62
+    - intent: price_common
+    - action: utter_pricebook62
+
+#----------------GREET - VERBOOK7.1-PRICE7.1---------------------------------
+- story: greet - verbook7.1-price7.1 #Tiếng gọi nơi hoang dã bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook71
+    - action: utter_verbook71
+    - intent: price_common
+    - action: utter_pricebook71
+#----------------GREET - VERBOOK7.2-PRICE7.2---------------------------------
+- story: greet - verbook7.2-price7.2 #Tiếng gọi nơi hoang dã bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook72
+    - action: utter_verbook72
+    - intent: price_common
+    - action: utter_pricebook72
+#----------------GREET - VERBOOK8.1-PRICE8.1---------------------------------
+- story: greet - verbook8.1-price8.1 #Cà phê cùng Tony bản thường - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook81
+    - action: utter_verbook81
+    - intent: price_common
+    - action: utter_pricebook81
+#----------------GREET - VERBOOK8.2-PRICE8.2---------------------------------
+- story: greet - verbook8.2-price8.2 #Cà phê cùng Tony bản tái bản 2022 - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook82
+    - action: utter_verbook82
+    - intent: price_common
+    - action: utter_pricebook82
+
+#----------------GREET - VERBOOK9.1-PRICE9.1---------------------------------
+- story: greet - verbook9.1-price9.1 #Từ điển Anh Việt bìa đỏ cứng  - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook91
+    - action: utter_verbook91
+    - intent: price_common
+    - action: utter_pricebook91
+#----------------GREET - VERBOOK9.2-PRICE9.2---------------------------------
+- story: greet - verbook9.2-price9.2 #Từ điển ANh Việt bìa xanh cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook92
+    - action: utter_verbook92
+    - intent: price_common
+    - action: utter_pricebook92
+#----------------GREET - VERBOOK10.1-PRICE10.1---------------------------------
+- story: greet - verbook10.1-price10.1 #Đại Việt sử kí toàn thư bản thường - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook101
+    - action: utter_verbook101
+    - intent: price_common
+    - action: utter_pricebook101
+#----------------GREET - VERBOOK10.2-PRICE10.2---------------------------------
+- story: greet - verbook10.2-price10.2 #Đại Việt sử kí toàn thư bản đặc biệt - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: verbook102
+    - action: utter_verbook102
+    - intent: price_common
+    - action: utter_pricebook102
