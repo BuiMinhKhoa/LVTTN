@@ -20,7 +20,7 @@ nlu:
     - cho em hỏi với shop
     - cho mình hỏi với ạ
     - belo shop
-    
+
 - intent: thank #cảm ơn
   examples: |
     - cảm ơn shop
@@ -69,14 +69,34 @@ nlu:
     - giá nhiêu vậy?
 - intent: versoft_common #hỏi về loại sách mềm sau khi hỏi về sách
   examples: |
+    - phiên bản bìa mềm thì sao ?
+    - quan tâm đến phiên bản bìa mềm ạ
+    - bản bìa mềm nha 
+    - bản bìa mềm thế nào ạ?
+    - Bìa mềm bên shop sao ạ?
+    - sách bìa mềm 
+    - sách bìa mềm thế nào ?
+    - sách bìa mềm thì thế nào ?
+- intent: verhard_common #hỏi về loại sách bìa cứng sau khi hỏi về sách
+  examples: |
+    - phiên bản bìa cứng thì sao ?
+    - quan tâm đến phiên bản bìa cứng ạ
+    - bản bìa cứng nha 
+    - bản bìa cứng thế nào ạ?
+    - Bìa cứng bên shop sao ạ?
+    - sách bìa cứng 
+    - sách bìa cứng sao ạ
+- intent: priceversoft_common #hỏi giá về loại sách mềm sau khi hỏi về sách
+
+  examples: |
     - Sách bìa mềm bên shop giá sao
-    - Sách bìa mềm bên bên shop bao nhiêu tiền ạ?
+    - Sách bìa mềm bên shop bao nhiêu tiền ạ?
     - Sách bìa mềm bao nhiêu tiền ạ?
     - Bìa mềm bao nhiêu tiền ạ?
     - Bìa mềm bên shop bao tiền ạ?
     - Bìa mềm bên shop nhiêu vậy?
     - Bìa mềm giá thế nào
-- intent: verhard_common #hỏi về loại sách bìa cứng sau khi hỏi về sách
+- intent: priceverhard_common #hỏi giá về loại sách bìa cứng sau khi hỏi về sách
   examples: |
     - Sách bìa cứng bên shop giá sao
     - Sách bìa cứng bên bên shop bao nhiêu tiền ạ?
@@ -85,89 +105,11 @@ nlu:
     - Bìa cứng bên shop bao tiền ạ?
     - Bìa cứng bên shop nhiêu vậy?
     - Bìa cứng giá thế nào
-- intent: ver2022_common #hỏi về loại sách tái bản 2022 sau khi hỏi về sách
-  examples: |
-    - Sách tái bản 2022 bên shop giá sao
-    - Sách tái bản 2022 bên bên shop bao nhiêu tiền ạ?
-    - Sách tái bản năm 2022 bao nhiêu tiền ạ?
-    - tái bản 2022 bao nhiêu tiền ạ?
-    - tái bản 2022 bên shop bao tiền ạ?
-    - tái bản 2022 bên shop nhiêu vậy?
-    - bản 2022 giá thế nào
-- intent: ver2018_common #hỏi về loại sách tái bản 2018 sau khi hỏi về sách
-  examples: |
-    - Sách tái bản 2018 bên shop giá sao
-    - Sách tái bản 2018 bên bên shop bao nhiêu tiền ạ?
-    - Sách tái bản năm 2018 bao nhiêu tiền ạ?
-    - tái bản 2018 bao nhiêu tiền ạ?
-    - tái bản 2018 bên shop bao tiền ạ?
-    - tái bản 2018 bên shop nhiêu vậy?
-    - bản 2022 giá thế nào
-- intent: vernormal_common #hỏi về loại sách bình thường sau khi hỏi về sách
-  examples: |
-    - Sách bản thường bên shop giá sao
-    - Sách bản thường  bên bên shop bao nhiêu tiền ạ?
-    - Sách thường bao nhiêu tiền ạ?
-    - sách thường bao nhiêu tiền ạ?
-    - sách thường bên shop bao tiền ạ?
-    - sách thường bên shop nhiêu vậy?
-    - bản thường giá thế nào
-- intent: verspecial_common #hỏi về loại sách đặc biệt sau khi hỏi về sách
-  examples: |
-    - Sách bản đặc biệt bên shop giá sao
-    - Sách bản đặc biệt bên bên shop bao nhiêu tiền ạ?
-    - Sách đặc biệt bao nhiêu tiền ạ?
-    - sách đặc biệt bao nhiêu tiền ạ?
-    - sách đặc biệt bên shop bao tiền ạ?
-    - sách đặc biệt bên shop nhiêu vậy?
-    - bản đặc biệt giá thế nào
-- intent: verbonus_common #hỏi về loại sách có tặng kèm sau khi hỏi về sách
-  examples: |
-    - Sách bản có tặng kèm bên shop giá sao
-    - Sách bản tậng kèm  bên bên shop bao nhiêu tiền ạ?
-    - Sách tặng kèm bao nhiêu tiền ạ?
-    - sách tặng kèm bao nhiêu tiền ạ?
-    - sách tặng kèm bên shop bao tiền ạ?
-    - sách tặng kèm sổ bên shop nhiêu vậy?
-    - bản  có tặng kèm sổ giá thế nào
-- intent: ver1book_common #hỏi về loại sách 1 quyển sau khi hỏi về sách
-  examples: |
-    - Sách quyển lẻ bên shop giá sao
-    - quyển lẻ  bên bên shop bao nhiêu tiền ạ?
-    - sách quyển bao nhiêu tiền ạ?
-    - quyển lẻ bao nhiêu tiền ạ?
-    - shop bán bao nhiêu 1 quyển lẻ ạ?
-    - shop bán 1 quyển lẻ bao nhiêu tiền ạ?
-    - shop bán sách 1 quyển bao nhiêu tiền ạ?
-    - shop bán bao nhiêu tiền 1 quyển lẻ vậy?
-- intent: ver24book_common #hỏi về loại sách 1 bộ 24 quyển sau khi hỏi về sách
-  examples: |
-    - 1 bộ bên shop giá sao
-    - 1 bộ 24 quyển  bên bên shop bao nhiêu tiền ạ?
-    - bộ 24 quyển bao nhiêu tiền ạ?
-    - 1 bộ bao nhiêu tiền ạ?
-    - shop bán bao nhiêu 1 bộ ạ?
-    - shop bán 1 bộ bao nhiêu tiền ạ?
-    - shop bán sách 1 bộ 24 quyển bao nhiêu tiền ạ?
-    - shop bán bao nhiêu tiền 1 bộ vậy?
-- intent: verredhard_common #hỏi về loại sách bìa đỏ cứng sau khi hỏi về sách
-  examples: |
-    - Sách bìa đỏ cứng bên shop giá sao
-    - Sách bìa đỏ cứng bên bên shop bao nhiêu tiền ạ?
-    - Sách bìa đỏ cứng bao nhiêu tiền ạ?
-    - Bìa đỏ cứng  bao nhiêu tiền ạ?
-    - Bìa đỏ cứng bên shop bao tiền ạ?
-    - Bìa đỏ cứng bên shop nhiêu vậy?
-    - Bìa đỏ cứng giá thế nào
-- intent: verbluehard_common #hỏi về loại sách bìa cứng sau khi hỏi về sách
-  examples: |
-    - Sách bìa xanh cứng bên shop giá sao
-    - Sách bìa xanh cứng bên bên shop bao nhiêu tiền ạ?
-    - Sách bìa xanh cứng bao nhiêu tiền ạ?
-    - Bìa xanh cứng bao nhiêu tiền ạ?
-    - Bìa xanh cứng bên shop bao tiền ạ?
-    - Bìa xanh cứng bên shop nhiêu vậy?
-    - Bìa xanh cứng giá thế nào
+
+
+
+
+
 
 #---------------------TYPE_BOOK--------------------------------------------------------------
 
@@ -215,7 +157,7 @@ nlu:
 
 - intent: typebook4 #sách kinh tế
   examples: |
-    - cho em hỏi shop mình có sách kinh tếg không ạ?
+    - cho em hỏi shop mình có sách kinh tế không ạ?
     - có sách kinh tế không bạn ?
     - mình muốn tìm sách kinh tế
     - không biết shop có sách kinh tế không ạ?
@@ -254,22 +196,15 @@ nlu:
     - bên mình có sách kỹ năng sống không?	 
     - tìm sách kỹ năng sống
     - có sách kỹ năng sống không bạn ?
-
-
-
-
 - intent: typebook7 #sách từ điển
   examples: |
     - cho em hỏi shop mình có sách từ điển không ạ?
     - có sách từ điển không bạn ?
-    - mình muốn tìm sách từ điển
     - không biết shop có sách từ điển không ạ?
-    - bên shop có sách từ điển  không ?
-    - sách từ điển shop có không ạ?
-    - sách từ điển shop có bán không ? 
-    - ở shop mình có bán sách từ điển không ?
-    - bên mình có sách từ điển không?
-    - tìm sách từ điển
+    - sách từ điển bên shop có bán không ạ?
+    - có bán sách từ điển ko ?
+    - shop có bán sách từ điển ko ?
+    - shop có sách từ điển không ?
 
 - intent: typebook8 #lịch sử địa lý
   examples: |
@@ -286,306 +221,238 @@ nlu:
 
 #-------------------NAME_BOOK------------------------------------------------------
 
-- intent: namebook1 #Cảm ơn người lớn
+- intent: namebook1 # Tôi là Bê Tô
   examples: |
-    - cho em hỏi shop mình có quyển Cảm ơn người lớn không ạ?
-    - cho em hỏi shop mình có cuốn Cảm ơn người lớn không ạ?
-    - cho em hỏi shop mình có Cảm ơn người lớn không ạ?
-    - có quyển Cảm ơn người lớn không bạn ?
-    - có cuốn Cảm ơn người lớn không bạn ?
-    - có Cảm ơn người lớn không bạn ?
-    - mình muốn tìm quyển Cảm ơn người lớn
-    - mình muốn tìm cuốn Cảm ơn người lớn
-    - mình muốn tìm cuốn Cảm ơn người lớn
-    - không biết shop có quyển Cảm ơn người lớn không ạ?
-    - không biết shop có cuốn Cảm ơn người lớn không ạ?
-    - không biết shop có Cảm ơn người lớn không ạ?
-    - bên shop có quyển Cảm ơn người lớn không ?
-    - bên shop có cuốn Cảm ơn người lớn không ?
-    - bên shop có Cảm ơn người lớn không ?
-    - Cảm ơn người lớn shop có không ạ? - Cảm ơn người lớn shop có bán không ? 
-    - ở shop mình có bán quyển Cảm ơn người lớn không ?
-    - ở shop mình có bán cuốn Cảm ơn người lớn không ?
-    - bên mình có quyển Cảm ơn người lớn không?
-    - bên mình có cuốn Cảm ơn người lớn không?
-    - tìm quyển Cảm ơn người lớn
-    - tìm cuốn Cảm ơn người lớn
-    - tìm Cảm ơn người lớn
+    - mình muốn tìm quyển Tôi là Bê Tô
+    - mình muốn tìm cuốn Tôi là Bê Tô
+    - mình muốn tìm Tôi là Bê Tô
+    - có cuốn Tôi là Bê Tô không ạ?
+    - có quyển Tôi là Bê Tô không ạ?
+    - Có Tôi là Bê Tô không ạ?
+    - shop có quyển Tôi là Bê Tô không?
+    - Shop có cuốn Tôi là Bê Tô không?
+    - Shop có bán cuốn Tôi là Bê Tô không?
+    - Shop có bán quyển Tôi là Bê Tô không?
+    - Cuốn Tôi là Bê Tô shop có không ?
+    - quyển Tôi là Bê Tô shop có không?
+    - tìm quyển Tôi là Bê Tô
+    - tìm cuốn Tôi là Bê Tô
+    - Tôi là Bê Tô
+    - Tôi là Bê Tô còn không ạ?
 
-- intent: namebook2 #Doraemon
+- intent: namebook2 # 365 Tryện kể cho bé
   examples: |
-    - cho em hỏi shop mình có quyển Doraemon không ạ?
-    - cho em hỏi shop mình có cuốn Doraemon không ạ?
-    - cho em hỏi shop mình có Doraemon không ạ?
-    - có quyển Doraemon không bạn ?
-    - có cuốn Doraemon không bạn ?
-    - có Doraemon không bạn ?
-    - mình muốn tìm quyển Doraemon
-    - mình muốn tìm cuốn Doraemon
-    - mình muốn tìm cuốn Doraemon
-    - không biết shop có quyển Doraemon không ạ?
-    - không biết shop có cuốn Doraemon không ạ?
-    - không biết shop có Doraemon không ạ?
-    - bên shop có quyển Doraemon không ?
-    - bên shop có cuốn Doraemon không ?
-    - bên shop có Doraemon không ?
-    - Doraemon shop có không ạ? 
-    - Doraemon shop có bán không ? 
-    - ở shop mình có bán quyển Doraemon không ?
-    - ở shop mình có bán cuốn Doraemon không ?
-    - bên mình có quyển Doraemon không?
-    - bên mình có cuốn Doraemon không?
-    - tìm quyển Doraemon
-    - tìm cuốn Doraemon
-    - tìm Doraemon
-
-- intent: namebook3 #Nhà giả kim
+    - mình muốn tìm quyển 365 Tryện kể cho bé
+    - mình muốn tìm cuốn 365 Tryện kể cho bé
+    - mình muốn tìm 365 Tryện kể cho bé
+    - có cuốn 365 Tryện kể cho bé không ạ?
+    - có quyển 365 Tryện kể cho bé không ạ?
+    - Có 365 Tryện kể cho bé không ạ?
+    - shop có quyển 365 Tryện kể cho bé không?
+    - Shop có cuốn 365 Tryện kể cho bé không?
+    - Shop có bán cuốn 365 Tryện kể cho bé không?
+    - Shop có bán quyển 365 Tryện kể cho bé không?
+    - Cuốn 365 Tryện kể cho bé shop có không ?
+    - quyển 365 Tryện kể cho bé shop có không?
+    - tìm quyển 365 Tryện kể cho bé
+    - tìm cuốn 365 Tryện kể cho bé
+    - 365 Tryện kể cho bé
+    - 365 Tryện kể cho bé còn không ạ?
+- intent: namebook3 # Nhà giả kim
   examples: |
-    - cho em hỏi shop mình có quyển Nhà giả kim không ạ?
-    - cho em hỏi shop mình có cuốn Nhà giả kim không ạ?
-    - cho em hỏi shop mình có Nhà giả kim không ạ?
-    - có quyển Nhà giả kim không bạn ?
-    - có cuốn Nhà giả kim không bạn ?
-    - có Nhà giả kim không bạn ?
     - mình muốn tìm quyển Nhà giả kim
     - mình muốn tìm cuốn Nhà giả kim
-    - mình muốn tìm cuốn Nhà giả kim
-    - không biết shop có quyển Nhà giả kim không ạ?
-    - không biết shop có cuốn Nhà giả kim không ạ?
-    - không biết shop có Nhà giả kim không ạ?
-    - bên shop có quyển Nhà giả kim không ?
-    - bên shop có cuốn Nhà giả kim không ?
-    - bên shop có Nhà giả kim không ?
-    - Nhà giả kim shop có không ạ? 
-    - Nhà giả kim shop có bán không ? 
-    - ở shop mình có bán quyển Nhà giả kim không ?
-    - ở shop mình có bán cuốn Nhà giả kim không ?
-    - bên mình có quyển Nhà giả kim không?
-    - bên mình có cuốn Nhà giả kim không?
+    - mình muốn tìm Nhà giả kim
+    - có cuốn Nhà giả kim không ạ?
+    - có quyển Nhà giả kim không ạ?
+    - Có Nhà giả kim không ạ?
+    - shop có quyển Nhà giả kim không?
+    - Shop có cuốn Nhà giả kim không?
+    - Shop có bán cuốn  Nhà giả kim không?
+    - Shop có bán quyển Nhà giả kim không?
+    - Cuốn Nhà giả kim shop có không ?
+    - quyển Nhà giả kim shop có không?
     - tìm quyển Nhà giả kim
     - tìm cuốn Nhà giả kim
-    - tìm Nhà giả kim
-
-- intent: namebook4 #Nghĩ giàu làm giàu
+    - Nhà giả kim
+    - Nhà giả kim còn không ạ?
+- intent: namebook4 # Nghĩ giàu làm giàu
   examples: |
-    - cho em hỏi shop mình có quyển Nghĩ giàu làm giàu  không ạ?
-    - cho em hỏi shop mình có cuốn Nghĩ giàu làm giàu  không ạ?
-    - cho em hỏi shop mình có Nghĩ giàu làm giàu  không ạ?
-    - có quyển Nghĩ giàu làm giàu  không bạn ?
-    - có cuốn Nghĩ giàu làm giàu  không bạn ?
-    - có Nghĩ giàu làm giàu  không bạn ?
-    - mình muốn tìm quyển Nghĩ giàu làm giàu 
-    - mình muốn tìm cuốn Nghĩ giàu làm giàu 
-    - mình muốn tìm cuốn Nghĩ giàu làm giàu 
-    - không biết shop có quyển Nghĩ giàu làm giàu  không ạ?
-    - không biết shop có cuốn Nghĩ giàu làm giàu  không ạ?
-    - không biết shop có Nghĩ giàu làm giàu  không ạ?
-    - bên shop có quyển Nghĩ giàu làm giàu  không ?
-    - bên shop có cuốn Nghĩ giàu làm giàu  không ?
-    - bên shop có Nghĩ giàu làm giàu  không ?
-    - Nghĩ giàu làm giàu  shop có không ạ? 
-    - Nghĩ giàu làm giàu shop có bán không ? 
-    - ở shop mình có bán quyển Nghĩ giàu làm giàu  không ?
-    - ở shop mình có bán cuốn Nghĩ giàu làm giàu  không ?
-    - bên mình có quyển Nghĩ giàu làm giàu  không?
-    - bên mình có cuốn Nghĩ giàu làm giàu  không?
-    - tìm quyển Nghĩ giàu làm giàu 
-    - tìm cuốn Nghĩ giàu làm giàu 
-    - tìm Nghĩ giàu làm giàu 
-
-- intent: namebook5 #Vũ trụ trong vỏ hạt dẻ
+    - mình muốn tìm quyển Nghĩ giàu làm giàu
+    - mình muốn tìm cuốn Nghĩ giàu làm giàu
+    - mình muốn tìm Nghĩ giàu làm giàu
+    - có cuốn Nghĩ giàu làm giàu không ạ?
+    - có quyểnNghĩ giàu làm giàu không ạ?
+    - Có Nghĩ giàu làm giàu không ạ?
+    - shop có quyển Nghĩ giàu làm giàu không?
+    - Shop có cuốn Nghĩ giàu làm giàu không?
+    - Shop có bán cuốn Nghĩ giàu làm giàu không?
+    - Shop có bán quyển Nghĩ giàu làm giàu không?
+    - Cuốn Nghĩ giàu làm giàu shop có không ?
+    - quyển Nghĩ giàu làm giàu shop có không?
+    - tìm quyển Nghĩ giàu làm giàu
+    - tìm cuốn Nghĩ giàu làm giàu
+    - Nghĩ giàu làm giàu
+    - Nghĩ giàu làm giàu còn không ạ?
+- intent: namebook5 # Vũ trụ trong vỏ hạt dẻ
   examples: |
-    - cho em hỏi shop mình có quyển Vũ trụ trong vỏ hạt dẻ không ạ?
-    - cho em hỏi shop mình có cuốn Vũ trụ trong vỏ hạt dẻ không ạ?
-    - cho em hỏi shop mình có Vũ trụ trong vỏ hạt dẻ không ạ?
-    - có quyển Vũ trụ trong vỏ hạt dẻ không bạn ?
-    - có cuốn Vũ trụ trong vỏ hạt dẻ không bạn ?
-    - có Vũ trụ trong vỏ hạt dẻ không bạn ?
     - mình muốn tìm quyển Vũ trụ trong vỏ hạt dẻ
     - mình muốn tìm cuốn Vũ trụ trong vỏ hạt dẻ
-    - mình muốn tìm cuốn Vũ trụ trong vỏ hạt dẻ
-    - không biết shop có quyển Vũ trụ trong vỏ hạt dẻ không ạ?
-    - không biết shop có cuốn Vũ trụ trong vỏ hạt dẻ không ạ?
-    - không biết shop có Vũ trụ trong vỏ hạt dẻ không ạ?
-    - bên shop có quyển Vũ trụ trong vỏ hạt dẻ không ?
-    - bên shop có cuốn Vũ trụ trong vỏ hạt dẻ không ?
-    - bên shop có Vũ trụ trong vỏ hạt dẻ không ?
-    - Vũ trụ trong vỏ hạt dẻ shop có không ạ? 
-    - Vũ trụ trong vỏ hạt dẻ shop có bán không ? 
-    - ở shop mình có bán quyển Vũ trụ trong vỏ hạt dẻ ?
-    - ở shop mình có bán cuốn Vũ trụ trong vỏ hạt dẻ ?
-    - bên mình có quyển Vũ trụ trong vỏ hạt dẻ không?
-    - bên mình có cuốn Vũ trụ trong vỏ hạt dẻ không?
+    - mình muốn tìm Vũ trụ trong vỏ hạt dẻ
+    - có cuốn Vũ trụ trong vỏ hạt dẻ không ạ?
+    - có quyển Vũ trụ trong vỏ hạt dẻ không ạ?
+    - Có Vũ trụ trong vỏ hạt dẻ không ạ?
+    - shop có quyển Vũ trụ trong vỏ hạt dẻ không?
+    - Shop có cuốn Vũ trụ trong vỏ hạt dẻ không?
+    - Shop có bán cuốn Vũ trụ trong vỏ hạt dẻ không?
+    - Shop có bán quyển Vũ trụ trong vỏ hạt dẻ không?
+    - Cuốn Vũ trụ trong vỏ hạt dẻ shop có không ?
+    - quyển Vũ trụ trong vỏ hạt dẻ shop có không?
     - tìm quyển Vũ trụ trong vỏ hạt dẻ
     - tìm cuốn Vũ trụ trong vỏ hạt dẻ
-    - tìm Vũ trụ trong vỏ hạt dẻ
-    
-    
+    - Vũ trụ trong vỏ hạt dẻ
+    - Vũ trụ trong vỏ hạt dẻ còn không ạ?  
 
-- intent: namebook6 #Deep Learning cơ bản
+- intent: namebook5 # Vũ trụ trong vỏ hạt dẻ
   examples: |
-    - cho em hỏi shop mình có quyển Deep Learning cơ bản không ạ?
-    - cho em hỏi shop mình có cuốn Deep Learning cơ bản không ạ?
-    - cho em hỏi shop mình có Deep Learning cơ bản không ạ?
-    - có quyển Deep Learning cơ bản không bạn ?
-    - có cuốn Deep Learning cơ bản không bạn ?
-    - có Deep Learning cơ bản không bạn ?
-    - mình muốn tìm quyển Deep Learning cơ bản
-    - mình muốn tìm cuốn Deep Learning cơ bản
-    - mình muốn tìm cuốn Deep Learning cơ bản
-    - không biết shop có quyển Deep Learning cơ bản không ạ?
-    - không biết shop có cuốn Deep Learning cơ bản không ạ?
-    - không biết shop có Deep Learning cơ bản không ạ?
-    - bên shop có quyển Deep Learning cơ bản không ?
-    - bên shop có cuốn Deep Learning cơ bản không ?
-    - bên shop có Deep Learning cơ bản không ?
-    - Deep Learning cơ bản shop có không ạ? 
-    - Deep Learning cơ bản shop có bán không ? 
-    - ở shop mình có bán quyển Deep Learning cơ bản ?
-    - ở shop mình có bán cuốn Deep Learning cơ bản ?
-    - bên mình có quyển Deep Learning cơ bản không?
-    - bên mình có cuốn Deep Learning cơ bản không?
-    - tìm quyển Deep Learning cơ bản
-    - tìm cuốn Deep Learning cơ bản
-    - tìm Deep Learning cơ bản
-
-- intent: namebook7 #Tiếng gọi nơi hoang dã
+    - mình muốn tìm quyển Vũ trụ trong vỏ hạt dẻ
+    - mình muốn tìm cuốn Vũ trụ trong vỏ hạt dẻ
+    - mình muốn tìm Vũ trụ trong vỏ hạt dẻ
+    - có cuốn Vũ trụ trong vỏ hạt dẻ không ạ?
+    - có quyển Vũ trụ trong vỏ hạt dẻ không ạ?
+    - Có Vũ trụ trong vỏ hạt dẻ không ạ?
+    - shop có quyển Vũ trụ trong vỏ hạt dẻ không?
+    - Shop có cuốn Vũ trụ trong vỏ hạt dẻ không?
+    - Shop có bán cuốn Vũ trụ trong vỏ hạt dẻ không?
+    - Shop có bán quyển Vũ trụ trong vỏ hạt dẻ không?
+    - Cuốn Vũ trụ trong vỏ hạt dẻ shop có không ?
+    - quyển Vũ trụ trong vỏ hạt dẻ shop có không?
+    - tìm quyển Vũ trụ trong vỏ hạt dẻ
+    - tìm cuốn Vũ trụ trong vỏ hạt dẻ
+    - Vũ trụ trong vỏ hạt dẻ
+    - Vũ trụ trong vỏ hạt dẻ còn không ạ?
+- intent: namebook6 # Deep Learning - Cuộc Cách mạng học sâu
   examples: |
-    - cho em hỏi shop mình có quyển Tiếng gọi nơi hoang dã không ạ?
-    - cho em hỏi shop mình có cuốn Tiếng gọi nơi hoang dã không ạ?
-    - cho em hỏi shop mình có Tiếng gọi nơi hoang dã không ạ?
-    - có quyển Tiếng gọi nơi hoang dã không bạn ?
-    - có cuốn Tiếng gọi nơi hoang dã không bạn ?
-    - có Tiếng gọi nơi hoang dã không bạn ?
-    - mình muốn tìm quyển Tiếng gọi nơi hoang dã 
+    - mình muốn tìm quyển Deep Learning - Cuộc Cách mạng học sâu
+    - mình muốn tìm cuốn Deep Learning - Cuộc Cách mạng học sâu
+    - mình muốn tìm Deep Learning - Cuộc Cách mạng học sâu
+    - có cuốn Deep Learning - Cuộc Cách mạng học sâu không ạ?
+    - có quyển Deep Learning - Cuộc Cách mạng học sâu không ạ?
+    - Có  Deep Learning - Cuộc Cách mạng học sâu không ạ?
+    - shop có quyển Deep Learning - Cuộc Cách mạng học sâukhông?
+    - Shop có cuốn  Deep Learning - Cuộc Cách mạng học sâu không?
+    - Shop có bán cuốn  Deep Learning - Cuộc Cách mạng học sâu không?
+    - Shop có bán quyển Deep Learning - Cuộc Cách mạng học sâu không?
+    - Cuốn  Deep Learning - Cuộc Cách mạng học sâu shop có không ?
+    - quyển  Deep Learning - Cuộc Cách mạng học sâu shop có không?
+    - tìm quyển  Deep Learning - Cuộc Cách mạng học sâu
+    - tìm cuốn  Deep Learning - Cuộc Cách mạng học sâu
+    - Deep Learning - Cuộc Cách mạng học sâu
+    -  Deep Learning - Cuộc Cách mạng học sâu còn không ạ?
+- intent: namebook7 # Tiếng gọi nơi hoang dã
+  examples: |
+    - mình muốn tìm quyển Tiếng gọi nơi hoang dã
     - mình muốn tìm cuốn Tiếng gọi nơi hoang dã
-    - mình muốn tìm cuốn Tiếng gọi nơi hoang dã
-    - không biết shop có quyển Tiếng gọi nơi hoang dã không ạ?
-    - không biết shop có cuốn Tiếng gọi nơi hoang dã không ạ?
-    - không biết shop có Tiếng gọi nơi hoang dã không ạ?
-    - bên shop có quyển Tiếng gọi nơi hoang dã không ?
-    - bên shop có cuốn Tiếng gọi nơi hoang dã không ?
-    - bên shop có Tiếng gọi nơi hoang dã không ?
-    - Tiếng gọi nơi hoang dã shop có không ạ? 
-    - Tiếng gọi nơi hoang dã shop có bán không ? 
-    - ở shop mình có bán quyển Tiếng gọi nơi hoang dã ?
-    - ở shop mình có bán cuốn Tiếng gọi nơi hoang dã ?
-    - bên mình có quyển Tiếng gọi nơi hoang dã không?
-    - bên mình có cuốn Tiếng gọi nơi hoang dã không?
+    - mình muốn tìm Tiếng gọi nơi hoang dã
+    - có cuốn Tiếng gọi nơi hoang dã không ạ?
+    - có quyển Tiếng gọi nơi hoang dã không ạ?
+    - Có Tiếng gọi nơi hoang dã không ạ?
+    - shop có quyển Tiếng gọi nơi hoang dã không?
+    - Shop có cuốn Tiếng gọi nơi hoang dã không?
+    - Shop có bán cuốn  Tiếng gọi nơi hoang dã không?
+    - Shop có bán quyển Tiếng gọi nơi hoang dã không?
+    - Cuốn Tiếng gọi nơi hoang dã shop có không ?
+    - quyển Tiếng gọi nơi hoang dã shop có không?
     - tìm quyển Tiếng gọi nơi hoang dã
-    - tìm cuốn Tiếng gọi nơi hoang dã
-    - tìm Tiếng gọi nơi hoang dã
-- intent: namebook8 #Cà Phê cùng Tony
+    - tìm cuốn  Tiếng gọi nơi hoang dã
+    - Tiếng gọi nơi hoang dã học sâu
+    - Tiếng gọi nơi hoang dã còn không ạ?
+- intent: namebook8 # Cà phê cùng Tony
   examples: |
-    - cho em hỏi shop mình có quyển Cà Phê cùng Tony không ạ?
-    - cho em hỏi shop mình có cuốn Cà Phê cùng Tony không ạ?
-    - cho em hỏi shop mình có Cà Phê cùng Tony không ạ?
-    - có quyển Cà Phê cùng Tony không bạn ?
-    - có cuốn Cà Phê cùng Tony không bạn ?
-    - có Cà Phê cùng Tony không bạn ?
-    - mình muốn tìm quyển Cà Phê cùng Tony
-    - mình muốn tìm cuốn Cà Phê cùng Tony
-    - mình muốn tìm cuốn Cà Phê cùng Tony
-    - không biết shop có quyển Cà Phê cùng Tony không ạ?
-    - không biết shop có cuốn Cà Phê cùng Tony không ạ?
-    - không biết shop có Cà Phê cùng Tony không ạ?
-    - bên shop có quyển Cà Phê cùng Tony không ?
-    - bên shop có cuốn Cà Phê cùng Tony không ?
-    - bên shop có Cà Phê cùng Tony không ?
-    - Cà Phê cùng Tony shop có không ạ? 
-    - Cà Phê cùng Tony shop có bán không ? 
-    - ở shop mình có bán quyển Cà Phê cùng Tony không?
-    - ở shop mình có bán cuốn Cà Phê cùng Tony không?
-    - bên mình có quyển Cà Phê cùng Tony không?
-    - bên mình có cuốn Cà Phê cùng Tony không?
-    - tìm quyển Cà Phê cùng Tony
-    - tìm cuốn Cà Phê cùng Tony
-    - tìm Cà Phê cùng Tony
-- intent: namebook9 #Từ điển anh việt
+    - mình muốn tìm quyển Cà phê cùng Tony 
+    - mình muốn tìm cuốn Cà phê cùng Tony 
+    - mình muốn tìm Cà phê cùng Tony 
+    - có cuốn Cà phê cùng Tony  không ạ?
+    - có quyển Cà phê cùng Tony  không ạ?
+    - Có Cà phê cùng Tony  không ạ?
+    - shop có quyển Cà phê cùng Tony  không?
+    - Shop có cuốn Cà phê cùng Tony  không?
+    - Shop có bán cuốn  Cà phê cùng Tony  không?
+    - Shop có bán quyển Cà phê cùng Tony  không?
+    - Cuốn Cà phê cùng Tony  shop có không ?
+    - quyển Cà phê cùng Tony  shop có không?
+    - tìm quyển Cà phê cùng Tony 
+    - tìm cuốn  Cà phê cùng Tony 
+    - Cà phê cùng Tony  học sâu
+    - Cà phê cùng Tony  còn không ạ?
+- intent: namebook9 # Từ điển Anh Việt
   examples: |
-    - cho em hỏi shop mình có quyển Từ điển anh việt không ạ?
-    - cho em hỏi shop mình có cuốn Từ điển anh việt không ạ?
-    - cho em hỏi shop mình có Từ điển anh việt không ạ?
-    - có quyển Từ điển anh việt không bạn ?
-    - có cuốn Từ điển anh việt không bạn ?
-    - có Từ điển anh việt không bạn ?
-    - mình muốn tìm quyển Từ điển anh việt
-    - mình muốn tìm cuốn Từ điển anh việt
-    - mình muốn tìm cuốn Từ điển anh việt
-    - không biết shop có quyển Từ điển anh việt không ạ?
-    - không biết shop có cuốn Từ điển anh việt không ạ?
-    - không biết shop có Từ điển anh việt không ạ?
-    - bên shop có quyển Từ điển anh việt không ?
-    - bên shop có cuốn Từ điển anh việt không ?
-    - bên shop có Từ điển anh việt không ?
-    - Từ điển anh việt shop có không ạ? 
-    - Từ điển anh việt shop có bán không ? 
-    - ở shop mình có bán quyển Từ điển anh việt không?
-    - ở shop mình có bán cuốn Từ điển anh việt không?
-    - bên mình có quyển Từ điển anh việt không?
-    - bên mình có cuốn Từ điển anh việt không?
-    - tìm quyển Từ điển anh việt
-    - tìm cuốn Từ điển anh việt
-    - tìm Cà Từ điển anh việt
-- intent: namebook10 #Đại Việt sử ký toàn thư
+    - mình muốn tìm quyển Từ điển Anh Việt 
+    - mình muốn tìm cuốn Từ điển Anh Việt 
+    - mình muốn tìm Từ điển Anh Việt 
+    - có cuốn Từ điển Anh Việt  không ạ?
+    - có quyển Từ điển Anh Việt  không ạ?
+    - Có Từ điển Anh Việt  không ạ?
+    - shop có quyển Từ điển Anh Việt  không?
+    - Shop có cuốn Từ điển Anh Việt  không?
+    - Shop có bán cuốn  Từ điển Anh Việt  không?
+    - Shop có bán quyển Từ điển Anh Việt  không?
+    - Cuốn Từ điển Anh Việt  shop có không ?
+    - quyển Từ điển Anh Việt  shop có không?
+    - tìm quyển Từ điển Anh Việt 
+    - tìm cuốn  Từ điển Anh Việt 
+    - Từ điển Anh Việt  học sâu
+    - Từ điển Anh Việt  còn không ạ?
+- intent: namebook10 # Lịch sử thế giới
   examples: |
-    - cho em hỏi shop mình có quyển Đại Việt sử ký toàn thư không ạ?
-    - cho em hỏi shop mình có cuốn Đại Việt sử ký toàn thư không ạ?
-    - cho em hỏi shop mình có Đại Việt sử ký toàn thư không ạ?
-    - có quyển Đại Việt sử ký toàn thư không bạn ?
-    - có cuốn Đại Việt sử ký toàn thư không bạn ?
-    - có Đại Việt sử ký toàn thư không bạn ?
-    - mình muốn tìm quyển Đại Việt sử ký toàn thư
-    - mình muốn tìm cuốn Đại Việt sử ký toàn thư
-    - mình muốn tìm cuốn Đại Việt sử ký toàn thư
-    - không biết shop có quyển Đại Việt sử ký toàn thư không ạ?
-    - không biết shop có cuốn Đại Việt sử ký toàn thư không ạ?
-    - không biết shop có Đại Việt sử ký toàn thư không ạ?
-    - bên shop có quyển Đại Việt sử ký toàn thư không ?
-    - bên shop có cuốn Đại Việt sử ký toàn thư không ?
-    - bên shop có Đại Việt sử ký toàn thư không ?
-    - Đại Việt sử ký toàn thư shop có không ạ? 
-    - Đại Việt sử ký toàn thư shop có bán không ? 
-    - ở shop mình có bán quyển Đại Việt sử ký toàn thư?
-    - ở shop mình có bán cuốn Đại Việt sử ký toàn thư?
-    - bên mình có quyển Đại Việt sử ký toàn thư không?
-    - bên mình có cuốn Đại Việt sử ký toàn thư không?
-    - tìm quyển Đại Việt sử ký toàn thư
-    - tìm cuốn Đại Việt sử ký toàn thư
-    - tìm Cà Đại Việt sử ký toàn thư
-
+    - mình muốn tìm quyển Lịch sử thế giới 
+    - mình muốn tìm cuốn Lịch sử thế giới 
+    - mình muốn tìm Lịch sử thế giới 
+    - có cuốn Lịch sử thế giới  không ạ?
+    - có quyển Lịch sử thế giới  không ạ?
+    - Có Lịch sử thế giới  không ạ?
+    - shop có quyển Lịch sử thế giới  không?
+    - Shop có cuốn Lịch sử thế giới  không?
+    - Shop có bán cuốn  Lịch sử thế giới  không?
+    - Shop có bán quyển Lịch sử thế giới  không?
+    - Cuốn Lịch sử thế giới  shop có không ?
+    - quyển Lịch sử thế giới  shop có không?
+    - tìm quyển Lịch sử thế giới 
+    - tìm cuốn  Lịch sử thế giới 
+    - Lịch sử thế giới  học sâu
+    - Lịch sử thế giới  còn không ạ?
 #--------------------Ver------------------------------------------------------------------------
 
-- intent: verbook11 #Cảm ơn người lớn bìa mềm
+- intent: verbook11 #Tôi là Bê Tô bìa mềm
   examples: |
-    - Cảm ơn người lớn bìa mềm shop có không ạ?
-    - tìm cuốn cảm ơn người lớn bìa mềm
-    - em muốn mua quyển cảm ơn người lớn bìa mềm
-    - shop có cảm ơn người lớn bìa mềm không ạ ?
-    - cảm ơn người lớn bìa mềm
-    - cảm ơn người lớn phiên bản bìa mềm còn không ạ?
+    - Tôi là Bê Tô bìa mềm shop có không ạ?
+    - tìm cuốn Tôi là Bê Tô bìa mềm
+    - em muốn mua quyển Tôi là Bê Tô bìa mềm
+    - shop có Tôi là Bê Tô bìa mềm không ạ ?
+    - Tôi là Bê Tô bìa mềm
+    - Tôi là Bê Tô phiên bản bìa mềm còn không ạ?
 
-- intent: verbook12 #Cảm ơn người lớn bìa cứng
+- intent: verbook12 #Tôi là Bê Tô bìa cứng
   examples: |
-    - Cảm ơn người lớn bìa cứng shop có không ạ?
-    - tìm cuốn cảm ơn người lớn bìa cứng
-    - em muốn mua quyển cảm ơn người lớn bìa cứng 
-    - shop có cảm ơn người lớn bìa cứng không ạ ?
-    - cảm ơn người lớn bìa cứng
-- intent: verbook21 #Doraeemon truyện dài quyển lẻ
+    - Tôi là Bê Tô bìa cứng shop có không ạ?
+    - tìm cuốn Tôi là Bê Tô bìa cứng
+    - em muốn mua quyển Tôi là Bê Tô bìa cứng 
+    - shop có Tôi là Bê Tô bìa cứng không ạ ?
+    - Tôi là Bê Tô bìa cứng
+- intent: verbook21 #365 Truyện kể cho bé bìa mềm
   examples: |
-    - Doraemon truyện dài quyển lẻ shop có không ạ?
-    - em muốn mua Doraemon truyện dài quyển lẻ 
-    - shop có doraemon truyện dài quyển lẻ không ạ ?
+    - 365 Truyện kể cho bé bìa mềm shop có không ạ?
+    - em muốn mua 365 Truyện kể cho bé bìa mềm 
+    - shop có 365 Truyện kể cho bé bìa mềm không ạ ?
     - Doraemon truyện dài qquyển lẻ
-- intent: verbook22 #Doraeemon truyện dài trọn bộ
+- intent: verbook22 #365 Truyện kể cho bé bìa cứng
   examples: |
-    - Doraemon truyện dài trọn bộ shop có không ạ?
-    - em muốn mua Doraemon truyện dài trọn bộ
+    - 365 Truyện kể cho bé bìa cứng shop có không ạ?
+    - em muốn mua 365 Truyện kể cho bé bìa cứng
     - em muốn mua trọn bộ Doraemon truyện dài
-    - shop có doraemon truyện dài trọn bộ không ạ ?
+    - shop có 365 Truyện kể cho bé bìa cứng không ạ ?
     - shop có trọn bộ doraemon truyện dài không ạ ?
-    - Doraemon truyện dài trọn bộ
+    - 365 Truyện kể cho bé bìa cứng
     - trọn bộ Doraemon truyện dài
 - intent: verbook31 #Nhà giả kim bìa mềm
   examples: |
@@ -725,14 +592,14 @@ nlu:
     - Cà phê cùng Tony bản 2022
     - Cà phê cùng Tony bản 2022 còn không ạ?
 
-- intent: verbook91 #Từ điển anh việt bìa đỏ cứng
+- intent: verbook91 #Từ điển Anh Việt bìa mềm
   examples: |
-    - Từ điển anh việt bìa đỏ cứng shop có không ạ?
-    - tìm cuốn Từ điển anh việt bìa đỏ cứng
-    - em muốn mua quyển Từ điển anh việt bìa đỏ cứng
-    - shop có Từ điển anh việt bìa đỏ cứng không ạ ?
-    - Từ điển anh việt bìa đỏ cứng
-    - Từ điển anh việt bìa đỏ cứngcòn không ạ?
+    - Từ điển Anh Việt bìa mềm shop có không ạ?
+    - tìm cuốn Từ điển Anh Việt bìa mềm
+    - em muốn mua quyển Từ điển Anh Việt bìa mềm
+    - shop có Từ điển Anh Việt bìa mềm không ạ ?
+    - Từ điển Anh Việt bìa mềm
+    - Từ điển Anh Việt bìa mềmcòn không ạ?
     - Từ điển anh việt bìa đỏ shop có không ạ?
     - tìm cuốn Từ điển anh việt bìa đỏ
     - em muốn mua quyển Từ điển anh việt bìa đỏ
@@ -740,103 +607,135 @@ nlu:
     - Từ điển anh việt bìa đỏ
     - Từ điển anh việt bìa đỏ còn không ạ?
 
-- intent: verbook92 #Từ điển anh việt bìa xanh cứng
+- intent: verbook92 #Từ điển Anh Việt bìa cứng
   examples: |
-    - Từ điển anh việt bìa xanh cứng shop có không ạ?
-    - tìm cuốn Từ điển anh việt bìa xanh cứng
-    - em muốn mua quyển Từ điển anh việt bìa xanh cứng
-    - shop có Từ điển anh việt bìa xanh cứng không ạ ?
-    - Từ điển anh việt bìa xanh cứng
-    - Từ điển anh việt bìa xanh cứng còn không ạ?
-    - Từ điển anh việt bìa xanh cứng shop có không ạ?
+    - Từ điển Anh Việt bìa cứng shop có không ạ?
+    - tìm cuốn Từ điển Anh Việt bìa cứng
+    - em muốn mua quyển Từ điển Anh Việt bìa cứng
+    - shop có Từ điển Anh Việt bìa cứng không ạ ?
+    - Từ điển Anh Việt bìa cứng
+    - Từ điển Anh Việt bìa cứng còn không ạ?
+    - Từ điển Anh Việt bìa cứng shop có không ạ?
     - tìm cuốn Từ điển anh việt bìa xanh
     - em muốn mua quyển Từ điển anh việt bìa xanh
     - shop có Từ điển anh việt bìa xanh không ạ ?
     - Từ điển anh việt bìa xanh
     -Từ điển anh việt bìa xanh còn không ạ?
-- intent: verbook101 #Đại Việt sử kí toàn thư bản thường
+- intent: verbook101 #Lịch sử thế giới  bản thường
   examples: |
-    - Đại Việt sử kí toàn thư bản thường shop có không ạ?
-    - tìm cuốn Đại Việt sử kí toàn thư bản thường
-    - em muốn mua quyển Đại Việt sử kí toàn thư bản thường
-    - shop có Đại Việt sử kí toàn thư bản thường không ạ ?
-    - Đại Việt sử kí toàn thư bản thường
-    - Đại Việt sử kí toàn thư bản thường còn không ạ?
-    - Đại Việt sử kí toàn thư thường shop có không ạ?
-    - tìm cuốn Đại Việt sử kí toàn thư thường
-    - em muốn mua quyển Đại Việt sử kí toàn thư thường
-    - shop có Đại Việt sử kí toàn thư thường không ạ ?
-    - Đại Việt sử kí toàn thư thường
-    - Đại Việt sử kí toàn thư thường còn không ạ?
+    - Lịch sử thế giới  bản thường shop có không ạ?
+    - tìm cuốn Lịch sử thế giới  bản thường
+    - em muốn mua quyển Lịch sử thế giới  bản thường
+    - shop có Lịch sử thế giới  bản thường không ạ ?
+    - Lịch sử thế giới  bản thường
+    - Lịch sử thế giới  bản thường còn không ạ?
+    - Lịch sử thế giới  thường shop có không ạ?
+    - tìm cuốn Lịch sử thế giới  thường
+    - em muốn mua quyển Lịch sử thế giới  thường
+    - shop có Lịch sử thế giới  thường không ạ ?
+    - Lịch sử thế giới  thường
+    - Lịch sử thế giới  thường còn không ạ?
 
-- intent: verbook102 #Đại Việt sử kí toàn thư bản đặc biệt
+- intent: verbook102 #Lịch sử thế giới  bản đặc biệt
   examples: |
-    - Đại Việt sử kí toàn thư bản đặc biệt shop có không ạ?
-    - tìm cuốn Đại Việt sử kí toàn thư bản đặc biệt
-    - em muốn mua quyển Đại Việt sử kí toàn thư bản đặc biệt
-    - shop có Đại Việt sử kí toàn thư bản đặc biệt không ạ ?
-    - Đại Việt sử kí toàn thư bản đặc biệt
-    - Đại Việt sử kí toàn thư bản đặc biệt còn không ạ?
-    - Đại Việt sử kí toàn thư đặc biệt shop có không ạ?
-    - tìm cuốn Đại Việt sử kí toàn thư đặc biệt
-    - em muốn mua quyển Đại Việt sử kí toàn thư đặc biệt
-    - shop có Đại Việt sử kí toàn thư đặc biệt không ạ ?
-    - Đại Việt sử kí toàn thư đặc biệt
-    - Đại Việt sử kí toàn thư đặc biệt còn không ạ?
+    - Lịch sử thế giới  bản đặc biệt shop có không ạ?
+    - tìm cuốn Lịch sử thế giới  bản đặc biệt
+    - em muốn mua quyển Lịch sử thế giới  bản đặc biệt
+    - shop có Lịch sử thế giới  bản đặc biệt không ạ ?
+    - Lịch sử thế giới  bản đặc biệt
+    - Lịch sử thế giới  bản đặc biệt còn không ạ?
+    - Lịch sử thế giới  đặc biệt shop có không ạ?
+    - tìm cuốn Lịch sử thế giới  đặc biệt
+    - em muốn mua quyển Lịch sử thế giới  đặc biệt
+    - shop có Lịch sử thế giới  đặc biệt không ạ ?
+    - Lịch sử thế giới  đặc biệt
+    - Lịch sử thế giới  đặc biệt còn không ạ?
 #---------------------PRICE_BOOK-----------------------------------------------------------------
-
-
-    
-
-- intent: pricebook11 #Cảm ơn người lớn bìa mềm
+- intent: pricebook1 #Tôi là Bê Tô
   examples: |   
-    - Cảm ơn người lớn  bìa mềm giá bao nhiêu vậy shop?
-    - Cảm ơn người lớn bìa mềm giá bao nhiêu thế?
-    - Cảm ơn người lớn bìa mềm  giá bao nhiêu ạ?	
-    - Cảm ơn người lớn bìa mềm giá sao ạ?
-    - Cảm ơn người lớn bìa mềm giá sao shop?
-    - Giá của quyển Cảm ơn người lớn bìa mềm bao nhiêu vậy shop?
-    - Cảm ơn người lớn bìa mềm bao nhiêu tiền vậy shop ?
-    - Cảm ơn người lớn bìa mềm bán bao nhiêu vậy shop?
-    - Quyển Cảm ơn người lớn bìa mềm giá bao nhiêu vậy shop?
-    - Giá Cảm ơn người lớn bìa mềm là bao nhiêu vậy shop?
-- intent: pricebook12 #Cảm ơn người lớn bìa cứng
+    - Tôi là Bê Tô giá bao nhiêu vậy shop?
+    - Tôi là Bê Tô giá bao nhiêu thế?
+    - Tôi là Bê Tô  giá bao nhiêu ạ?	
+    - Tôi là Bê Tô giá sao ạ?
+    - Tôi là Bê Tô giá sao shop?
+    - Giá của quyển Tôi là Bê Tô bao nhiêu vậy shop?
+    - Tôi là Bê Tô bao nhiêu tiền vậy shop ?
+    - Tôi là Bê Tô bán bao nhiêu vậy shop?
+    - Quyển Tôi là Bê Tô giá bao nhiêu vậy shop?
+    - Giá Tôi là Bê Tô là bao nhiêu vậy shop?
+- intent: pricebook11 #Tôi là Bê Tô bìa mềm
   examples: |   
-    - Cảm ơn người lớn  bìa cứng giá bao nhiêu vậy shop?
-    - Cảm ơn người lớn bìa cứng giá bao nhiêu thế?
-    - Cảm ơn người lớn bìa cứng giá bao nhiêu ạ?	
-    - Cảm ơn người lớn bìa cứng giá sao ạ?
-    - Cảm ơn người lớn bìa cứng giá sao shop?
-    - Giá của quyển Cảm ơn người lớn bìa cứng bao nhiêu vậy shop?
-    - Cảm ơn người lớn bìa cứng bao nhiêu tiền vậy shop ?
-    - Cảm ơn người lớn bìa cứng bán bao nhiêu vậy shop?
-    - Quyển Cảm ơn người lớn bìa cứng giá bao nhiêu vậy shop?
-    - Giá Cảm ơn người lớn bìa cứng là bao nhiêu vậy shop?
-- intent: pricebook21 #Doraemon truyện dài quyển lẻ
+    - Tôi là Bê Tô  bìa mềm giá bao nhiêu vậy shop?
+    - Tôi là Bê Tô bìa mềm giá bao nhiêu thế?
+    - Tôi là Bê Tô bìa mềm  giá bao nhiêu ạ?	
+    - Tôi là Bê Tô bìa mềm giá sao ạ?
+    - Tôi là Bê Tô bìa mềm giá sao shop?
+    - Giá của quyển Tôi là Bê Tô bìa mềm bao nhiêu vậy shop?
+    - Tôi là Bê Tô bìa mềm bao nhiêu tiền vậy shop ?
+    - Tôi là Bê Tô bìa mềm bán bao nhiêu vậy shop?
+    - Quyển Tôi là Bê Tô bìa mềm giá bao nhiêu vậy shop?
+    - Giá Tôi là Bê Tô bìa mềm là bao nhiêu vậy shop?
+- intent: pricebook12 #Tôi là Bê Tô bìa cứng
   examples: |   
-    - Doraemon truyện dài quyển lẻ giá bao nhiêu vậy shop?
-    - Doraemon truyện dài quyển lẻ giá bao nhiêu thế?
-    - Doraemon truyện dài quyển lẻ giá bao nhiêu ạ?
-    - Doraemon truyện dài quyển lẻ giá sao ạ?
-    - Doraemon truyện dài quyển lẻ giá sao shop?
-    - Giá của quyển Doraemon truyện dài bao nhiêu vậy shop?
-    - Doraemon truyện dài quyển lẻ bao nhiêu tiền vậy shop ?
-    - Doraemon truyện dài quyển lẻ bán bao nhiêu vậy shop?
+    - Tôi là Bê Tô  bìa cứng giá bao nhiêu vậy shop?
+    - Tôi là Bê Tô bìa cứng giá bao nhiêu thế?
+    - Tôi là Bê Tô bìa cứng giá bao nhiêu ạ?	
+    - Tôi là Bê Tô bìa cứng giá sao ạ?
+    - Tôi là Bê Tô bìa cứng giá sao shop?
+    - Giá của quyển Tôi là Bê Tô bìa cứng bao nhiêu vậy shop?
+    - Tôi là Bê Tô bìa cứng bao nhiêu tiền vậy shop ?
+    - Tôi là Bê Tô bìa cứng bán bao nhiêu vậy shop?
+    - Quyển Tôi là Bê Tô bìa cứng giá bao nhiêu vậy shop?
+    - Giá Tôi là Bê Tô bìa cứng là bao nhiêu vậy shop?
+- intent: pricebook2 #365 Truyện kể cho bé
+  examples: |   
+    - 365 Truyện kể cho bé giá bao nhiêu vậy shop?
+    - 365 Truyện kể cho bé giá bao nhiêu thế?
+    - 365 Truyện kể cho bé giá bao nhiêu ạ?
+    - 365 Truyện kể cho bé giá sao ạ?
+    - 365 Truyện kể cho bé giá sao shop?
+    - quyển 365 truyện kể cho bé bao nhiêu vậy shop?
+    - quyển 365 Truyện kể cho bé bao nhiêu tiền vậy shop ?
+    - quyển 365 Truyện kể cho bé bán bao nhiêu vậy shop?
+    - Quyển 365 Truyện kể cho bé bao nhiêu vậy shop?
+    - Giá quyển 365 Truyện kể cho bé là bao nhiêu vậy shop?
+- intent: pricebook21 #365 Truyện kể cho bé bìa mềm
+  examples: |   
+    - 365 Truyện kể cho bé bìa mềm giá bao nhiêu vậy shop?
+    - 365 Truyện kể cho bé bìa mềm giá bao nhiêu thế?
+    - 365 Truyện kể cho bé bìa mềm giá bao nhiêu ạ?
+    - 365 Truyện kể cho bé bìa mềm giá sao ạ?
+    - 365 Truyện kể cho bé bìa mềm giá sao shop?
+    - quyển 365 truyện kể cho bé bao nhiêu vậy shop?
+    - quyển 365 Truyện kể cho bé bìa mềm bao nhiêu tiền vậy shop ?
+    - quyển 365 Truyện kể cho bé bìa mềm bán bao nhiêu vậy shop?
     - Quyển Doraemon truyện dài bao nhiêu vậy shop?
-    - Giá Doraemon truyện dài quyển lẻ là bao nhiêu vậy shop?
-- intent: pricebook22 #Doraemon truyện dài trọn bộ
+    - Giá quyển 365 Truyện kể cho bé bìa mềm là bao nhiêu vậy shop?
+- intent: pricebook22 #365 Truyện kể cho bé bìa cứng
   examples: |   
-    - Doraemon truyện dài trọn bộ giá bao nhiêu vậy shop?
-    - Doraemon truyện dài trọn bộ giá bao nhiêu thế?
-    - Doraemon truyện dài trọn bộ giá bao nhiêu ạ?
-    - Doraemon truyện dài trọn bộ giá sao ạ?
-    - Doraemon truyện dài trọn bộ giá sao shop?
-    - Giá của trọn bộ Doraemon truyện dài bao nhiêu vậy shop?
-    - Doraemon truyện dài trọn bộ bao nhiêu tiền vậy shop ?
-    - Doraemon trọn bộ truyện dài bán bao nhiêu vậy shop?
-    - Trọn bộ Doraemon truyện dài bao nhiêu vậy shop?
-    - Trọn bộ truyện dài Doraemon bao nhiêu vậy shop?
-    - Giá Doraemon truyện dài trọn bộ là bao nhiêu vậy shop?
+    - 365 Truyện kể cho bé bìa cứng giá bao nhiêu vậy shop?
+    - 365 Truyện kể cho bé bìa cứng giá bao nhiêu thế?
+    - 365 Truyện kể cho bé bìa cứng giá bao nhiêu ạ?
+    - 365 Truyện kể cho bé bìa cứng giá sao ạ?
+    - 365 Truyện kể cho bé bìa cứng giá sao shop?
+    - Giá của 365 truyện kể cho bé bìa cứng bao nhiêu vậy shop?
+    - quyển 365 Truyện kể cho bé bìa cứng bao nhiêu tiền vậy shop ?
+    - quyển 365 truyện kể cho bé bìa cứng bán bao nhiêu vậy shop?
+    - quyển 365 truyện kể cho bé bìa cứng bao nhiêu vậy shop?
+    - quyển 365 Truyện kể cho bé bao nhiêu vậy shop?
+    - Giá quyển365 Truyện kể cho bé bìa cứng là bao nhiêu vậy shop?
+- intent: pricebook3 #Nhà giả kim
+  examples: |   
+    - Nhà giả kim giá bao nhiêu vậy shop?
+    - Nhà giả kim giá bao nhiêu thế?
+    - Nhà giả kim giá bao nhiêu ạ?
+    - Nhà giả kim giá sao ạ?
+    - Nhà giả kim giá sao shop?
+    - Giá của quyển Nhà giả kim bao nhiêu vậy shop?
+    - Nhà giả kim bao nhiêu tiền vậy shop ?
+    - Nhà giả kim bán bao nhiêu vậy shop?
+    - Quyển Nhà giả kim bao nhiêu vậy shop?
+    - Giá Nhà giả kim là bao nhiêu vậy shop?
 - intent: pricebook31 #Nhà giả kim bìa mềm
   examples: |   
     - Nhà giả kim bìa mềm giá bao nhiêu vậy shop?
@@ -862,7 +761,18 @@ nlu:
     - Quyển Nhà giả kim bìa cứng bao nhiêu vậy shop?
     - Giá Nhà giả kim bìa cứng là bao nhiêu vậy shop?
 
-
+- intent: pricebook4  #Nghĩ giàu làm giàu
+  examples: |   
+    - Nghĩ giàu làm giàu giá bao nhiêu vậy shop?
+    - Nghĩ giàu làm giàu giá bao nhiêu thế?
+    - Nghĩ giàu làm giàu giá bao nhiêu ạ?
+    - Nghĩ giàu làm giàu giá sao ạ?
+    - Nghĩ giàu làm giàu giá sao shop?	
+    - Giá của quyển Nghĩ giàu làm giàu bao nhiêu vậy shop?
+    - Nghĩ giàu làm giàu bao nhiêu tiền vậy shop ?
+    - Nghĩ giàu làm giàu bán bao nhiêu vậy shop?
+    - Quyển Nghĩ giàu làm giàu nhiêu vậy shop?
+    - Giá Nghĩ giàu làm giàu là bao nhiêu vậy shop?
 - intent: pricebook41  #Nghĩ giàu làm giàu bìa mềm
   examples: |   
     - Nghĩ giàu làm giàu bìa mềm giá bao nhiêu vậy shop?
@@ -888,43 +798,66 @@ nlu:
     - Nghĩ giàu làm giàu bìa cứng bán bao nhiêu vậy shop?
     - Quyển Nghĩ giàu làm giàu bìa cứng bao nhiêu vậy shop?
     - Giá Nghĩ giàu làm giàu bìa cứng là bao nhiêu vậy shop?
-
-- intent: pricebook51 #Vũ trụ trong vỏ hạt dẻ tái bản 2022
+- intent: pricebook5 #Vũ trụ trong vỏ hạt dẻ
   examples: |   
-    - Vũ trụ trong vỏ hạt dẻ bản 2022  giá bao nhiêu vậy shop?	
-    - Vũ trụ trong vỏ hạt dẻ bản 2022 giá bao nhiêu thế?
-    - Vũ trụ trong vỏ hạt dẻ bản 2022 giá bao nhiêu ạ?	
-    - Vũ trụ trong vỏ hạt dẻ bản 2022 giá sao ạ?
-    - Vũ trụ trong vỏ hạt dẻ bản 2022 giá sao shop?
-    - Giá của quyển vũ trụ trong vỏ hạt dẻ bản 2022  bao nhiêu vậy shop?
-    - Vũ trụ trong vỏ hạt dẻ bản 2022 bao nhiêu tiền vậy shop ?
-    - Vũ trụ trong vỏ hạt dẻ  bản 2022 bán bao nhiêu vậy shop?
-    - Quyển Vũ trụ trong vỏ hạt dẻ bản 2022 giá bao nhiêu vậy shop?
+    - Vũ trụ trong vỏ hạt dẻ giá bao nhiêu vậy shop?	
+    - Vũ trụ trong vỏ hạt dẻ giá bao nhiêu thế?
+    - Vũ trụ trong vỏ hạt dẻ giá bao nhiêu ạ?	
+    - Vũ trụ trong vỏ hạt dẻ giá sao ạ?
+    - Vũ trụ trong vỏ hạt dẻ giá sao shop?
+    - Giá của quyển vũ trụ trong vỏ hạt dẻ bao nhiêu vậy shop?
+    - Vũ trụ trong vỏ hạt dẻ bao nhiêu tiền vậy shop ?
+    - Vũ trụ trong vỏ hạt dẻ bán bao nhiêu vậy shop?
+    - Quyển Vũ trụ trong vỏ hạt dẻ giá bao nhiêu vậy shop?
     - Giá Vũ trụ trong vỏ hạt dẻ bản 2022 là bao nhiêu vậy shop?
-- intent: pricebook52 #Vũ trụ trong vỏ hạt dẻ tái bản 2018
+- intent: pricebook51 #Vũ trụ trong vỏ hạt dẻ tái bìa mềm
   examples: |   
-    - Vũ trụ trong vỏ hạt dẻ bản 2018  giá bao nhiêu vậy shop?	
-    - Vũ trụ trong vỏ hạt dẻ bản 2018 giá bao nhiêu thế?
-    - Vũ trụ trong vỏ hạt dẻ bản 2018 giá bao nhiêu ạ?	
-    - Vũ trụ trong vỏ hạt dẻ bản 2018 giá sao ạ?
-    - Vũ trụ trong vỏ hạt dẻ bản 2018 giá sao shop?
-    - Giá của quyển vũ trụ trong vỏ hạt dẻ bản 2018  bao nhiêu vậy shop?
-    - Vũ trụ trong vỏ hạt dẻ bản 2018 bao nhiêu tiền vậy shop ?
-    - Vũ trụ trong vỏ hạt dẻ  bản 2018 bán bao nhiêu vậy shop?
-    - Quyển Vũ trụ trong vỏ hạt dẻ bản 2018 giá bao nhiêu vậy shop?
-    - Giá Vũ trụ trong vỏ hạt dẻ bản 2018 là bao nhiêu vậy shop?
-- intent: pricebook61 #Deep Learning - cuộc cách mạng học sâu bản thường
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm  giá bao nhiêu vậy shop?	
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm giá bao nhiêu thế?
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm giá bao nhiêu ạ?	
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm giá sao ạ?
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm giá sao shop?
+    - Giá của quyển vũ trụ trong vỏ hạt dẻ bìa mềm  bao nhiêu vậy shop?
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm bao nhiêu tiền vậy shop ?
+    - Vũ trụ trong vỏ hạt dẻ bìa mềm bán bao nhiêu vậy shop?
+    - Quyển Vũ trụ trong vỏ hạt dẻ bìa mềm giá bao nhiêu vậy shop?
+    - Giá Vũ trụ trong vỏ hạt dẻ bìa mềm là bao nhiêu vậy shop?
+- intent: pricebook52 #Vũ trụ trong vỏ hạt dẻ bìa cứng
   examples: |   
-    - Deep Learning - cuộc cách mạng học sâu bản thường giá bao nhiêu vậy shop?
-    - Deep Learning - cuộc cách mạng học sâu bản thường giá bao nhiêu thế?
-    - Deep Learning - cuộc cách mạng học sâu bản thường giá bao nhiêu ạ?	
-    - Deep Learning - cuộc cách mạng học sâu bản thường giá sao ạ?
-    - Deep Learning - cuộc cách mạng học sâu giá bản thường sao shop?
-    - Giá của quyển Deep Learning - cuộc cách mạng học sâu bản thường bao nhiêu vậy shop?
-    - Deep Learning - cuộc cách mạng học sâu bản thường bao nhiêu tiền vậy shop ?
-    - Deep Learning - cuộc cách mạng học sâu bản thường bán bao nhiêu vậy shop?
-    - Quyển Deep Learning - cuộc cách mạng học sâu bản thường lớn giá bao nhiêu vậy shop?
-    - Giá Deep learning - cuộc cách mạng học sâu bản thường là bao nhiêu vậy shop?
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng giá bao nhiêu vậy shop?	
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng giá bao nhiêu thế?
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng giá bao nhiêu ạ?	
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng giá sao ạ?
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng giá sao shop?
+    - Giá của quyển vũ trụ trong vỏ hạt dẻ bìa cứng bao nhiêu vậy shop?
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng bao nhiêu tiền vậy shop ?
+    - Vũ trụ trong vỏ hạt dẻ bìa cứng bán bao nhiêu vậy shop?
+    - Quyển Vũ trụ trong vỏ hạt dẻ bìa cứng giá bao nhiêu vậy shop?
+    - Giá Vũ trụ trong vỏ hạt dẻ bìa cứng là bao nhiêu vậy shop?
+- intent: pricebook6 #Deep Learning - cuộc cách mạng học sâu
+  examples: |   
+    - Deep Learning - cuộc cách mạng học sâu giá bao nhiêu vậy shop?
+    - Deep Learning - cuộc cách mạng học sâu giá bao nhiêu thế?
+    - Deep Learning - cuộc cách mạng học sâu giá bao nhiêu ạ?	
+    - Deep Learning - cuộc cách mạng học sâu giá sao ạ?
+    - Deep Learning - cuộc cách mạng học sâu sao shop?
+    - Giá của quyển Deep Learning - cuộc cách mạng học sâu bao nhiêu vậy shop?
+    - Deep Learning - cuộc cách mạng học sâu bao nhiêu tiền vậy shop ?
+    - Deep Learning - cuộc cách mạng học sâu bán bao nhiêu vậy shop?
+    - Quyển Deep Learning - cuộc cách mạng học sâu giá bao nhiêu vậy shop?
+    - Giá Deep learning - cuộc cách mạng học sâu là bao nhiêu vậy shop?
+- intent: pricebook61 #Deep Learning - cuộc cách mạng học sâu bản bìa mềm
+  examples: |   
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm giá bao nhiêu vậy shop?
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm giá bao nhiêu thế?
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm giá bao nhiêu ạ?	
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm giá sao ạ?
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm sao shop?
+    - Giá của quyển Deep Learning - cuộc cách mạng học sâu bìa mềm bao nhiêu vậy shop?
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm bao nhiêu tiền vậy shop ?
+    - Deep Learning - cuộc cách mạng học sâu bìa mềm bán bao nhiêu vậy shop?
+    - Quyển Deep Learning - cuộc cách mạng học sâu bìa mềm giá bao nhiêu vậy shop?
+    - Giá Deep learning - cuộc cách mạng học sâu bìa mềm là bao nhiêu vậy shop?
 
 - intent: pricebook62 #Deep Learning - cuộc cách mạng học sâu bản tặng kèm sổ
   examples: |   
@@ -948,7 +881,18 @@ nlu:
     - Deep Learning - cuộc cách mạng học sâu có tặng kè sổ bán bao nhiêu vậy shop?
     - Quyển Deep Learning - cuộc cách mạng học sâu có tặng kèm sổ lớn giá bao nhiêu vậy shop?
     - Giá Deep learning - cuộc cách mạng học sâu có tặng kèm sổ là bao nhiêu vậy shop?
-
+- intent: pricebook7 #Tiếng gọi nơi hoang dã
+  examples: |  
+    - Tiếng gọi nơi hoang dã giá bao nhiêu vậy shop?
+    - Tiếng gọi nơi hoang dã giá bao nhiêu thế?
+    - Tiếng gọi nơi hoang dã giá bao nhiêu ạ?
+    - Tiếng gọi nơi hoang dã giá sao ạ?
+    - Tiếng gọi nơi hoang dã giá sao shop?
+    - Giá của quyển Tiếng gọi nơi hoang dã bao nhiêu vậy shop?
+    - Tiêng gọi nơi hoang dã bao nhiêu tiền vậy shop ?
+    - Tiếng gọi nơi hoang dã bán bao nhiêu vậy shop?
+    - Quyển Tiếng gọi nơi hoang dã giá bao nhiêu vậy shop?
+    - Giá Tiếng gọi nơi hoang dã là bao nhiêu vậy shop?
 - intent: pricebook71 #Tiếng gọi nơi hoang dã bìa mềm
   examples: |  
     - Tiếng gọi nơi hoang dã bìa mềm  giá bao nhiêu vậy shop?
@@ -974,83 +918,108 @@ nlu:
     - Tiếng gọi nơi hoang dã bìa cứng bán bao nhiêu vậy shop?
     - Quyển Tiếng gọi nơi hoang dã bìa cứng giá bao nhiêu vậy shop?
     - Giá Tiếng gọi nơi hoang dã bìa cứng là bao nhiêu vậy shop?
-
-- intent: pricebook81 #Cà phê cùng Tony bản thường
+- intent: pricebook8 #Cà phê cùng Tony
   examples: |   
-    - Cà phê cùng Tony bản thường giá bao nhiêu vậy shop?	
-    - Cà phê cùng Tony bản thường giá bao nhiêu thế?
-    - Cà phê cùng Tony bản thường giá bao nhiêu ạ?
-    - Cà phê cùng Tony bản thường giá sao ạ?
-    - Cà phê cùng Tony bản thường giá sao shop?
-    - Giá của quyển Cà phê cùng Tony bản thường bao nhiêu vậy shop?
-    - Cà phê cùng Tony bản thường bao nhiêu tiền vậy shop ?
-    - Cà phê cùng Tony bản thường bán bao nhiêu vậy shop?
-
-- intent: pricebook82 #Cà phê cùng Tony bản 2022
+    - Cà phê cùng Tony giá bao nhiêu vậy shop?	
+    - Cà phê cùng Tony giá bao nhiêu thế?
+    - Cà phê cùng Tony giá bao nhiêu ạ?
+    - Cà phê cùng Tony giá sao ạ?
+    - Cà phê cùng Tony giá sao shop?
+    - Giá của quyển Cà phê cùng Tony bao nhiêu vậy shop?
+    - Cà phê cùng Tony bao nhiêu tiền vậy shop ?
+    - Cà phê cùng Tony bán bao nhiêu vậy shop?
+- intent: pricebook81 #Cà phê cùng Tony bìa mềm
   examples: |   
-    - Cà phê cùng Tony bản 2022 giá bao nhiêu vậy shop?	
-    - Cà phê cùng Tony bản 2022 giá bao nhiêu thế?
-    - Cà phê cùng Tony bản 2022 giá bao nhiêu ạ?
-    - Cà phê cùng Tony bản 2022 giá sao ạ?
-    - Cà phê cùng Tony bản 2022 giá sao shop?
-    - Giá của quyển Cà phê cùng Tony bản 2022 bao nhiêu vậy shop?
-    - Cà phê cùng Tony bản 2022 bao nhiêu tiền vậy shop ?
-    - Cà phê cùng Tony bản 2022 bán bao nhiêu vậy shop?    
-    - Cà phê cùng Tony tái bản 2022 giá bao nhiêu vậy shop?	
-    - Cà phê cùng Tony tái bản 2022 giá bao nhiêu thế?
-    - Cà phê cùng Tony tái bản 2022 giá bao nhiêu ạ?
-    - Cà phê cùng Tony tái bản 2022 giá sao ạ?
-    - Cà phê cùng Tony tái bản 2022 giá sao shop?
-    - Giá của quyển Cà phê cùng Tony tái bản 2022 bao nhiêu vậy shop?
-    - Cà phê cùng Tony tái bản 2022 bao nhiêu tiền vậy shop ?
-    - Cà phê cùng Tony tái bản 2022 bán bao nhiêu vậy shop?    
+    - Cà phê cùng Tony bìa mềm giá bao nhiêu vậy shop?	
+    - Cà phê cùng Tony bìa mềm giá bao nhiêu thế?
+    - Cà phê cùng Tony bìa mềm giá bao nhiêu ạ?
+    - Cà phê cùng Tony bìa mềm giá sao ạ?
+    - Cà phê cùng Tony bìa mềm giá sao shop?
+    - Giá của quyển Cà phê cùng Tony bìa mềm bao nhiêu vậy shop?
+    - Cà phê cùng Tony bìa mềm bao nhiêu tiền vậy shop ?
+    - Cà phê cùng Tony bìa mềm bán bao nhiêu vậy shop?
 
-- intent: pricebook91 #Từ điển Anh Việt bìa đỏ cứng
+
+- intent: pricebook82 #Cà phê cùng Tony bản bìa cứng
+  examples: |   
+    - Cà phê cùng Tony bìa cứng giá bao nhiêu vậy shop?	
+    - Cà phê cùng Tony bìa cứng giá bao nhiêu thế?
+    - Cà phê cùng Tony bìa cứng giá bao nhiêu ạ?
+    - Cà phê cùng Tony bìa cứng giá sao ạ?
+    - Cà phê cùng Tony bìa cứng giá sao shop?
+    - Giá của quyển Cà phê cùng Tony bìa cứng bao nhiêu vậy shop?
+    - Cà phê cùng Tony bìa cứng bao nhiêu tiền vậy shop ?
+    - Cà phê cùng Tony bìa cứng bán bao nhiêu vậy shop?
+
+- intent: pricebook9 #Từ điển Anh Việt
   examples: | 
-    - Từ điển Anh Việt bìa đỏ cứng giá bao nhiêu vậy shop?
-    - Từ điển Anh Việt bìa đỏ cứng giá bao nhiêu thế?
-    - Từ điển Anh Việt bìa đỏ cứng giá bao nhiêu ạ?
-    - Từ điển Anh Việt bìa đỏ cứng giá bao nhiêu ạ?
-    - Từ điển Anh Việt bìa đỏ cứng giá sao ạ?
-    - Từ điển Anh Việt bìa đỏ cứng giá sao shop?
-    - Giá của quyển từ điển Anh Việt bìa đỏ cứng bao nhiêu vậy shop?
-    - Từ điển Anh Việt bìa đỏ cứng bao nhiêu tiền vậy shop ?
-    - Từ điển Anh Việt bìa đỏ cứng bán bao nhiêu vậy shop?
-    - Quyển Từ điển Anh Việt bìa đỏ cứng giá bao nhiêu vậy shop?
-    - Từ điển ANh Việt bìa đỏ cứng là bao nhiêu vậy shop?
-- intent: pricebook92 #Từ điển Anh Việt bìa xanh cứng
+    - Từ điển Anh Việt giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt giá bao nhiêu thế?
+    - Từ điển Anh Việt giá bao nhiêu ạ?
+    - Từ điển Anh Việt giá bao nhiêu ạ?
+    - Từ điển Anh Việt giá sao ạ?
+    - Từ điển Anh Việt giá sao shop?
+    - Giá của quyển Từ điển Anh Việt bao nhiêu vậy shop?
+    - Từ điển Anh Việt bao nhiêu tiền vậy shop ?
+    - Từ điển Anh Việt bao nhiêu vậy shop?
+    - Quyển Từ điển Anh Việt giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt là bao nhiêu vậy shop?
+- intent: pricebook91 #Từ điển Anh Việt bìa mềm
   examples: | 
-    - Từ điển Anh Việt bìa xanh cứng giá bao nhiêu vậy shop?
-    - Từ điển Anh Việt bìa xanh cứng giá bao nhiêu thế?
-    - Từ điển Anh Việt bìa xanh cứng giá bao nhiêu ạ?
-    - Từ điển Anh Việt bìa xanh cứng giá bao nhiêu ạ?
-    - Từ điển Anh Việt bìa xanh cứng giá sao ạ?
-    - Từ điển Anh Việt bìa xanh cứng giá sao shop?
-    - Giá của quyển từ điển Anh Việt bìa xanh cứng bao nhiêu vậy shop?
-    - Từ điển Anh Việt bìa xanh cứng bao nhiêu tiền vậy shop ?
-    - Từ điển Anh Việt bìa xanh cứng bán bao nhiêu vậy shop?
-    - Quyển Từ điển Anh Việt bìa xanh cứng giá bao nhiêu vậy shop?
-    - Từ điển ANh Việt bìa xanh cứng là bao nhiêu vậy shop?
-- intent: pricebook101 #Đại Việt sử kí toàn thư bản thường
+    - Từ điển Anh Việt bìa mềm giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt bìa mềm giá bao nhiêu thế?
+    - Từ điển Anh Việt bìa mềm giá bao nhiêu ạ?
+    - Từ điển Anh Việt bìa mềm giá bao nhiêu ạ?
+    - Từ điển Anh Việt bìa mềm giá sao ạ?
+    - Từ điển Anh Việt bìa mềm giá sao shop?
+    - Giá của quyển Từ điển Anh Việt bìa mềm bao nhiêu vậy shop?
+    - Từ điển Anh Việt bìa mềm bao nhiêu tiền vậy shop ?
+    - Từ điển Anh Việt bìa mềm bán bao nhiêu vậy shop?
+    - Quyển Từ điển Anh Việt bìa mềm giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt bìa mềm là bao nhiêu vậy shop?
+- intent: pricebook92 #Từ điển Anh Việt bìa cứng
   examples: | 
-    - Đại Việt sử kí toàn thư bản thường giá bao nhiêu vậy shop?
-    - Đại Việt sử kí toàn thư bản thường giá bao nhiêu ạ?
-    - Đại Việt sử kí toàn thư bản thường giá bao nhiêu thế?
-    - Giá của quyển Đại Việt sử kí toàn thư bản thường bao nhiêu vậy shop?
-    - Đại Việt sử kí toàn thư bản thường bao nhiêu tiền vậy shop ?
-    - Đại Việt sử kí toàn thư bản thường bán bao nhiêu vậy shop?
-    - Quyển Đại Việt sử kí toàn thư bản thường giá bao nhiêu vậy shop?
-    - Giá Đại Việt sử kí toàn thư bản thường  là bao nhiêu vậy shop?
-- intent: pricebook102 #Đại Việt sử kí toàn thư bản đặc biệt
+    - Từ điển Anh Việt bìa cứng giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt bìa cứng giá bao nhiêu thế?
+    - Từ điển Anh Việt bìa cứng giá bao nhiêu ạ?
+    - Từ điển Anh Việt bìa cứng giá bao nhiêu ạ?
+    - Từ điển Anh Việt bìa cứng giá sao ạ?
+    - Từ điển Anh Việt bìa cứng giá sao shop?
+    - Giá của quyển Từ điển Anh Việt bìa cứng bao nhiêu vậy shop?
+    - Từ điển Anh Việt bìa cứng bao nhiêu tiền vậy shop ?
+    - Từ điển Anh Việt bìa cứng bán bao nhiêu vậy shop?
+    - Quyển Từ điển Anh Việt bìa cứng giá bao nhiêu vậy shop?
+    - Từ điển Anh Việt bìa cứng là bao nhiêu vậy shop?
+- intent: pricebook10 #Lịch sử thế giới
   examples: | 
-    - Đại Việt sử kí toàn thư bản đặc biệt giá bao nhiêu vậy shop?
-    - Đại Việt sử kí toàn thư bản đặc biệt giá bao nhiêu ạ?
-    - Đại Việt sử kí toàn thư bản đặc biệt giá bao nhiêu thế?
-    - Giá của quyển Đại Việt sử kí toàn thư bản đặc biệt bao nhiêu vậy shop?
-    - Đại Việt sử kí toàn thư bản thường bao nhiêu tiền vậy shop ?
-    - Đại Việt sử kí toàn thư bản thường bán bao nhiêu vậy shop?
-    - Quyển Đại Việt sử kí toàn thư bản thường giá bao nhiêu vậy shop?
-    - Giá Đại Việt sử kí toàn thư bản thường là bao nhiêu vậy shop?
+    - Lịch sử thế giới giá bao nhiêu vậy shop?
+    - Lịch sử thế giới giá bao nhiêu ạ?
+    - Lịch sử thế giới giá bao nhiêu thế?
+    - Giá của quyển Lịch sử thế giới bao nhiêu vậy shop?
+    - Lịch sử thế giới bao nhiêu tiền vậy shop ?
+    - Lịch sử thế giới bán bao nhiêu vậy shop?
+    - Quyển Lịch sử thế giới giá bao nhiêu vậy shop?
+    - Giá Lịch sử thế giới là bao nhiêu vậy shop?
+- intent: pricebook101 #Lịch sử thế giới bìa mềm
+  examples: | 
+    - Lịch sử thế giới  bìa mềm giá bao nhiêu vậy shop?
+    - Lịch sử thế giới  bìa mềm giá bao nhiêu ạ?
+    - Lịch sử thế giới  bản  giá bao nhiêu thế?
+    - Giá của quyển Lịch sử thế giới  bản thường bao nhiêu vậy shop?
+    - Lịch sử thế giới  bản thường bao nhiêu tiền vậy shop ?
+    - Lịch sử thế giới  bản thường bán bao nhiêu vậy shop?
+    - Quyển Lịch sử thế giới  bản thường giá bao nhiêu vậy shop?
+    - Giá Lịch sử thế giới  bản thường  là bao nhiêu vậy shop?
+- intent: pricebook102 #Lịch sử thế giới  bản bìa cứng
+  examples: | 
+    - Lịch sử thế giới  bìa cứng giá bao nhiêu vậy shop?
+    - Lịch sử thế giới  bản bìa cứng giá bao nhiêu ạ?
+    - Lịch sử thế giới  bìa cứng  giá bao nhiêu thế?
+    - Giá của quyển Lịch sử thế giới  bản bìa cứng bao nhiêu vậy shop?
+    - Lịch sử thế giới  bản bìa cứng bao nhiêu tiền vậy shop ?
+    - Lịch sử thế giới  bản bìa cứng bán bao nhiêu vậy shop?
+    - Quyển Lịch sử thế giới  bìa cứng giá bao nhiêu vậy shop?
+    - Giá Lịch sử thế giới  bìa cứng là bao nhiêu vậy shop?
 
 #----------------------PAYMENT--------------------------------------------------------------
 - intent: payment #thanh toán
@@ -1082,40 +1051,43 @@ nlu:
     - Thanh toán bằng tiền mặt được không shop ?
 
 #---------------------------SHIP-----------------------------------------------------------------
-
-- intent: ship
+- intent: shiptime
   examples: |
-      - ship thế nào ạ
-      - ship hàng bao lâu vậy shop
-      - Dịch vụ vận chuyển như thế nào ạ
-      - Địa chỉ shop ở đâu để em tới lấy hàng ạ
-      - Mua hàng như nào để có thể miễn phí vận chuyển vậy shop
-      - Cho em hỏi phí vận chuyển tính như nào ạ
-      - Chính sách vận chuyển bên shop như thế nào ạ
-      - Phí vận chuyển đơn hàng của em là bao nhiêu vậy ạ
-      - Đơn hàng của em phí vận chuyển là bao nhiêu vậy shop
-      - Nếu hàng nhận không như hàng mẫu phải đổi trả thế nào ạ
-      - Vận chuyển thế nào vậy?
-      - có ship đi các tỉnh không shop
-      - Hàng gửi ngoại thành bao nhiêu ngày là tới vậy ạ
-      - Hàng gửi ngoại thành đến nơi trong bao lâu ạ
-      - Em ở trong bán kính 2km thì có hàng trong ngày không shop
-      - Shop ơi, khi vận chuyển shop nhớ đóng gói kỹ giúp em
-      - Nhờ em shop đóng gói hàng kỹ giúp em ạ
-      - nhưng mà vận chuyển bao lâu
+    - thời gian ship trong bao lâu vậy?
+    - ship mất bao lâu vậy?
+    - thời gian vận chuyển lâu không ?
+    - vận chuyển trong vòng mấy ngày vậy?
+    -
+- intent: shipfee
+  examples: |
+    - ship có mất tiền khôngg?
+    - ship mất bao nhiêu tiền?
+    - tiền ship bao nhiêu?
+    - tiền vận chuyển bao nhiêu vậy?
+    - phí vận chuyển bao nhiêu ạ?
+    - phí vận chuyển bao nhiêu vậy shop?
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
-- intent: sale_time
+#--------------------------------SALE----------------------------------------
+- intent: saletime
   examples: |
     - bên mình có chương trình giảm giá không ạ?
     - hiện đang có chương trình giảm giá gì không vậy shop?
+    - khi nào có chương trình giảm giá v shop
+    - khi nào khuyến mãi vậy shop
+    - chương trình khuyến mãi là khi nào vậy?
+    - thời gian khuyến mãi 
+    - 
 
-- intent: sale_product
+- intent: saleproduct
   examples: |
     - các sách nào được giảm giá vậy shop?
     - các sản phẩm này có đang được giảm giá không shop?
+    - mặt hàng này có đang giảm giá không vậy?
+    - sách này có được giảm giá không?
+    - sách này giảm giá phải không vậy?

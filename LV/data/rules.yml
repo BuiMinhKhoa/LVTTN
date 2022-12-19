@@ -92,6 +92,46 @@ rules:
     - action: utter_namebook10
 
 #-----------------------------------PRICEBOOK--------------------------------------
+- rule: pricebook1
+  steps:
+    - intent: pricebook1
+    - action: utter_pricebook1
+- rule: pricebook2
+  steps:
+    - intent: pricebook2
+    - action: utter_pricebook2
+- rule: pricebook3
+  steps:
+    - intent: pricebook3
+    - action: utter_pricebook3
+- rule: pricebook4
+  steps:
+    - intent: pricebook4
+    - action: utter_pricebook4
+- rule: pricebook5
+  steps:
+    - intent: pricebook5
+    - action: utter_pricebook5
+- rule: pricebook6
+  steps:
+    - intent: pricebook6
+    - action: utter_pricebook6
+- rule: pricebook7
+  steps:
+    - intent: pricebook7
+    - action: utter_pricebook7
+- rule: pricebook8
+  steps:
+    - intent: pricebook8
+    - action: utter_pricebook8
+- rule: pricebook9
+  steps:
+    - intent: pricebook9
+    - action: utter_pricebook9
+- rule: pricebook10
+  steps:
+    - intent: pricebook10
+    - action: utter_pricebook10
 - rule: pricebook11
   steps:
     - intent: pricebook11
@@ -274,7 +314,20 @@ rules:
     - intent: payment
     - action: utter_payment
 #--------------------------------------SHIP---------------------------
-- rule: ship
+- rule: shiptime
   steps:
-    - intent: ship
-    - action: utter_ship
+    - intent: shiptime
+    - action: utter_shiptime
+- rule: shipfee
+  steps:
+    - intent: shipfee
+    - action: utter_shipfee
+#--------------------------SALE--------------------------------------------
+- rule: saletime
+  steps:
+    - intent: saletime
+    - action: utter_saletime
+- rule: saleproduct
+  steps:
+    - intent: saleproduct
+    - action: utter_saleproduct

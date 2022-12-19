@@ -7,122 +7,124 @@ stories:
     - action: utter_greet
     - intent: goodbye
     - action: utter_goodbye
-
-- story: greet ship #chào - ship
+- story: greet shipfee #chào - shipfee
   steps:
     - intent: greet
     - action: utter_greet
-    - intent: ship
-    - action: utter_ship
-- story: greet payment ship #chào - thanh toán - ship
+    - intent: shipfee
+    - action: utter_shipfee
+
+- story: greet shiptime #chào - shiptime
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: shiptime
+    - action: utter_shiptime
+- story: greet payment ship #chào - thanh toán
   steps:
     - intent: greet
     - action: utter_greet
     - intent: payment
     - action: utter_payment
-    - intent: ship
-    - action: utter_ship
 
 - story: greet ship payment #chào - ship - thanh toán
   steps:
     - intent: greet
     - action: utter_greet
-    - intent: ship
-    - action: utter_ship
     - intent: payment
     - action: utter_payment
 #---------------GREET-TYPEBOOK1--------------------------------
-- story: greet - typebook1
+- story: greet - typebook1 # sách văn học Việt Nam
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook1
     - action: utter_typebook1
 #----------------GREET-TYPEBOOK2----------------------------
-- story: greet - typebook2
+- story: greet - typebook2 # sách thiếu nhi
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook2
     - action: utter_typebook2
 #----------------GREET-TYPEBOOK3----------------------------
-- story: greet - typebook3
+- story: greet - typebook3 # sách văn học nước ngoài
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook3
     - action: utter_typebook3
 #----------------GREET-TYPEBOOK4----------------------------
-- story: greet - typebook4
+- story: greet - typebook4 # sách kinh tế
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook4
     - action: utter_typebook4
 #----------------GREET-TYPEBOOK5----------------------------
-- story: greet - typebook5
+- story: greet - typebook5 # sách khoa học và đời sống
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook5
     - action: utter_typebook5
 #----------------GREET-TYPEBOOK6----------------------------
-- story: greet - typebook6
+- story: greet - typebook6 #sách kỹ năng sống
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook6
     - action: utter_typebook6
 #----------------GREET-TYPEBOOK7----------------------------
-- story: greet - typebook7
+- story: greet - typebook7 #sách từ điển
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook7
     - action: utter_typebook7
 #----------------GREET-TYPEBOOK8----------------------------
-- story: greet - typebook8
+- story: greet - typebook8 # sách lịch sử địa lý
   steps:
     - intent: greet
     - action: utter_greet
     - intent: typebook8
     - action: utter_typebook8
 #----------------GREET - BOOK1 - VERSOFT---------------------------------
-- story: greet - namebook1 -versoft-price1.1 #Cảm ơn người lớn - bản bìa mềm
+- story: greet - namebook1 -versoft-price1.1 #Tôi là Bê Tô - bản bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook1
     - action: utter_namebook1
     - intent: versoft_common
-    - action: utter_pricebook11
+    - action: utter_verbook11
 #----------------GREET - BOOK1 - VERHARD---------------------------------
-- story: greet - namebook1 -verhard-price1.2 #Cảm ơn người lớn - bản bìa cứng
+- story: greet - namebook1 -verhard-price1.2 #tôi là Bê Tô - bản bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook1
     - action: utter_namebook1
     - intent: verhard_common
-    - action: utter_pricebook12
-#----------------GREET - BOOK2 - VER1BOOK---------------------------------
-- story: greet - namebook2 -ver1book-price2.1 # Doraemon truyện dài - 1 quyển lẻ
+    - action: utter_verbook12
+#----------------GREET - BOOK2 - VERSOFT---------------------------------
+- story: greet - namebook2 -ver1book-price2.1 # 365 truyện kể bé nghe bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook2
     - action: utter_namebook2
-    - intent: ver1book_common
-    - action: utter_pricebook21
-#----------------GREET - BOOK2 - VER24BOOK---------------------------------
-- story: greet - namebook2 -verhard-price2.2 #Doraemon truyện dài - 1 bộ 24 quyển
+    - intent: versoft_common
+    - action: utter_verbook21
+#----------------GREET - BOOK2 - VERHARD---------------------------------
+- story: greet - namebook2 -verhard-price2.2 #365 truyện kể bé nghe bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook2
     - action: utter_namebook2
-    - intent: ver24book_common
-    - action: utter_pricebook22
+    - intent: verhard_common
+    - action: utter_verbook22
 #----------------GREET - BOOK3 - VERSOFT---------------------------------
 - story: greet - namebook3 -versoft-price3.1 #Nhà giả kim - bản bìa mềm
   steps:
@@ -131,7 +133,7 @@ stories:
     - intent: namebook3
     - action: utter_namebook3
     - intent: versoft_common
-    - action: utter_pricebook31
+    - action: utter_verbook31
 #----------------GREET - BOOK3 - VERHARD---------------------------------
 - story: greet - namebook3 -versoft-price3.2 #Nhà giả kim - bản bìa cứng
   steps:
@@ -140,7 +142,7 @@ stories:
     - intent: namebook3
     - action: utter_namebook3
     - intent: verhard_common
-    - action: utter_pricebook32
+    - action: utter_verbook32
 
 #----------------GREET - BOOK4 - VERSOFT---------------------------------
 - story: greet - namebook4 -versoft-price4.1 #Nghĩ giàu làm giàu - bản bìa mềm
@@ -150,7 +152,7 @@ stories:
     - intent: namebook4
     - action: utter_namebook4
     - intent: versoft_common
-    - action: utter_pricebook41
+    - action: utter_verbook41
 #----------------GREET - BOOK4 - VERHARD---------------------------------
 - story: greet - namebook4 -versoft-price4.2 #Nghĩ giàu làm giàu - bản bìa cứng
   steps:
@@ -159,45 +161,45 @@ stories:
     - intent: namebook4
     - action: utter_namebook4
     - intent: verhard_common
-    - action: utter_pricebook42
+    - action: utter_verbook42
 
-#----------------GREET - BOOK5 - VER2022---------------------------------
-- story: greet - namebook5 -ver2022-price5.1 #Vũ trụ trong vỏ hạt dẻ - bản tái bản 2022
+#----------------GREET - BOOK5 - VERSOFT---------------------------------
+- story: greet - namebook5 -ver2022-price5.1 #Vũ trụ trong vỏ hạt dẻ - bản bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook5
     - action: utter_namebook5
-    - intent: ver2022_common
-    - action: utter_pricebook51
-#----------------GREET - BOOK5 - VER2018---------------------------------
-- story: greet - namebook5 -versoft-price5.1 #Vũ trụ trong vỏ hạt dẻ - bản tái bản 2018
+    - intent: versoft_common
+    - action: utter_verbook51
+#----------------GREET - BOOK5 - VERHARD---------------------------------
+- story: greet - namebook5 -versoft-price5.2 #Vũ trụ trong vỏ hạt dẻ - bản bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook5
     - action: utter_namebook5
-    - intent: ver2018_common
-    - action: utter_pricebook52
+    - intent: verhard_common
+    - action: utter_verbook52
 
-#----------------GREET - BOOK6 - VERNORMAL---------------------------------
-- story: greet - namebook6 -versoft-price6.1 #Deep Learning - cuộc cách mạng học sâu  - bản thường
+#----------------GREET - BOOK6 - VERSOFT---------------------------------
+- story: greet - namebook6 -versoft-price6.1 #Deep Learning - cuộc cách mạng học sâu  - bản bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook6
     - action: utter_namebook6
     - intent: versoft_common
-    - action: utter_pricebook61
-#----------------GREET - BOOK6 - VERBONUS---------------------------------
-- story: greet - namebook6 -versoft-price6.2 #Deep Learning - cuộc cách mạng học sâu  - bản có tặng kèm
+    - action: utter_verbook61
+#----------------GREET - BOOK6 - VERHARD---------------------------------
+- story: greet - namebook6 -versoft-price6.2 #Deep Learning - cuộc cách mạng học sâu  - bản bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook6
     - action: utter_namebook6
-    - intent: verbonus_common
-    - action: utter_pricebook62
+    - intent: verhard_common
+    - action: utter_verbook62
 #----------------GREET - BOOK7 - VERSOFT---------------------------------
 - story: greet - namebook7 -versoft-price7.1 #Tiếng gọi nơi hoang dã  - bản bìa mềm
   steps:
@@ -206,7 +208,7 @@ stories:
     - intent: namebook7
     - action: utter_namebook7
     - intent: versoft_common
-    - action: utter_pricebook71
+    - action: utter_verbook71
 #----------------GREET - BOOK7 - VERHARD---------------------------------
 - story: greet - namebook7 -versoft-price7.2 #Tiếng gọi nơi hoang dã  - bản bìa cứng
   steps:
@@ -215,63 +217,63 @@ stories:
     - intent: namebook7
     - action: utter_namebook7
     - intent: verhard_common
-    - action: utter_pricebook72
-#----------------GREET - BOOK8 - VERNORMAL---------------------------------
-- story: greet - namebook8 -vernormal-price8.1 #Cà phê cùng Tony - bản thường
+    - action: utter_verbook72
+#----------------GREET - BOOK8 - VERSOFT---------------------------------
+- story: greet - namebook8 -versoft-price8.1 #Cà phê cùng Tony - bản bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook8
     - action: utter_namebook8
-    - intent: vernormal_common
-    - action: utter_pricebook81
-#----------------GREET - BOOK8 - VER2022---------------------------------
-- story: greet - namebook8 -ver2022-price8.2 #Cà phê cùng Tony - bản tái bản 2022
+    - intent: versoft_common
+    - action: utter_verbook81
+#----------------GREET - BOOK8 - VERHARD---------------------------------
+- story: greet - namebook8 -verhard-price8.2 #Cà phê cùng Tony - bản bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook8
     - action: utter_namebook8
-    - intent: ver2022_common
-    - action: utter_pricebook82
+    - intent: verhard_common
+    - action: utter_verbook82
 
-#----------------GREET - BOOK9 - VERREDHARD---------------------------------
-- story: greet - namebook9 -verredhard-price9.1 #Từ điển ANh- Việt  - bản bìa đỏ cứng
+#----------------BOOK9 - VERSOFT---------------------------------
+- story: namebook9 -versoft-price9.1 #Từ điển ANh- Việt  - bản bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook9
     - action: utter_namebook9
-    - intent: verredhard_common
-    - action: utter_pricebook91
-#----------------GREET - BOOK9 - VERBLUEHARD---------------------------------
-- story: greet - namebook9 -verredhard-price9.2 #Từ điển Anh- Việt  - bản bìa xanh cứng
+    - intent: versoft_common
+    - action: utter_verbook91
+#----------------BOOK9 - VERHARD---------------------------------
+- story: greet - namebook9 -verhard-price9.2 #Từ điển Anh- Việt  - bản bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook9
     - action: utter_namebook9
-    - intent: verbluehard_common
-    - action: utter_pricebook92
+    - intent: verhard_common
+    - action: utter_verbook92
 
-#----------------GREET - BOOK10 - VERNORMAL---------------------------------
-- story: greet - namebook10 -vernormal-price10.1 # Đại Việt sử kí toàn thư - bản thường
+#----------------GREET - BOOK10 - VERSOFT---------------------------------
+- story: greet - namebook10 -versoft-price10.1 # Đại Việt sử kí toàn thư - bản bìa mềm
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook10
     - action: utter_namebook10
-    - intent: vernormal_common
-    - action: utter_pricebook101
-#----------------GREET - BOOK10 - VERSPECIAL---------------------------------
-- story: greet - namebook10 -verspecial-price10.1 # Đại Việt sử kí toàn thư - bản đặc biệt
+    - intent: versoft_common
+    - action: utter_verbook101
+#----------------GREET - BOOK10 - VERHARD---------------------------------
+- story: greet - namebook10 -verhard-price10.1 # Đại Việt sử kí toàn thư - bản bìa cứng
   steps:
     - intent: greet
     - action: utter_greet
     - intent: namebook10
     - action: utter_namebook10
-    - intent: verspecial_common
-    - action: utter_pricebook102
+    - intent: verhard_common
+    - action: utter_verbook102
 
 #----------------GREET - VERBOOK1.1-PRICE1.1---------------------------------
 - story: greet - verbook1.1-price1.1 #Cảm ơn người lớn bìa mềm - giá
@@ -293,7 +295,7 @@ stories:
     - action: utter_pricebook12
 
 #----------------GREET - VERBOOK2.1-PRICE2.1---------------------------------
-- story: greet - verbook2.1-price2.1 #Doraemon quyển lẻ - giá
+- story: greet - verbook2.1-price2.1 # 365 truyển kể bé nghe bản bìa mềm  - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -302,7 +304,7 @@ stories:
     - intent: price_common
     - action: utter_pricebook21
 #----------------GREET - VERBOOK2.2-PRICE2.2---------------------------------
-- story: greet - verbook2.2-price2.2 #Doraemon trọn bộ - giá
+- story: greet - verbook2.2-price2.2 #365 truyện kể bé nghe bản bìa cứng - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -347,8 +349,8 @@ stories:
     - action: utter_verbook42
     - intent: price_common
     - action: utter_pricebook42
-#----------------GREET - VERBOOK5.1-PRICE5.1---------------------------------
-- story: greet - verbook5.1-price5.1 #Vũ trụ trong vỏ hạt dẻ 2022 - giá
+#----------------GREET-VERBOOK5.1-PRICE5.1---------------------------------
+- story: greet - verbook5.1-price5.1 #Vũ trụ trong vỏ hạt dẻ bìa mềm - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -356,8 +358,8 @@ stories:
     - action: utter_verbook51
     - intent: price_common
     - action: utter_pricebook51
-#----------------GREET - VERBOOK5.2-PRICE5.2---------------------------------
-- story: greet - verbook5.2-price5.2 #Vũ trụ trong vỏ hạt dẻ 2018 - giá
+#----------------GREET-VERBOOK5.2-PRICE5.2---------------------------------
+- story: greet - verbook5.2-price5.2 #Vũ trụ trong vỏ hạt dẻ bìa cứng - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -366,8 +368,8 @@ stories:
     - intent: price_common
     - action: utter_pricebook52
 
-#----------------GREET - VERBOOK6.1-PRICE6.1---------------------------------
-- story: greet - verbook6.1-price6.1 #Deep Learning - cuộc cách mạng học sâu bản thường - giá
+#----------------GREET-VERBOOK6.1-PRICE6.1---------------------------------
+- story: greet - verbook6.1-price6.1 #Deep Learning - cuộc cách mạng học sâu bìa mềm - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -375,8 +377,8 @@ stories:
     - action: utter_verbook61
     - intent: price_common
     - action: utter_pricebook61
-#----------------GREET - VERBOOK6.2-PRICE6.2---------------------------------
-- story: greet - verbook6.2-price6.2 #Deep Learning - cuộc cách mạng học sâu bản tặng kèm sổ tay - giá
+#----------------GREET-VERBOOK6.2-PRICE6.2---------------------------------
+- story: greet - verbook6.2-price6.2 #Deep Learning - cuộc cách mạng học sâu bìa cứng - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -385,7 +387,7 @@ stories:
     - intent: price_common
     - action: utter_pricebook62
 
-#----------------GREET - VERBOOK7.1-PRICE7.1---------------------------------
+#----------------GREET-VERBOOK7.1-PRICE7.1---------------------------------
 - story: greet - verbook7.1-price7.1 #Tiếng gọi nơi hoang dã bìa mềm - giá
   steps:
     - intent: greet
@@ -394,7 +396,7 @@ stories:
     - action: utter_verbook71
     - intent: price_common
     - action: utter_pricebook71
-#----------------GREET - VERBOOK7.2-PRICE7.2---------------------------------
+#----------------GREET-VERBOOK7.2-PRICE7.2---------------------------------
 - story: greet - verbook7.2-price7.2 #Tiếng gọi nơi hoang dã bìa cứng - giá
   steps:
     - intent: greet
@@ -403,8 +405,8 @@ stories:
     - action: utter_verbook72
     - intent: price_common
     - action: utter_pricebook72
-#----------------GREET - VERBOOK8.1-PRICE8.1---------------------------------
-- story: greet - verbook8.1-price8.1 #Cà phê cùng Tony bản thường - giá
+#----------------GREET-VERBOOK8.1-PRICE8.1---------------------------------
+- story: greet - verbook8.1-price8.1 #Cà phê cùng Tony bản bìa mềm - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -412,8 +414,8 @@ stories:
     - action: utter_verbook81
     - intent: price_common
     - action: utter_pricebook81
-#----------------GREET - VERBOOK8.2-PRICE8.2---------------------------------
-- story: greet - verbook8.2-price8.2 #Cà phê cùng Tony bản tái bản 2022 - giá
+#----------------GREET-VERBOOK8.2-PRICE8.2---------------------------------
+- story: greet - verbook8.2-price8.2 #Cà phê cùng Tony bản bìa cứng - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -422,8 +424,8 @@ stories:
     - intent: price_common
     - action: utter_pricebook82
 
-#----------------GREET - VERBOOK9.1-PRICE9.1---------------------------------
-- story: greet - verbook9.1-price9.1 #Từ điển Anh Việt bìa đỏ cứng  - giá
+#----------------GREET-VERBOOK9.1-PRICE9.1---------------------------------
+- story: greet - verbook9.1-price9.1 #Từ điển Anh Việt bản bìa mềm  - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -431,8 +433,8 @@ stories:
     - action: utter_verbook91
     - intent: price_common
     - action: utter_pricebook91
-#----------------GREET - VERBOOK9.2-PRICE9.2---------------------------------
-- story: greet - verbook9.2-price9.2 #Từ điển ANh Việt bìa xanh cứng - giá
+#----------------GREET-VERBOOK9.2-PRICE9.2---------------------------------
+- story: greet - verbook9.2-price9.2 #Từ điển ANh Việt bản bìa cứng - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -440,8 +442,8 @@ stories:
     - action: utter_verbook92
     - intent: price_common
     - action: utter_pricebook92
-#----------------GREET - VERBOOK10.1-PRICE10.1---------------------------------
-- story: greet - verbook10.1-price10.1 #Đại Việt sử kí toàn thư bản thường - giá
+#----------------GREET-VERBOOK10.1-PRICE10.1---------------------------------
+- story: greet - verbook10.1-price10.1 # lịch sử thế giới bản bìa mềm - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -449,8 +451,8 @@ stories:
     - action: utter_verbook101
     - intent: price_common
     - action: utter_pricebook101
-#----------------GREET - VERBOOK10.2-PRICE10.2---------------------------------
-- story: greet - verbook10.2-price10.2 #Đại Việt sử kí toàn thư bản đặc biệt - giá
+#----------------GREET-VERBOOK10.2-PRICE10.2---------------------------------
+- story: greet - verbook10.2-price10.2 #Lịch sử thế giới bản bìa cứng - giá
   steps:
     - intent: greet
     - action: utter_greet
@@ -458,3 +460,198 @@ stories:
     - action: utter_verbook102
     - intent: price_common
     - action: utter_pricebook102
+
+#------------GREET-PRICEBOOK1-PRICEBOOK1.1---------------------------------
+- story: greet - price1-price1.1 #Tôi là Bê Tô - Tôi là Bê Tô bia mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook1
+    - action: utter_pricebook1
+    - intent: priceversoft_common
+    - action: utter_pricebook11
+#------------GREET-PRICEBOOK1-PRICEBOOK1.2---------------------------------
+- story: greet - price1-price1.2 #Tôi là Bê Tô - Tôi là Bê Tô bia cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook1
+    - action: utter_pricebook1
+    - intent: priceverhard_common
+    - action: utter_pricebook12
+#------------GREET-PRICEBOOK2-PRICEBOOK2.1---------------------------------
+- story: greet - price2-price2.1 # 365 Truyện kể cho bé- 365 Truyện kể cho bé bia mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook2
+    - action: utter_pricebook2
+    - intent: priceversoft_common
+    - action: utter_pricebook21
+#------------GREET-PRICEBOOK2-PRICEBOOK2.2---------------------------------
+- story: greet - price2-price2.2 #365 Truyện kể cho bé - 365 Truyện kể cho bé bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook2
+    - action: utter_pricebook2
+    - intent: priceverhard_common
+    - action: utter_pricebook22
+#------------GREET-PRICEBOOK3-PRICEBOOK3.1---------------------------------
+- story: greet - price1-price1.1 #Nhà giả kim - Nhà giả kim bia mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook3
+    - action: utter_pricebook3
+    - intent: priceversoft_common
+    - action: utter_pricebook31
+#------------GREET-PRICEBOOK3-PRICEBOOK3.2---------------------------------
+- story: greet - price3-price3.2 #Nhà giả kim - Nhà giả kim bìa cứng- giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook3
+    - action: utter_pricebook3
+    - intent: priceverhard_common
+    - action: utter_pricebook32
+#------------GREET-PRICEBOOK4-PRICEBOOK4.1---------------------------------
+- story: greet - price4-price4.1 #Nghĩ giàu làm giàu- Nghĩ giàu làm giàu bia mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook4
+    - action: utter_pricebook4
+    - intent: priceversoft_common
+    - action: utter_pricebook41
+#------------GREET-PRICEBOOK4-RICEBOOK4.2---------------------------------
+- story: greet - price4-price4.2 #Nghĩ giàu làm giàu - Nghĩ giàu làm giàu bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook4
+    - action: utter_pricebook4
+    - intent: priceverhard_common
+    - action: utter_pricebook42
+#------------GREET-PRICEBOOK5-PRICEBOOK5.1---------------------------------
+- story: greet - price5-price5.1 #Vũ trụ trong vỏ hạt dẻ - Vũ trụ trong vỏ hạt dẻ bia mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook5
+    - action: utter_pricebook5
+    - intent: priceversoft_common
+    - action: utter_pricebook51
+#------------GREET-PRICEBOOK5-PRICEBOOK5.2---------------------------------
+- story: greet - price5-price5.2 #Vũ trụ trong vỏ hạt dẻ - Vũ trụ trong vỏ hạt dẻ bìa cứng- giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook5
+    - action: utter_pricebook5
+    - intent: priceverhard_common
+    - action: utter_pricebook52
+#------------GREET-PRICEBOOK6-PRICEBOOK6.1---------------------------------
+- story: greet - price6-price6.1 #Deep Learning- cuộc cách mạng học sâu - Deep Learning cuộc cách mạng học sâu bia mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook6
+    - action: utter_pricebook6
+    - intent: priceversoft_common
+    - action: utter_pricebook61
+#------------GREET-PRICEBOOK6-PRICEBOOK6.2---------------------------------
+- story: greet - price6-price6.2 #Deep Learning- cuộc cách mạng học sâu - Deep Learning cuộc cách mạng học sâu bia cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook6
+    - action: utter_pricebook6
+    - intent: priceverhard_common
+    - action: utter_pricebook61
+#------------GREET-PRICEBOOK7-PRICEBOOK7.1---------------------------------
+- story: greet - price7-price7.1 #Tiếng gọi nơi hoang dã - Tiếng gọi nơi hoang dã bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook7
+    - action: utter_pricebook7
+    - intent: priceversoft_common
+    - action: utter_pricebook71
+#------------GREET-PRICEBOOK7-PRICEBOOK7.2---------------------------------
+- story: greet - price7-price7.2 #Tiếng gọi nơi hoãng dã - Tiếng gọi nơi hoang dã bìa cứng- giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook7
+    - action: utter_pricebook7
+    - intent: priceverhard_common
+    - action: utter_pricebook72
+#------------GREET-PRICEBOOK8-PRICEBOOK8.1---------------------------------
+- story: greet - price8-price8.1 #Cà phê cùng Tony - Cà phê cùng Tony bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook8
+    - action: utter_pricebook8
+    - intent: priceversoft_common
+    - action: utter_pricebook81
+#------------GREET-PRICEBOOK8-PRICEBOOK8.2---------------------------------
+- story: greet - price8-price8.2 #Cà phê cùng Tony - Cà phê cùng Tony bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook8
+    - action: utter_pricebook8
+    - intent: priceverhard_common
+    - action: utter_pricebook82
+#------------GREET-PRICEBOOK9-PRICEBOOK9.1---------------------------------
+- story: greet - price9-price9.1 #Từ điển Anh Việt - Từ điển Anh Việt bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook9
+    - action: utter_pricebook9
+    - intent: priceversoft_common
+    - action: utter_pricebook91
+#------------GREET-PRICEBOOK9-PRICEBOOK9.2---------------------------------
+- story: greet - price8-price8.1 #Từ điển Anh Việt - Từ điển Anh Việt bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook9
+    - action: utter_pricebook9
+    - intent: priceverhard_common
+    - action: utter_pricebook92
+#------------GREET-PRICEBOOK10-PRICEBOOK10.1---------------------------------
+- story: greet - price10-price10.1 #Lịch sử thế giới - lịch sử thế giới bìa mềm - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook10
+    - action: utter_pricebook10
+    - intent: priceversoft_common
+    - action: utter_pricebook101
+#------------GREET-PRICEBOOK10-PRICEBOOK10.2---------------------------------
+- story: greet - price10-price10.2 #Lịch sử thế giới - lịch sử thế giới bìa cứng - giá
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: pricebook10
+    - action: utter_pricebook10
+    - intent: priceverhard_common
+    - action: utter_pricebook102
+##--------GREET-SALE PRODUCT------------------------------------
+- story: greet-sale product
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: saleproduct
+    - action: utter_saleproduct
+##--------GREET-SALE TIME------------------------------------
+- story: greet-saletime
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: saletime
+    - action: utter_saletime

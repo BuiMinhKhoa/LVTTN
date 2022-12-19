@@ -62,23 +62,35 @@ intents:
   - pricebook92
   - pricebook101
   - pricebook102
+  - pricebook1
+  - pricebook2
+  - pricebook3
+  - pricebook4
+  - pricebook5
+  - pricebook6
+  - pricebook7
+  - pricebook8
+  - pricebook9
+  - pricebook10
   - bot_challenge
   - payment
-  - ship
+  - shiptime
+  - shipfee
   - price_common
   - versoft_common
   - verhard_common
-  - ver2018_common
-  - ver2022_common
-  - ver1book_common
-  - ver24book_common
-  - vernormal_common
-  - verspecial_common
-  - verredhard_common
-  - verbluehard_common
-  - verbonus_common
+  - priceversoft_common
+  - priceverhard_common
+  - saletime
+  - saleproduct
 
 responses:
+  #------------------SALE----------------
+  utter_saletime:
+    - text: Dạ cửa hàng bên mình sắp tới vào ngày 6/1/2023 Shop em sẽ khuyến mãi 50% đơn hàng nếu mua trên 200000VND áp dụng cho mọi đầu sách ở cửa hàng. Bạn có thể ghé qua shop và sưu tầm cho mình những quyển sách đang bán chạy nhất trên thị trường với ưu đãi lớn nhất từ trước đến nay bạn nhé
+  utter_saleproduct:
+    - text: hiện bên mình đang giảm giá 10% cho những đầu sách nằm trong thể loại sách văn học và sách kỹ năng sống bạn nhé.
+
 #----------------------------GREET---------------------------------------------------------------------------------------------------------------------
   utter_greet:
     - text: Hey,shop chào bạn. Không biết shop có thể giúp gì cho bạn?
@@ -86,7 +98,7 @@ responses:
     - text: Hello bạn. Shop có thể giúp gì cho bạn ạ?
 #----------------------------GREET---------------------------------------------------------------------------------------------------------------------
   utter_thank:
-    - text: ......
+    - text: Shop cảm ơn ạ, chúc bạn mua sắm vui vẻ.
 #-------------------------------GOODBYE-----------------------------------------------------------------------------------------------------------------
   utter_goodbye:
     - text:  Bye Bye
@@ -96,67 +108,67 @@ responses:
     - text: Chào bạn, hẹn gặp lại bạn sau nhé!Cảm ơn bạn đã quan tâm đến shop
 #---------------------------------TYPEBOOK-----------------------------------------------------------------------------------------------------------------
   utter_typebook1:
-    - text: Sách văn học Việt Nam bên shop có bán và hiện có quyển Cảm ơn người lớn ạ
+    - text: Sách văn học Việt Nam bên shop có bán và hiện có quyển Cảm ơn người lớn bạn nhé
   utter_typebook2:
-    - text: Truyện thiếu Nhi bên shop có bán và hiện có Doraemon truyện dài ạ
+    - text: Truyện thiếu Nhi bên mình hiện có đầu sách 365 truyện kể cho bé bạn nhé
   utter_typebook3:
-    - text: Sách Văn học nước ngoài này bên shop có bán và hiện có quyển Tiếng gọi nơi hoang dã và Nhà giả kim ạ
+    - text: Sách Văn học nước ngoài bên mình hiện có 2 đầu sách Tiếng gọi nơi hoang dã và Nhà giả kim bạn nhé
   utter_typebook4:
-    - text: Loại sách này bên shop có bán và hiện có quyển Nghĩ giàu làm giàu ạ
+    - text: Loại sách này bên shop có bán và hiện có đầu sách Nghĩ giàu làm giàu bạn nhé.
   utter_typebook5:
-    - text: Sách khoa học và kỹ thuật này bên shop có bán và hiện có quyển Deep Learning cơ bản và Vũ trụ trong vỏ hạt dẻ
+    - text: Sách khoa học và kỹ thuật này bên mình hiện có 2 đầu sách là  Deep Learning - Cuộc cách mạng học sâu và Vũ trụ trong vỏ hạt dẻ bạn nhé
   utter_typebook6:
-    - text: Sách kỹ năng sống bên shop có bán và hiện có quyển Cà Phê cùng Tony ạ
+    - text: Sách kỹ năng sống bên mình hiện có đầu sách Cà Phê cùng Tony bạn nhé
   utter_typebook7:
-    - text: Từ điển bên shop có bán và hiện có quyển Từ Điển Anh Việt ạ
+    - text: Từ điển bên hiện có đầu sách Từ Điển Anh Việt bạn nhé
   utter_typebook8:
-    - text: Sách Lịch sử địa lý bên shop có bán và hiện có Đại Việt sử ký toàn thư ạ
+    - text: Sách Lịch sử địa lý bên mình hiện có đầu sách Lịch sử thế giới bạn nhé
 #----------------------------------NAMEBOOK-----------------------------------------------------------------------------------------------------------------------
   utter_namebook1:
-    - text: Cảm ơn người lớn bên Shop có 2 loại là Cảm ơn người lớn phiên bản bìa mềm và Cảm ơn người lớn phiên bản bìa cứng ạ, không biết bạn muốn tìm loại nào ạ?
+    - text: Tôi là Bê Tô hiện đang nằm ở trong mục Sách Văn học Việt Nam với 2 phiên bản là Tôi là Bê Tô bản bìa mềm và Tôi là Bê Tô bản bìa cứng bạn nhé.
   utter_namebook2:
-    - text: Doraemon truyện dài hiện bên shop có 2 loại là những quyển lẻ và bộ truyện toàn tập gồm 24 quyển ạ, không biết bạn muốn tìm loại nào ạ?
+    - text: 365 Truyện kể bé nghe hiện đang nằm ở trong mục Sách thiếu nhi với 2 phiên bản là 365 truyện kể bé nghe bản bìa mềm và 365 truyện kể bé nghe bản bìa cứng bạn nhé.
   utter_namebook3:
-    - text: Nhà giả kim bên Shop mình có 2 loại là Nhà giả kim bìa cứng và Nhà giả kim phiên bản bìa mềm, không biết bạn muốn tìm loại nào ạ?
+    - text: Nhà giả kim hiện đang nằm ở trong mục Sách Văn học nước ngoài với 2 phiên bản là Nhà giả kim bìa cứng và Nhà giả kim phiên bản bìa mềm bạn nhé.
   utter_namebook4:
-    - text: Nghĩ giàu làm giàu bên shop có 2 loại là Nghĩ giàu làm giàu bản bìa mềm và nghĩ giàu làm giàu bản bìa cứng, không biết bạn muốn tìm loại nào ạ?
+    - text: Nghĩ giàu làm giàu hiện đang nằm ở trong mục Sách kinh tế với 2 phiên bản là Nghĩ giàu làm giàu bản bìa mềm và nghĩ giàu làm giàu bản bìa cứng bạn nhé.
   utter_namebook5:
-    - text: Vũ trụ trong vỏ hạt dẻ bên Shop mình hiện có 2 phiên bản là Vũ trụ trong vỏ hạt dẻ (tái bản 2018) và Vũ trụ trong vỏ hạt dẻ (tái bản 2022), không biết bạn muốn tìm loại nào ạ?
+    - text: Vũ trụ trong vỏ hạt dẻ hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Vũ trụ trong vỏ hạt dẻ bản bìa mềm và Vũ trụ trong vỏ hạt dẻ bản bìa cứng bạn nhé.
   utter_namebook6:
-    - text: Deep Learning - Cuộc cách mạng học sâu bên shop có 2 loại là Deep Learning - Cuộc cách mạng học sâu bản thường và Deep Learning - Cuộc cách mạng học sâu bản có tặng kèm theo sổ tay, không biết bạn muốn tìm loại nào ạ?
+    - text: Deep Learning - Cuộc cách mạng học sâu  hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Deep Learning - Cuộc cách mạng học sâu bản bìa mềm và Deep Learning - Cuộc cách mạng học sâu bản bìa cứng bạn nhé.
   utter_namebook7:
-    - text: Tiếng gọi nơi hoang dã bên mình còn 2 phiên bản là Tiếng gọi nơi hoang dã bìa cứng và Tiếng gọi nơi hoang dã phiên bản  bìa mềm, không biết bạn muốn tìm loại nào ạ ?
+    - text: Tiếng gọi nơi hoang dã hiện đang nằm ở mục sách Văn học nước ngoài với 2 phiên bản là Tiếng gọi nơi hoang dã bìa mềm và Tiếng gọi nơi hoang dã phiên bản  bìa cứng bạn nhé.
   utter_namebook8:
-    - text: Cà phê cùng Tony bên mình còn 2 loại là Cà phê cùng Tony bản thường và Cà phê cùng Tony (tái bản 2022), không biết bạn muốn tìm loại nào ạ?
+    - text: Cà phê cùng Tony hiện đang nằm ở trong mục Sách kỹ năng sống với 2 phiên bản là Cà phê cùng Tony bản bìa mềm và Cà phê cùng Tony bản bìa cứng bạn nhé.
   utter_namebook9:
-    - text: Từ điển Anh Việt bên Shop mình có 2 loại là Từ điển Anh Việt bìa đỏ cứng và Từ điển Anh Việt bìa xanh cứng, không biêt bạn muốn tìm loại nào ạ?
+    - text: Từ điển Anh Việt hiện đang nằm ở trong mục Sách từ điển với 2 phiên bản là Từ điển Anh Việt bản bìa mềm và Từ điển Anh Việt bản bìa cứng bạn nhé.
   utter_namebook10:
-    - text: Đại Việt Sử kí toàn thư bên Shop mình có 2 loại là Đại Việt sử kí toàn thư phiên bản thường và Đại Việt sử kí toàn thư phiên bản đặc biệt bạn nhé, không biết bạn muốn tìm loại nào ạ?
+    - text: Lịch sử thế giới bên Shop mình có 2 loại là Lịch sử thế giới bản bìa mềm và Lịch sử thế giới bản bìa cứng bạn nhé.
 #-------------------------------------VERBOOK---------------------------------------------------------------------------------------------
   utter_verbook11:
-    - text: Cảm ơn người lớn bìa mềm bên shop mình còn 5 quyển bạn nhé
+    - text: Tôi là Bê Tô bản bìa mềm hiện nay bên mình còn 10 quyển bạn nhé.
   utter_verbook12:
-    - text: Cảm ơn người lớn bìa cứng bên mình hiện đang hết hàng bạn nhé,bạn vui lòng quay lại sau vài ngày nữa ạ
+    - text: Tôi là Bê Tô bản bìa cứng hiện nay bên mình còn 15 quyển bạn nhé
   utter_verbook21:
-    - text: Doraemon truyện dài bên shop chỉ còn những quyển số 1, số 2, và số 24 thôi bạn nhé
+    - text: 365 truyện kể bé nghe bản bìa mềm hiện nay bên mình còn 5 quyển bạn nhé.
   utter_verbook22:
-    - text: trọn bộ Doraemon truyện dài hiện nay bên shop còn 3 bộ bạn nhé
+    - text: 365 truyện kể bé nghe bản bìa cứng hiện nay bên mình còn 10 quyển bạn nhé
   utter_verbook31:
-    - text: Nhà giả kim bản bìa bìa mềm bên shop hiện đang còn 3 quyển bạn nhé
+    - text: Nhà giả kim bản bìa bìa mềm bên mình hiện đang còn 30 quyển bạn nhé
   utter_verbook32:
-    - text: Nhà giả kim bản bìa cứng bên shop hiện đang còn 4 quyển bạn nhé
+    - text: Nhà giả kim bản bìa cứng hiện nay bên mình tạm thời hết hàng, bạn vui lòng quay trở lại vào vài ngày tới. Rất xin lỗi bạn về việc này ạ.
   utter_verbook41:
-    - text: Nghĩ giàu làm giàu bản bìa mềm bên shop hiện đang đợi nhập hàng bạn nhé, bạn vui lòng quay lại sau ngày 6/1/2023
+    - text: Nghĩ giàu làm giàu bản bìa mềm hiện bên mình còn 15 quyển bạn nhé
   utter_verbook42:
-    - text: nghĩ giàu làm giàu bản bìa cứng bên shop hiện đang còn 4 quyển bạn nhé
+    - text: nghĩ giàu làm giàu bản bìa cứng bên bên mình hiện còn 19 quyển bạn nhé
   utter_verbook51:
-    - text: Vũ trụ trong vỏ hạt dẻ (tái bản năm 2022) hiện bên shop mình còn 3 quyển bạn nhé
+    - text: Vũ trụ trong vỏ hạt dẻ bản bìa mềm hiện bên mình còn 35 quyển bạn nhé
   utter_verbook52:
-    - text: Vũ trụ trong vỏ hạt dẻ (tái bản năm 2018) hiện bên shop mình còn 5 quyển bạn nhé
+    - text: Vũ trụ trong vỏ hạt dẻ bản bìa cứng hiện bên mình còn 40 quyển bạn nhé
   utter_verbook61:
-    - text: Deep Learning - Cuộc cách mạng học sâu bản thường hiện bên shop mình còn 8 quyển bạn nhé
+    - text: Deep Learning - Cuộc cách mạng học sâu bản bìa mềm hiện bên shop mình còn 8 quyển bạn nhé
   utter_verbook62:
-    - text: Deep Learning - Cuộc cách mạng học sâu bản có tặng kèm sổ tay bên shop mình hiện còn 9 quyển bạn nhé
+    - text: Deep Learning - Cuộc cách mạng học sâu bản bìa cứng bên shop mình hiện còn 9 quyển bạn nhé
   utter_verbook71:
     - text: Tiếng gọi nơi hoang dã bản bìa mềm hiện nay bên shop mình chỉ còn 2 quyển thôi bạn nhé
   utter_verbook72:
@@ -170,14 +182,34 @@ responses:
   utter_verbook92:
     - text: Từ điển Anh Việt bìa xanh cứng hiện nay bên shop còn 11 quyển bạn nhé
   utter_verbook101:
-    - text: Đại Việt sử kí toàn thư bản thường bên shop còn 4 quyển bạn nhé
+    - text: Lịch sử thế giới bản thường bên shop còn 4 quyển bạn nhé
   utter_verbook102:
-    - text : Đại Việt sử kí toàn thư bản đặc biệt bên shop còn 5 bộ bạn nhé
+    - text : Lịch sử thế giới bản đặc biệt bên shop còn 5 bộ bạn nhé
 #-----------------------PRICEBOOK-----------------------------------------------------------------------------------------------------------------
+  utter_pricebook1:
+    - text: Dạ quyển Tôi là Bê Tô bên mình có 2 phiên bản Tôi là Bê Tô bản bìa cứng và tôi là Bê Tô bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ?
+  utter_pricebook2:
+    - text: Dạ quyển 365 truyện kể cho bé bên mình có 2 phiên bản 365 Truyện kể cho bé bản bìa cứng và 365 Truyện kể cho bé bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook3:
+    - text: Dạ quyển Nhà giả kim bên mình có 2 phiên bản Nhà giả kim bản bìa cứng và Nhà giả kim bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook4:
+    - text: Dạ quyển Nghĩ giàu làm giàu bên mình có 2 phiên bản Nghĩ giàu làm giàu bản bìa cứng và Nghĩ giàu làm giàu bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook5:
+    - text: Dạ quyển Vũ trụ trong vỏ hạt dẻ bên mình có 2 phiên bản Vũ trụ trong vỏ hạt dẻ bản bìa cứng và Vũ trụ trong vỏ hạt dẻ bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook6:
+    - text: Dạ quyển Deep Learning - Cuộc cách mạng học sâu bên mình có 2 phiên bản Deep Learning - Cuộc cách mạng học sâu và Deep Learning - Cuộc cách mạng học sâu bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook7:
+    - text: Dạ quyển Tiếng gọi nơi hoang dã bên mình có 2 phiên bản Tiếng gọi nơi hoang dã bản bìa cứng và Tiếng gọi nơi hoang dã bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook8:
+    - text: Dạ quyển Cà phê cùng Tony bên mình có 2 phiên bản Cà phê cùng Tony bản bìa cứng và Cà phê cùng Tony bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook9:
+    - text: Dạ quyển Từ điển Anh Việt bên mình có 2 phiên bản Từ điển Anh Việt bản bìa cứng và Từ điển Anh Việt bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
+  utter_pricebook10:
+    - text: Dạ quyển Lịch sử thế giới bên mình có 2 phiên bản Lịch sử thế giới bản bìa cứng và Lịch sử thế giới bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ
   utter_pricebook11:
-    - text: Dạ quyển Cảm ơn người lớn bản bìa mềm có giá là 110000VND 1 quyển bạn nhé
+    - text: Dạ quyển Tôi là Bê Tô bản bìa mềm có giá là 110000VND 1 quyển bạn nhé
   utter_pricebook12:
-    - text: Dạ quyển Cảm ơn người lớn bản bìa cứng có giá là 220000VND 1 quyển bạn nhé
+    - text: Dạ quyển Tôi là Bê Tô bản bìa cứng có giá là 220000VND 1 quyển bạn nhé
   utter_pricebook21:
     - text: Dạ quyển Doraemon truyện dài quyển lẻ có giá là 18000VND 1 quyển bạn nhé
   utter_pricebook22:
@@ -216,11 +248,14 @@ responses:
     - text: Dạ quyển Đại Việt sử ký toàn thư bản đặc biệt có giá là 25000000VND 1 bộ 2 quyển bạn nhé
 #------------------------PAYMENT-----------------------------------------------------------------------------
   utter_payment:
-    - text: Dạ bên shop mình có thể thanh toán trực tiếp khi nhận hàng hoặc chuyển khoản trước cho shop sẽ được freeship ạ
+    - text: Dạ bên shop mình có thể thanh toán trực tiếp khi nhận hàng hoặc chuyển khoản trước cho shop sẽ được freeship ạ.Với hình thức thanh toán trực tiếp thì bạn có thể thanh toán sau khi nhận hàng. Còn với hình thức thanh toán online thì bạn có thể chuyển tiền vào stk abc, hoặc MOMO XYZ với nội dung Tên sách +số lượng + tên người mua bạn nhé
+
 
 #-----------------------SHIP----------------------------------------------------------------------------------------
-  utter_ship:
-    - text: shop em free ship cho đơn từ 200k đổ lên
+  utter_shiptime:
+    - text: Bên mình ship mất khoảng 2-3 ngày tuỳ vào địa chỉ của khách hàng bạn nhé,
+  utter_shipfee:
+    - text: phí ship bên mình tính theo phí của đơn vị vận chuyển GHN bạn nhé. Bên mình free ship cho đơn hàng trên 200k.
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
 action:
@@ -285,8 +320,19 @@ action:
   - utter_pricebook92
   - utter_pricebook101
   - utter_pricebook102
+  - utter_pricebook1
+  - utter_pricebook2
+  - utter_pricebook3
+  - utter_pricebook4
+  - utter_pricebook5
+  - utter_pricebook6
+  - utter_pricebook7
+  - utter_pricebook8
+  - utter_pricebook9
+  - utter_pricebook10
   - utter_payment
-  - utter_ship
+  - utter_shiptime
+  - utter_shipfee
 
 session_config:
   session_expiration_time: 60
