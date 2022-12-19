@@ -91,22 +91,22 @@ responses:
   utter_saleproduct:
     - text: hiện bên mình đang giảm giá 10% cho những đầu sách nằm trong thể loại sách văn học và sách kỹ năng sống bạn nhé.
 
-#----------------------------GREET---------------------------------------------------------------------------------------------------------------------
+  #----------------------------GREET---------------------------------------------------------------------------------------------------------------------
   utter_greet:
     - text: Hey,shop chào bạn. Không biết shop có thể giúp gì cho bạn?
     - text: Chào bạn. Shop có thể giúp gì cho bạn?
     - text: Hello bạn. Shop có thể giúp gì cho bạn ạ?
-#----------------------------GREET---------------------------------------------------------------------------------------------------------------------
+  #----------------------------GREET---------------------------------------------------------------------------------------------------------------------
   utter_thank:
     - text: Shop cảm ơn ạ, chúc bạn mua sắm vui vẻ.
-#-------------------------------GOODBYE-----------------------------------------------------------------------------------------------------------------
+  #-------------------------------GOODBYE-----------------------------------------------------------------------------------------------------------------
   utter_goodbye:
-    - text:  Bye Bye
+    - text: Bye Bye
     - text: Chào tạm biệt. Chúc bạn luôn vui vẻ
     - text: Tạm biệt bạn. Cảm ơn bạn đã dành thời gian quan tâm đến shop
     - text: Tạm biệt bạn
     - text: Chào bạn, hẹn gặp lại bạn sau nhé!Cảm ơn bạn đã quan tâm đến shop
-#---------------------------------TYPEBOOK-----------------------------------------------------------------------------------------------------------------
+  #---------------------------------TYPEBOOK-----------------------------------------------------------------------------------------------------------------
   utter_typebook1:
     - text: Sách văn học Việt Nam bên shop có bán và hiện có quyển Cảm ơn người lớn bạn nhé
   utter_typebook2:
@@ -123,28 +123,28 @@ responses:
     - text: Từ điển bên hiện có đầu sách Từ Điển Anh Việt bạn nhé
   utter_typebook8:
     - text: Sách Lịch sử địa lý bên mình hiện có đầu sách Lịch sử thế giới bạn nhé
-#----------------------------------NAMEBOOK-----------------------------------------------------------------------------------------------------------------------
+  #----------------------------------NAMEBOOK-----------------------------------------------------------------------------------------------------------------------
   utter_namebook1:
-    - text: Tôi là Bê Tô hiện đang nằm ở trong mục Sách Văn học Việt Nam với 2 phiên bản là Tôi là Bê Tô bản bìa mềm và Tôi là Bê Tô bản bìa cứng bạn nhé.
+    - text: Tôi là Bê Tô hiện đang nằm ở trong mục Sách Văn học Việt Nam với 2 phiên bản là Tôi là Bê Tô bản bìa mềm và Tôi là Bê Tô bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/2
   utter_namebook2:
-    - text: 365 Truyện kể bé nghe hiện đang nằm ở trong mục Sách thiếu nhi với 2 phiên bản là 365 truyện kể bé nghe bản bìa mềm và 365 truyện kể bé nghe bản bìa cứng bạn nhé.
+    - text: 365 Truyện kể bé nghe hiện đang nằm ở trong mục Sách thiếu nhi với 2 phiên bản là 365 truyện kể bé nghe bản bìa mềm và 365 truyện kể bé nghe bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/1
   utter_namebook3:
-    - text: Nhà giả kim hiện đang nằm ở trong mục Sách Văn học nước ngoài với 2 phiên bản là Nhà giả kim bìa cứng và Nhà giả kim phiên bản bìa mềm bạn nhé.
+    - text: Nhà giả kim hiện đang nằm ở trong mục Sách Văn học nước ngoài với 2 phiên bản là Nhà giả kim bìa cứng và Nhà giả kim phiên bản bìa mềm. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/3
   utter_namebook4:
-    - text: Nghĩ giàu làm giàu hiện đang nằm ở trong mục Sách kinh tế với 2 phiên bản là Nghĩ giàu làm giàu bản bìa mềm và nghĩ giàu làm giàu bản bìa cứng bạn nhé.
+    - text: Nghĩ giàu làm giàu hiện đang nằm ở trong mục Sách kinh tế với 2 phiên bản là Nghĩ giàu làm giàu bản bìa mềm và nghĩ giàu làm giàu bản bìa cứng . Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/4
   utter_namebook5:
-    - text: Vũ trụ trong vỏ hạt dẻ hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Vũ trụ trong vỏ hạt dẻ bản bìa mềm và Vũ trụ trong vỏ hạt dẻ bản bìa cứng bạn nhé.
+    - text: Vũ trụ trong vỏ hạt dẻ hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Vũ trụ trong vỏ hạt dẻ bản bìa mềm và Vũ trụ trong vỏ hạt dẻ bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/5
   utter_namebook6:
-    - text: Deep Learning - Cuộc cách mạng học sâu  hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Deep Learning - Cuộc cách mạng học sâu bản bìa mềm và Deep Learning - Cuộc cách mạng học sâu bản bìa cứng bạn nhé.
+    - text: Deep Learning - Cuộc cách mạng học sâu  hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Deep Learning - Cuộc cách mạng học sâu bản bìa mềm và Deep Learning - Cuộc cách mạng học sâu bản bìa cứng . Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/6
   utter_namebook7:
-    - text: Tiếng gọi nơi hoang dã hiện đang nằm ở mục sách Văn học nước ngoài với 2 phiên bản là Tiếng gọi nơi hoang dã bìa mềm và Tiếng gọi nơi hoang dã phiên bản  bìa cứng bạn nhé.
+    - text: Tiếng gọi nơi hoang dã hiện đang nằm ở mục sách Văn học nước ngoài với 2 phiên bản là Tiếng gọi nơi hoang dã bìa mềm và Tiếng gọi nơi hoang dã phiên bản  bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/7
   utter_namebook8:
-    - text: Cà phê cùng Tony hiện đang nằm ở trong mục Sách kỹ năng sống với 2 phiên bản là Cà phê cùng Tony bản bìa mềm và Cà phê cùng Tony bản bìa cứng bạn nhé.
+    - text: Cà phê cùng Tony hiện đang nằm ở trong mục Sách kỹ năng sống với 2 phiên bản là Cà phê cùng Tony bản bìa mềm và Cà phê cùng Tony bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/8
   utter_namebook9:
-    - text: Từ điển Anh Việt hiện đang nằm ở trong mục Sách từ điển với 2 phiên bản là Từ điển Anh Việt bản bìa mềm và Từ điển Anh Việt bản bìa cứng bạn nhé.
+    - text: Từ điển Anh Việt hiện đang nằm ở trong mục Sách từ điển với 2 phiên bản là Từ điển Anh Việt bản bìa mềm và Từ điển Anh Việt bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/9
   utter_namebook10:
-    - text: Lịch sử thế giới bên Shop mình có 2 loại là Lịch sử thế giới bản bìa mềm và Lịch sử thế giới bản bìa cứng bạn nhé.
-#-------------------------------------VERBOOK---------------------------------------------------------------------------------------------
+    - text: Lịch sử thế giới bên Shop mình có 2 loại là Lịch sử thế giới bản bìa mềm và Lịch sử thế giới bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/10
+  #-------------------------------------VERBOOK---------------------------------------------------------------------------------------------
   utter_verbook11:
     - text: Tôi là Bê Tô bản bìa mềm hiện nay bên mình còn 10 quyển bạn nhé.
   utter_verbook12:
@@ -184,8 +184,8 @@ responses:
   utter_verbook101:
     - text: Lịch sử thế giới bản thường bên shop còn 4 quyển bạn nhé
   utter_verbook102:
-    - text : Lịch sử thế giới bản đặc biệt bên shop còn 5 bộ bạn nhé
-#-----------------------PRICEBOOK-----------------------------------------------------------------------------------------------------------------
+    - text: Lịch sử thế giới bản đặc biệt bên shop còn 5 bộ bạn nhé
+  #-----------------------PRICEBOOK-----------------------------------------------------------------------------------------------------------------
   utter_pricebook1:
     - text: Dạ quyển Tôi là Bê Tô bên mình có 2 phiên bản Tôi là Bê Tô bản bìa cứng và tôi là Bê Tô bản bìa mềm. Không biết bạn muốn biết giá của phiên bản nào ạ?
   utter_pricebook2:
@@ -246,18 +246,17 @@ responses:
     - text: Dạ quyển Đại Việt sử ký toàn thư bản thường có giá là 203000VND 1 quyển bạn nhé
   utter_pricebook102:
     - text: Dạ quyển Đại Việt sử ký toàn thư bản đặc biệt có giá là 25000000VND 1 bộ 2 quyển bạn nhé
-#------------------------PAYMENT-----------------------------------------------------------------------------
+  #------------------------PAYMENT-----------------------------------------------------------------------------
   utter_payment:
     - text: Dạ bên shop mình có thể thanh toán trực tiếp khi nhận hàng hoặc chuyển khoản trước cho shop sẽ được freeship ạ.Với hình thức thanh toán trực tiếp thì bạn có thể thanh toán sau khi nhận hàng. Còn với hình thức thanh toán online thì bạn có thể chuyển tiền vào stk abc, hoặc MOMO XYZ với nội dung Tên sách +số lượng + tên người mua bạn nhé
 
-
-#-----------------------SHIP----------------------------------------------------------------------------------------
+  #-----------------------SHIP----------------------------------------------------------------------------------------
   utter_shiptime:
     - text: Bên mình ship mất khoảng 2-3 ngày tuỳ vào địa chỉ của khách hàng bạn nhé,
   utter_shipfee:
     - text: phí ship bên mình tính theo phí của đơn vị vận chuyển GHN bạn nhé. Bên mình free ship cho đơn hàng trên 200k.
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+    - text: I am a bot, powered by Rasa.
 action:
   - utter_greet
   - utter-thank
