@@ -125,25 +125,25 @@ responses:
     - text: Sách Lịch sử địa lý bên mình hiện có đầu sách Lịch sử thế giới bạn nhé
   #----------------------------------NAMEBOOK-----------------------------------------------------------------------------------------------------------------------
   utter_namebook1:
-    - text: Tôi là Bê Tô hiện đang nằm ở trong mục Sách Văn học Việt Nam với 2 phiên bản là Tôi là Bê Tô bản bìa mềm và Tôi là Bê Tô bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/2
+    - text: Tôi là Bê Tô hiện đang nằm ở trong mục Sách Văn học Việt Nam với 2 phiên bản là Tôi là Bê Tô bản bìa mềm và Tôi là Bê Tô bản bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/2" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/2 </a>
   utter_namebook2:
-    - text: 365 Truyện kể bé nghe hiện đang nằm ở trong mục Sách thiếu nhi với 2 phiên bản là 365 truyện kể bé nghe bản bìa mềm và 365 truyện kể bé nghe bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/1
+    - text: 365 Truyện kể bé nghe hiện đang nằm ở trong mục Sách thiếu nhi với 2 phiên bản là 365 truyện kể bé nghe bản bìa mềm và 365 truyện kể bé nghe bản bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/1" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/1 </a>
   utter_namebook3:
-    - text: Nhà giả kim hiện đang nằm ở trong mục Sách Văn học nước ngoài với 2 phiên bản là Nhà giả kim bìa cứng và Nhà giả kim phiên bản bìa mềm. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/3
+    - text: Nhà giả kim hiện đang nằm ở trong mục Sách Văn học nước ngoài với 2 phiên bản là Nhà giả kim bìa cứng và Nhà giả kim phiên bản bìa mềm. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/3" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/3 </a>
   utter_namebook4:
-    - text: Nghĩ giàu làm giàu hiện đang nằm ở trong mục Sách kinh tế với 2 phiên bản là Nghĩ giàu làm giàu bản bìa mềm và nghĩ giàu làm giàu bản bìa cứng . Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/4
+    - text: Nghĩ giàu làm giàu hiện đang nằm ở trong mục Sách kinh tế với 2 phiên bản là Nghĩ giàu làm giàu bản bìa mềm và nghĩ giàu làm giàu bản bìa cứng . Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/4" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/4 </a>
   utter_namebook5:
-    - text: Vũ trụ trong vỏ hạt dẻ hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Vũ trụ trong vỏ hạt dẻ bản bìa mềm và Vũ trụ trong vỏ hạt dẻ bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/5
+    - text: Vũ trụ trong vỏ hạt dẻ hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Vũ trụ trong vỏ hạt dẻ bản bìa mềm và Vũ trụ trong vỏ hạt dẻ bản bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/5" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/5 </a>
   utter_namebook6:
-    - text: Deep Learning - Cuộc cách mạng học sâu  hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Deep Learning - Cuộc cách mạng học sâu bản bìa mềm và Deep Learning - Cuộc cách mạng học sâu bản bìa cứng . Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/6
+    - text: Deep Learning - Cuộc cách mạng học sâu  hiện đang nằm ở trong mục Sách khoa học kỹ thuật với 2 phiên bản là Deep Learning - Cuộc cách mạng học sâu bản bìa mềm và Deep Learning - Cuộc cách mạng học sâu bản bìa cứng . Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/6" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/6 </a>
   utter_namebook7:
-    - text: Tiếng gọi nơi hoang dã hiện đang nằm ở mục sách Văn học nước ngoài với 2 phiên bản là Tiếng gọi nơi hoang dã bìa mềm và Tiếng gọi nơi hoang dã phiên bản  bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/7
+    - text: Tiếng gọi nơi hoang dã hiện đang nằm ở mục sách Văn học nước ngoài với 2 phiên bản là Tiếng gọi nơi hoang dã bìa mềm và Tiếng gọi nơi hoang dã phiên bản  bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/7" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/7 </a>
   utter_namebook8:
-    - text: Cà phê cùng Tony hiện đang nằm ở trong mục Sách kỹ năng sống với 2 phiên bản là Cà phê cùng Tony bản bìa mềm và Cà phê cùng Tony bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/8
+    - text: Cà phê cùng Tony hiện đang nằm ở trong mục Sách kỹ năng sống với 2 phiên bản là Cà phê cùng Tony bản bìa mềm và Cà phê cùng Tony bản bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/8" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/8 </a>
   utter_namebook9:
-    - text: Từ điển Anh Việt hiện đang nằm ở trong mục Sách từ điển với 2 phiên bản là Từ điển Anh Việt bản bìa mềm và Từ điển Anh Việt bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/9
+    - text: Từ điển Anh Việt hiện đang nằm ở trong mục Sách từ điển với 2 phiên bản là Từ điển Anh Việt bản bìa mềm và Từ điển Anh Việt bản bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/9" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/9 </a>
   utter_namebook10:
-    - text: Lịch sử thế giới bên Shop mình có 2 loại là Lịch sử thế giới bản bìa mềm và Lịch sử thế giới bản bìa cứng. Bạn có thể tham khảo thêm tại đây https://e-commerce-frontend-react-gilt.vercel.app/book/10
+    - text: Lịch sử thế giới bên Shop mình có 2 loại là Lịch sử thế giới bản bìa mềm và Lịch sử thế giới bản bìa cứng. Bạn có thể tham khảo thêm tại đây <a href="https://e-commerce-frontend-react-gilt.vercel.app/book/10" className="link-book"> https://e-commerce-frontend-react-gilt.vercel.app/book/10 </a>
   #-------------------------------------VERBOOK---------------------------------------------------------------------------------------------
   utter_verbook11:
     - text: Tôi là Bê Tô bản bìa mềm hiện nay bên mình còn 10 quyển bạn nhé.
