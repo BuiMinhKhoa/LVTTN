@@ -252,11 +252,11 @@ responses:
 
   #-----------------------SHIP----------------------------------------------------------------------------------------
   utter_shiptime:
-    - text: Bên mình ship mất khoảng 2-3 ngày tuỳ vào địa chỉ của khách hàng bạn nhé,
+    - text: Bên mình ship mất khoảng 2-3 ngày tuỳ vào địa chỉ của khách hàng bạn nhé
   utter_shipfee:
     - text: phí ship bên mình tính theo phí của đơn vị vận chuyển GHN bạn nhé. Bên mình free ship cho đơn hàng trên 200k.
-  utter_iamabot:
-    - text: I am a bot, powered by Rasa.
+  # utter_iamabot:
+  #   - text: I am a bot, powered by Rasa.
 action:
   - utter_greet
   - utter-thank
