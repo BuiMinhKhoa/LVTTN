@@ -1,333 +1,332 @@
 version: "3.1"
 
 rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - rule: thank
+    steps:
+      - intent: thank
+      - action: utter_thank
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-- rule: thank
-  steps:
-    - intent: thank
-    - action: utter_thank
+  # - rule: Say 'I am a bot' anytime the user challenges
+  #   steps:
+  #   - intent: bot_challenge
+  #   - action: utter_iamabot
+  #--------------------------------TYPEBOOK--------------------------------------------------------
+  - rule: typebook1
+    steps:
+      - intent: typebook1
+      - action: utter_typebook1
+  - rule: typebook2
+    steps:
+      - intent: typebook2
+      - action: utter_typebook2
+  - rule: typebook3
+    steps:
+      - intent: typebook3
+      - action: utter_typebook3
+  - rule: typebook4
+    steps:
+      - intent: typebook4
+      - action: utter_typebook4
+  - rule: typebook5
+    steps:
+      - intent: typebook5
+      - action: utter_typebook5
+  - rule: typebook6
+    steps:
+      - intent: typebook6
+      - action: utter_typebook6
+  - rule: typebook7
+    steps:
+      - intent: typebook7
+      - action: utter_typebook7
+  - rule: typebook8
+    steps:
+      - intent: typebook8
+      - action: utter_typebook8
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
-#--------------------------------TYPEBOOK--------------------------------------------------------
-- rule: typebook1
-  steps:
-    - intent: typebook1
-    - action: utter_typebook1
-- rule: typebook2
-  steps:
-    - intent: typebook2
-    - action: utter_typebook2
-- rule: typebook3
-  steps:
-    - intent: typebook3
-    - action: utter_typebook3
-- rule: typebook4
-  steps:
-    - intent: typebook4
-    - action: utter_typebook4
-- rule: typebook5
-  steps:
-    - intent: typebook5
-    - action: utter_typebook5
-- rule: typebook6
-  steps:
-    - intent: typebook6
-    - action: utter_typebook6
-- rule: typebook7
-  steps:
-    - intent: typebook7
-    - action: utter_typebook7
-- rule: typebook8
-  steps:
-    - intent: typebook8
-    - action: utter_typebook8
+  #-----------------------------------NAMEBOOK-------------------------------------
+  - rule: namebook1
+    steps:
+      - intent: namebook1
+      - action: utter_namebook1
+  - rule: namebook2
+    steps:
+      - intent: namebook2
+      - action: utter_namebook2
+  - rule: namebook3
+    steps:
+      - intent: namebook3
+      - action: utter_namebook3
+  - rule: namebook4
+    steps:
+      - intent: namebook4
+      - action: utter_namebook4
+  - rule: namebook5
+    steps:
+      - intent: namebook5
+      - action: utter_namebook5
+  - rule: namebook6
+    steps:
+      - intent: namebook6
+      - action: utter_namebook6
+  - rule: namebook7
+    steps:
+      - intent: namebook7
+      - action: utter_namebook7
+  - rule: namebook8
+    steps:
+      - intent: namebook8
+      - action: utter_namebook8
+  - rule: namebook9
+    steps:
+      - intent: namebook9
+      - action: utter_namebook9
+  - rule: namebook10
+    steps:
+      - intent: namebook10
+      - action: utter_namebook10
 
-#-----------------------------------NAMEBOOK-------------------------------------
-- rule: namebook1
-  steps:
-    - intent: namebook1
-    - action: utter_namebook1
-- rule: namebook2
-  steps:
-    - intent: namebook2
-    - action: utter_namebook2
-- rule: namebook3
-  steps:
-    - intent: namebook3
-    - action: utter_namebook3
-- rule: namebook4
-  steps:
-    - intent: namebook4
-    - action: utter_namebook4
-- rule: namebook5
-  steps:
-    - intent: namebook5
-    - action: utter_namebook5
-- rule: namebook6
-  steps:
-    - intent: namebook6
-    - action: utter_namebook6
-- rule: namebook7
-  steps:
-    - intent: namebook7
-    - action: utter_namebook7
-- rule: namebook8
-  steps:
-    - intent: namebook8
-    - action: utter_namebook8
-- rule: namebook9
-  steps:
-    - intent: namebook9
-    - action: utter_namebook9
-- rule: namebook10
-  steps:
-    - intent: namebook10
-    - action: utter_namebook10
+  #-----------------------------------PRICEBOOK--------------------------------------
+  - rule: pricebook1
+    steps:
+      - intent: pricebook1
+      - action: utter_pricebook1
+  - rule: pricebook2
+    steps:
+      - intent: pricebook2
+      - action: utter_pricebook2
+  - rule: pricebook3
+    steps:
+      - intent: pricebook3
+      - action: utter_pricebook3
+  - rule: pricebook4
+    steps:
+      - intent: pricebook4
+      - action: utter_pricebook4
+  - rule: pricebook5
+    steps:
+      - intent: pricebook5
+      - action: utter_pricebook5
+  - rule: pricebook6
+    steps:
+      - intent: pricebook6
+      - action: utter_pricebook6
+  - rule: pricebook7
+    steps:
+      - intent: pricebook7
+      - action: utter_pricebook7
+  - rule: pricebook8
+    steps:
+      - intent: pricebook8
+      - action: utter_pricebook8
+  - rule: pricebook9
+    steps:
+      - intent: pricebook9
+      - action: utter_pricebook9
+  - rule: pricebook10
+    steps:
+      - intent: pricebook10
+      - action: utter_pricebook10
+  - rule: pricebook11
+    steps:
+      - intent: pricebook11
+      - action: utter_pricebook11
+  - rule: pricebook12
+    steps:
+      - intent: pricebook12
+      - action: utter_pricebook12
+  - rule: pricebook21
+    steps:
+      - intent: pricebook21
+      - action: utter_pricebook21
+  - rule: pricebook22
+    steps:
+      - intent: pricebook22
+      - action: utter_pricebook22
+  - rule: pricebook31
+    steps:
+      - intent: pricebook31
+      - action: utter_pricebook31
+  - rule: pricebook32
+    steps:
+      - intent: pricebook32
+      - action: utter_pricebook32
+  - rule: pricebook41
+    steps:
+      - intent: pricebook41
+      - action: utter_pricebook41
+  - rule: pricebook42
+    steps:
+      - intent: pricebook42
+      - action: utter_pricebook42
+  - rule: pricebook51
+    steps:
+      - intent: pricebook51
+      - action: utter_pricebook51
+  - rule: pricebook52
+    steps:
+      - intent: pricebook52
+      - action: utter_pricebook52
+  - rule: pricebook61
+    steps:
+      - intent: pricebook61
+      - action: utter_pricebook61
+  - rule: pricebook62
+    steps:
+      - intent: pricebook62
+      - action: utter_pricebook62
+  - rule: pricebook71
+    steps:
+      - intent: pricebook71
+      - action: utter_pricebook71
+  - rule: pricebook72
+    steps:
+      - intent: pricebook72
+      - action: utter_pricebook72
+  - rule: pricebook81
+    steps:
+      - intent: pricebook81
+      - action: utter_pricebook81
+  - rule: pricebook82
+    steps:
+      - intent: pricebook82
+      - action: utter_pricebook82
+  - rule: pricebook91
+    steps:
+      - intent: pricebook91
+      - action: utter_pricebook91
+  - rule: pricebook92
+    steps:
+      - intent: pricebook92
+      - action: utter_pricebook92
+  - rule: pricebook10.1
+    steps:
+      - intent: pricebook101
+      - action: utter_pricebook101
+  - rule: pricebook102
+    steps:
+      - intent: pricebook102
+      - action: utter_pricebook102
+  #-------------------------------------------VERBOOK-----------------------------------
+  - rule: verbook11
+    steps:
+      - intent: verbook11
+      - action: utter_verbook11
 
-#-----------------------------------PRICEBOOK--------------------------------------
-- rule: pricebook1
-  steps:
-    - intent: pricebook1
-    - action: utter_pricebook1
-- rule: pricebook2
-  steps:
-    - intent: pricebook2
-    - action: utter_pricebook2
-- rule: pricebook3
-  steps:
-    - intent: pricebook3
-    - action: utter_pricebook3
-- rule: pricebook4
-  steps:
-    - intent: pricebook4
-    - action: utter_pricebook4
-- rule: pricebook5
-  steps:
-    - intent: pricebook5
-    - action: utter_pricebook5
-- rule: pricebook6
-  steps:
-    - intent: pricebook6
-    - action: utter_pricebook6
-- rule: pricebook7
-  steps:
-    - intent: pricebook7
-    - action: utter_pricebook7
-- rule: pricebook8
-  steps:
-    - intent: pricebook8
-    - action: utter_pricebook8
-- rule: pricebook9
-  steps:
-    - intent: pricebook9
-    - action: utter_pricebook9
-- rule: pricebook10
-  steps:
-    - intent: pricebook10
-    - action: utter_pricebook10
-- rule: pricebook11
-  steps:
-    - intent: pricebook11
-    - action: utter_pricebook11
-- rule: pricebook12
-  steps:
-    - intent: pricebook12
-    - action: utter_pricebook12
-- rule: pricebook21
-  steps:
-    - intent: pricebook21
-    - action: utter_pricebook21
-- rule: pricebook22
-  steps:
-    - intent: pricebook22
-    - action: utter_pricebook22
-- rule: pricebook31
-  steps:
-    - intent: pricebook31
-    - action: utter_pricebook31
-- rule: pricebook32
-  steps:
-    - intent: pricebook32
-    - action: utter_pricebook32
-- rule: pricebook41
-  steps:
-    - intent: pricebook41
-    - action: utter_pricebook41
-- rule: pricebook42
-  steps:
-    - intent: pricebook42
-    - action: utter_pricebook42
-- rule: pricebook51
-  steps:
-    - intent: pricebook51
-    - action: utter_pricebook51
-- rule: pricebook52
-  steps:
-    - intent: pricebook52
-    - action: utter_pricebook52
-- rule: pricebook61
-  steps:
-    - intent: pricebook61
-    - action: utter_pricebook61
-- rule: pricebook62
-  steps:
-    - intent: pricebook62
-    - action: utter_pricebook62
-- rule: pricebook71
-  steps:
-    - intent: pricebook71
-    - action: utter_pricebook71
-- rule: pricebook72
-  steps:
-    - intent: pricebook72
-    - action: utter_pricebook72
-- rule: pricebook81
-  steps:
-    - intent: pricebook81
-    - action: utter_pricebook81
-- rule: pricebook82
-  steps:
-    - intent: pricebook82
-    - action: utter_pricebook82
-- rule: pricebook91
-  steps:
-    - intent: pricebook91
-    - action: utter_pricebook91
-- rule: pricebook92
-  steps:
-    - intent: pricebook92
-    - action: utter_pricebook92
-- rule: pricebook10.1
-  steps:
-    - intent: pricebook101
-    - action: utter_pricebook101
-- rule: pricebook102
-  steps:
-    - intent: pricebook102
-    - action: utter_pricebook102
-#-------------------------------------------VERBOOK-----------------------------------
-- rule: verbook11
-  steps:
-    - intent: verbook11
-    - action: utter_verbook11
+  - rule: verbook1.2
+    steps:
+      - intent: verbook12
+      - action: utter_verbook12
+  - rule: verbook2.1
+    steps:
+      - intent: verbook21
+      - action: utter_verbook21
 
-- rule: verbook1.2
-  steps:
-    - intent: verbook12
-    - action: utter_verbook12
-- rule: verbook2.1
-  steps:
-    - intent: verbook21
-    - action: utter_verbook21
+  - rule: verbook22
+    steps:
+      - intent: verbook22
+      - action: utter_verbook22
 
-- rule: verbook22
-  steps:
-    - intent: verbook22
-    - action: utter_verbook22
+  - rule: verbook31
+    steps:
+      - intent: verbook31
+      - action: utter_verbook31
 
-- rule: verbook31
-  steps:
-    - intent: verbook31
-    - action: utter_verbook31
+  - rule: verbook32
+    steps:
+      - intent: verbook32
+      - action: utter_verbook32
+  - rule: verbook41
+    steps:
+      - intent: verbook41
+      - action: utter_verbook41
 
-- rule: verbook32
-  steps:
-    - intent: verbook32
-    - action: utter_verbook32
-- rule: verbook41
-  steps:
-    - intent: verbook41
-    - action: utter_verbook41
+  - rule: verbook42
+    steps:
+      - intent: verbook42
+      - action: utter_verbook42
 
-- rule: verbook42
-  steps:
-    - intent: verbook42
-    - action: utter_verbook42
+  - rule: verbook51
+    steps:
+      - intent: verbook51
+      - action: utter_verbook51
 
-- rule: verbook51
-  steps:
-    - intent: verbook51
-    - action: utter_verbook51
+  - rule: verbook52
+    steps:
+      - intent: verbook52
+      - action: utter_verbook52
 
-- rule: verbook52
-  steps:
-    - intent: verbook52
-    - action: utter_verbook52
+  - rule: verbook61
+    steps:
+      - intent: verbook61
+      - action: utter_verbook61
 
-- rule: verbook61
-  steps:
-    - intent: verbook61
-    - action: utter_verbook61
+  - rule: verbook62
+    steps:
+      - intent: verbook62
+      - action: utter_verbook62
 
-- rule: verbook62
-  steps:
-    - intent: verbook62
-    - action: utter_verbook62
+  - rule: verbook71
+    steps:
+      - intent: verbook71
+      - action: utter_verbook71
 
-- rule: verbook71
-  steps:
-    - intent: verbook71
-    - action: utter_verbook71
+  - rule: verbook72
+    steps:
+      - intent: verbook72
+      - action: utter_verbook72
 
-- rule: verbook72
-  steps:
-    - intent: verbook72
-    - action: utter_verbook72
+  - rule: verbook81
+    steps:
+      - intent: verbook81
+      - action: utter_verbook81
 
-- rule: verbook81
-  steps:
-    - intent: verbook81
-    - action: utter_verbook81
+  - rule: verbook82
+    steps:
+      - intent: verbook82
+      - action: utter_verbook82
+  - rule: verbook91
+    steps:
+      - intent: verbook91
+      - action: utter_verbook91
 
-- rule: verbook82
-  steps:
-    - intent: verbook82
-    - action: utter_verbook82
-- rule: verbook91
-  steps:
-    - intent: verbook91
-    - action: utter_verbook91
+  - rule: verbook92
+    steps:
+      - intent: verbook92
+      - action: utter_verbook92
+  - rule: verbook101
+    steps:
+      - intent: verbook101
+      - action: utter_verbook101
 
-- rule: verbook92
-  steps:
-    - intent: verbook92
-    - action: utter_verbook92
-- rule: verbook101
-  steps:
-    - intent: verbook101
-    - action: utter_verbook101
-
-- rule: verbook102
-  steps:
-    - intent: verbook102
-    - action: utter_verbook102
-#---------------------------------------PAYMENT--------------------
-- rule: payment
-  steps:
-    - intent: payment
-    - action: utter_payment
-#--------------------------------------SHIP---------------------------
-- rule: shiptime
-  steps:
-    - intent: shiptime
-    - action: utter_shiptime
-- rule: shipfee
-  steps:
-    - intent: shipfee
-    - action: utter_shipfee
-#--------------------------SALE--------------------------------------------
-- rule: saletime
-  steps:
-    - intent: saletime
-    - action: utter_saletime
-- rule: saleproduct
-  steps:
-    - intent: saleproduct
-    - action: utter_saleproduct
+  - rule: verbook102
+    steps:
+      - intent: verbook102
+      - action: utter_verbook102
+  #---------------------------------------PAYMENT--------------------
+  - rule: payment
+    steps:
+      - intent: payment
+      - action: utter_payment
+  #--------------------------------------SHIP---------------------------
+  - rule: shiptime
+    steps:
+      - intent: shiptime
+      - action: utter_shiptime
+  - rule: shipfee
+    steps:
+      - intent: shipfee
+      - action: utter_shipfee
+  #--------------------------SALE--------------------------------------------
+  - rule: saletime
+    steps:
+      - intent: saletime
+      - action: utter_saletime
+  - rule: saleproduct
+    steps:
+      - intent: saleproduct
+      - action: utter_saleproduct
